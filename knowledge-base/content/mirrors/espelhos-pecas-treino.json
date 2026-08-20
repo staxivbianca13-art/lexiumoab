@@ -1,0 +1,632 @@
+{
+  "espelhos": [
+    {
+      "id": "espelho-xx_exame_de_ordem",
+      "exame": "XX Exame de Ordem",
+      "total_itens": 21,
+      "itens_pontuacao": [
+        {
+          "item": "Petição Inicial dirigida ao Juiz do Trabalho de Natal/RN",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "Qualificação do autor  e do réu",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "Hora extra pela supressão do intervalo  . Citação Art. 13",
+          "pontos_max": 0.4
+        },
+        {
+          "item": "LC 150/15 OU da Súmula 437, I e IV, TST",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "Hora extra por excesso da jornada legal. . Citação Art. 2º",
+          "pontos_max": 0.4
+        },
+        {
+          "item": "7º, XIII OU CF/88 art. 7º, § único",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "Reflexo das horas extras nas verbas resilitórias",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "Pagamento  de  25%  por  hora  trabalhada  em  viagem  ",
+          "pontos_max": 0.5
+        },
+        {
+          "item": "Citação Art. 11, § 2º, LC 150/15",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "Devolução  do  desconto  de  alimentação  porque  ilegal  ",
+          "pontos_max": 0.4
+        },
+        {
+          "item": "Citação Art. 18 LC 150/15",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "Devolução do excesso do desconto do vale transporte  ",
+          "pontos_max": 0.4
+        },
+        {
+          "item": "Reconhecimento  de  contrato  por  prazo  indeterminado  ",
+          "pontos_max": 0.5
+        },
+        {
+          "item": "Citação Art. 5º, § 2º, LC 150/15",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "prévio . Citação OJ 82 TST",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "Aviso prévio . Citação Art. 23, § 1º, LC 150/15 OU CF/88,",
+          "pontos_max": 0.4
+        },
+        {
+          "item": "art. 7º, XXI OU CF/88 art. 7º, § único",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "Reflexo do aviso prévio em férias acrescidas de 1/3",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "Reflexo do aviso prévio em 13º salário",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "Requerimento de procedência dos pedidos",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "Local, data, advogado",
+          "pontos_max": 0.1
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nPetição Inicial dirigida ao Juiz do Trabalho de Natal/RN (0,20) \nQualificação do autor (0,10) e do réu (0,10) \nHora extra pela supressão do intervalo  (0,40). Citação Art. 13 \nLC 150/15 OU da Súmula 437, I e IV, TST (0,10) \nHora extra por excesso da jornada legal. (0,40). Citação Art. 2º \ncaput OU Art. 2º § 1º OU Art. 2º § 4º, LC 150/15 OU CF/88, art. \n7º, XIII OU CF/88 art. 7º, § único (0,10) \nReflexo das horas extras nas verbas resilitórias (0,10) \nPagamento  de  25%  por  hora  trabalhada  em  viagem  (0,50). \nCitação Art. 11, § 2º, LC 150/15 (0,10) \nDevolução  do  desconto  de  alimentação  porque  ilegal  (0,40). \nCitação Art. 18 LC 150/15 (0,10) \nDevolução do excesso do desconto do vale transporte  (0,40). \nCitação § único Art. 4º Lei 7.418/85 OU Decreto 95.247/87, art. \n9º, I (0,10) \nReconhecimento  de  contrato  por  prazo  indeterminado  (0,50). \nCitação Art. 5º, § 2º, LC 150/15 (0,10) \nAnotação/Retificação  de  dispensa  com  projeção  do  aviso \nprévio (0,20). Citação OJ 82 TST (0,10) \nAviso prévio (0,40). Citação Art. 23, § 1º, LC 150/15 OU CF/88, \nart. 7º, XXI OU CF/88 art. 7º, § único (0,10) \nReflexo do aviso prévio em férias acrescidas de 1/3 (0,10) \nReflexo do aviso prévio em 13º salário (0,10) \nRequerimento de procedência dos pedidos (0,20) \nLocal, data, advogado (0,10) \n\nPONTUAÇÃO \n\n0,00/0,20 \n0,00/0,10/0,20 \n\n0,0 / 0,40 / 0,50 \n\n0,00/0,40/0,50 \n\n0,00/0,10 \n\n0,0 / 0,50 / 0,60 \n\n0,00/0,40/0,50 \n\n0,00/0,40/0,50 \n\n0,00/0,50/0,60 \n\n0,00/0,20/0,30 \n\n0,00/0,40/0,50 \n\n0,00/0,10 \n0,00/0,10 \n0,0 / 0,20 \n0,00/0,10 \n\nPONTUAÇÃO \nDO ALUNO \n\nTotal: \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n1) Ano: 2016 Banca: FGV Órgão: OAB Prova: XX Exame de Ordem \n\nJéssica é empregada em um salão de cabeleireiro localizado na capital do Estado em que reside \n\ne cumpre jornada de 2ª feira a sábado, das 8h00min às 19h00min, com pausa alimentar de uma \n\nhora. Não existe previsão em Lei, acordo coletivo ou convenção coletiva de jornada diferenciada \n\npara a sua categoria.  \n\nDiante da hipótese apresentada, responda aos itens a seguir. \n\nA) Analise se a trabalhadora, em eventual reclamação trabalhista, teria sucesso em pedido \n\nde horas extras pela inobservância do intervalo interjornada. (Valor: 0,65)  \n\nB)  Caso  você  fosse  contratado  como  advogado  de  Jéssica,  analise  se  seria  possível \n\nformular,  além  do  pedido  de  horas  extras  pelo  excesso  de  jornada,  algum  pleito  de \n\n"
+    },
+    {
+      "id": "espelho-exame_2",
+      "exame": "Exame 2",
+      "total_itens": 3,
+      "itens_pontuacao": [
+        {
+          "item": "horas  foi  observado  .  Indicação  Art.  66/CLT  OU  Art.  382/CLT",
+          "pontos_max": 0.55
+        },
+        {
+          "item": "de pausa anteriores à realização de horas extras para a mulher ",
+          "pontos_max": 0.5
+        },
+        {
+          "item": "Indicação Art. 384 CLT",
+          "pontos_max": 0.1
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nPONTUAÇÃO \n\nPONTUAÇÃO \nDO ALUNO \n\nA. O pedido  é  improcedente, já que  o intervalo de período de  onze \nhoras  foi  observado  (0,55).  Indicação  Art.  66/CLT  OU  Art.  382/CLT \n(0,10) \nB. Pedido de horas extras em razão da inobservância dos 15 minutos \nde pausa anteriores à realização de horas extras para a mulher (0,50). \nIndicação Art. 384 CLT (0,10) \n\n0,00/0,55/0,65 \n\n0,00/0,50/0,60 \n\nTotal: \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n\n2) Ano: 2016 Banca: FGV Órgão: OAB Prova: XX Exame de Ordem \n\nEm sede de ação trabalhista movida por Célio em face da Madeireira Ltda, transitada em julgado \n\na  decisão  de  conhecimento,  após  a  apresentação  de  cálculos  pelas  partes  e  homologado \n\ndeterminado valor, o juiz abriu prazo para a manifestação específica das partes em relação à \n\nsua decisão. Ambas se quedaram inertes. Posteriormente, em sede de embargos à execução, a \n\nparte ré quis impugnar os valores do débito. Na qualidade de advogado do autor, tendo você \n\nconcordado com os cálculos homologados pelo juiz, responda:  \n\nA) O que você deverá alegar em sede de resposta aos embargos à execução? Fundamente. \n\n(Valor: 0,65)  \n\nB) Qual o recurso cabível da decisão dos embargos à execução? Fundamente. (Valor: 0,60) \n\nObs.: o(a) examinando(a) deve fundamentar as respostas. A mera citação do dispositivo legal \n\nnão confere pontuação. \n\nPADRÃO RESPOSTA \n\nA)  Nos  termos  do  Art.  879,  §  2º,  da  CLT,  é  facultado  ao  juiz  abrir  prazo  para  as  partes  se \n\nmanifestarem sobre a conta de liquidação, sob pena de preclusão. Tal, cotejado com o Art. 884, \n\n§  3º,  deixa  evidente  que,  se  o  juiz  abrir  prazo  e  a  parte  nada  fizer,  ocorrerá  a  preclusão  e  a \n\nmatéria  não  poderá  ser  arguida  em  sede  de  embargos  à  execução.  Portanto,  a  parte  autora \n\ndeverá  alegar  a  preclusão  para  impugnar  a  conta  de  liquidação  em  sede  de  embargos  à \n\nexecução conforme Art. 879, § 2º, da CLT.  \n\nB) Caberá Agravo de Petição, conforme Art. 897, a, da CLT. \n\n"
+    },
+    {
+      "id": "espelho-exame_3",
+      "exame": "Exame 3",
+      "total_itens": 2,
+      "itens_pontuacao": [
+        {
+          "item": "A. Alegação de preclusão . Indicação Art. 879, § 2º, CLT",
+          "pontos_max": 0.55
+        },
+        {
+          "item": "B.  Caberá  Agravo  de  Petição  .  Indicação  Art.  897,  “a”,  CLT",
+          "pontos_max": 0.5
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nA. Alegação de preclusão (0,55). Indicação Art. 879, § 2º, CLT (0,10) \nB.  Caberá  Agravo  de  Petição  (0,50).  Indicação  Art.  897,  “a”,  CLT \n(0,10)   \n\nPONTUAÇÃO \n\n0,00/0,55/0,65 \n\n0,00/0,50/0,60 \n\nPONTUAÇÃO \nDO ALUNO \n\nTotal: \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n \n \n\n3) Ano: 2016 Banca: FGV Órgão: OAB Prova: XX Exame de Ordem \n\nRafael trabalha há 5 anos na empresa Come Come Gêneros Alimentícios S/A no Município de \n\nNiterói/RJ,  como  auxiliar  administrativo.  Entretanto,  sem  qualquer  razão  aparente,  seu \n\nempregador decidiu transferi-lo para Taubaté/SP, onde se localiza uma das filiais da empresa. \n\nApesar das ponderações de Rafael ao empregador, esse se manteve irredutível.  \n\nDiante disso responda aos itens a seguir. \n\nA)  Analise  se  é  possível  a  transferência  de  Rafael  sob  o  aspecto  da  legalidade. \n\nFundamente. (Valor: 0,60) \n\nB) Considerando o risco iminente da transferência, na qualidade de advogado de Rafael, \n\nqual a medida a ser adotada por você? Fundamente. (Valor: 0,65)  \n\nObs.: o(a) examinando(a) deve fundamentar as respostas. A mera citação do dispositivo legal \n\nnão confere pontuação. \n\nPADRÃO RESPOSTA \n\nA) A transferência é ilícita, pois não houve concordância do empregado, não foi demonstrada \n\nreal necessidade de serviço, nem extinção de estabelecimento, nos termos do Art. 469 da CLT.  \n\nB) Deverá ser ajuizada uma reclamação trabalhista com pedido de antecipação de tutela (tutela \n\nde urgência, ou pedido liminar) a fim de suspender a transferência até a decisão do processo, \n\nnos termos do Art. 659, inciso IX, da CLT. \n\n"
+    },
+    {
+      "id": "espelho-exame_4",
+      "exame": "Exame 4",
+      "total_itens": 5,
+      "itens_pontuacao": [
+        {
+          "item": "A. Não é possível, pois não houve concordância do empregado ",
+          "pontos_max": 0.5
+        },
+        {
+          "item": "Indicação Art. 468 OU Art. 469 CLT",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "a transferência . Indicação Art. 659, IX, CLT",
+          "pontos_max": 0.55
+        },
+        {
+          "item": "Tutela de urgência . Indicação Art. 300 CPC",
+          "pontos_max": 0.55
+        },
+        {
+          "item": "Tutela antecipada . Indicação Art. 303 CPC",
+          "pontos_max": 0.55
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nA. Não é possível, pois não houve concordância do empregado (0,50). \nIndicação Art. 468 OU Art. 469 CLT. (0,10) \nB. Ajuizar reclamação trabalhista com pedido liminar para suspender \na transferência (0,55). Indicação Art. 659, IX, CLT (0,10)  \nOU  \nTutela de urgência (0,55). Indicação Art. 300 CPC (0,10)  \nOU \nTutela antecipada (0,55). Indicação Art. 303 CPC (0,10) \n\nPONTUAÇÃO \n\n0,00/0,50/0,60 \n\nPONTUAÇÃO \nDO ALUNO \n\n0,00/0,55/0,65 \n\nTotal: \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n \n\n4) Ano: 2016 Banca: FGV Órgão: OAB Prova: XX Exame de Ordem \n\nUm determinado empregado sofreu um acidente fora do local de trabalho, recebeu auxílio doença \n\ncomum (B-31), e permaneceu afastado da empresa por 6 meses. Três meses após o seu retorno, \n\no empregado foi dispensado e, em razão disso, ajuizou reclamação trabalhista com pedido de \n\nreintegração, afirmando que a sua garantia no emprego foi violada.   \n\nDe acordo com os dados apresentados e com a legislação em vigor, responda aos itens a seguir. \n\nA)  Informe  que  tese  você,  contratado  como  advogado  da  empresa,  sustentaria \n\ncontrariamente ao pedido de reintegração. (Valor: 0,65)  \n\nB) Caso o empregado tivesse alguma deficiência por conta do acidente sofrido, analise se \n\nele poderia usar o FGTS para compra de uma prótese que permitisse maior acessibilidade. \n\n(Valor: 0,60) \n\nObs.: o(a) examinando(a) deve fundamentar as respostas. A mera citação do dispositivo legal \n\nnão confere pontuação. \n\nPADRÃO RESPOSTA \n\nA) A tese a ser sustentada é que não houve acidente de trabalho, daí porque não há a garantia \n\nacidentária prevista no Art. 118 da Lei nº 8.213/91, posto que o benefício recebido foi o de auxílio \n\ndoença comum.  \n\nB) Seria possível o saque porque há previsão legal expressa, conforme Art. 20, inciso XVIII, da \n\nLei nº 8.036/90. \n\n"
+    },
+    {
+      "id": "espelho-exame_5",
+      "exame": "Exame 5",
+      "total_itens": 4,
+      "itens_pontuacao": [
+        {
+          "item": "do trabalho OU porque não recebeu auxílio doença acidentário ",
+          "pontos_max": 0.55
+        },
+        {
+          "item": "Indicação Art. 118 Lei 8.213/91 OU Súmula 378, II, TST",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "B. Sim, por haver disposição legal expressa . Indicação do Art",
+          "pontos_max": 0.5
+        },
+        {
+          "item": "20, XVIII, Lei 8.036/90 OU Art. 99, Lei 13.146/15",
+          "pontos_max": 0.1
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nPONTUAÇÃO \n\nPONTUAÇÃO \nDO ALUNO \n\nA. Inexistência  de  garantia no  emprego porque  não houve acidente \ndo trabalho OU porque não recebeu auxílio doença acidentário (0,55). \nIndicação Art. 118 Lei 8.213/91 OU Súmula 378, II, TST (0,10) \nB. Sim, por haver disposição legal expressa (0,50). Indicação do Art. \n20, XVIII, Lei 8.036/90 OU Art. 99, Lei 13.146/15 (0,10) \n\n0,00/0,55/0,65 \n\n0,00/0,50/0,60 \n\nTotal: \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n \n\nResolução do X Exame de Ordem \n\n"
+    },
+    {
+      "id": "espelho-x_exame_de_ordem",
+      "exame": "X Exame de Ordem",
+      "total_itens": 14,
+      "itens_pontuacao": [
+        {
+          "item": "Obs.:  o  desrespeito  a  algum  dos  elementos  estruturais",
+          "pontos_max": 0.6
+        },
+        {
+          "item": "Aviso prévio  proporcional ao tempo de serviço de 42 dias",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "Saldo  salarial    de  11  dias  do  mês  de  outubro  de  2012",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "13º salário proporcional  de 11/12 avos ",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "Férias em dobro 2010/2011  acrescidas de 1/3 ",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "Férias simples 2011/2012  acrescidas de 1/3 ",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "Férias proporcionais + 1/3  de 2/12 avos ",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "Devolução da CTPS ",
+          "pontos_max": 0.4
+        },
+        {
+          "item": "de conectividade ",
+          "pontos_max": 0.35
+        },
+        {
+          "item": "Formulários do seguro-desemprego ",
+          "pontos_max": 0.35
+        },
+        {
+          "item": "Devolução do aparelho celular ",
+          "pontos_max": 0.4
+        },
+        {
+          "item": "Encerramento  requerendo  a  citação  ,  depósito  dos",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "valores  e  coisas  devidos  ,  quitação  das  obrigações  OU",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "procedência dos pedidos  e indicação de valor da causa",
+          "pontos_max": 0.2
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nFormato de petição inicial (consignatória), baseada nos artigos \n890 a 900 do CPC, com endereçamento ao juiz do trabalho de \nMaceió e qualificação das partes – consignante e consignatária \n(0,60)  Obs.:  o  desrespeito  a  algum  dos  elementos  estruturais \nacarretará perda de 0,20. \nAviso prévio (0,20) proporcional ao tempo de serviço de 42 dias \n(0,20). \nSaldo  salarial  (0,20)  de  11  dias  do  mês  de  outubro  de  2012 \n(0,20). \n13º salário proporcional (0,20) de 11/12 avos (0,20). \nFérias em dobro 2010/2011 (0,20) acrescidas de 1/3 (0,20). \nFérias simples 2011/2012 (0,20) acrescidas de 1/3 (0,20). \nFérias proporcionais + 1/3 (0,20) de 2/12 avos (0,20).   \nDevolução da CTPS (0,40). \nEntrega das guias para saque do FGTS OU TRCT OU chave \nde conectividade (0,35). \nFormulários do seguro-desemprego (0,35). \nDevolução do aparelho celular (0,40). \nEncerramento  requerendo  a  citação  (0,10),  depósito  dos \nvalores  e  coisas  devidos  (0,10),  quitação  das  obrigações  OU \nprocedência dos pedidos (0,20) e indicação de valor da causa \n(0,10). \n\nPONTUAÇÃO \n\nPONTUAÇÃO \nDO ALUNO \n\n0,00/0,40/0,60 \n\n0,00/0,20/0,40 \n\n0,00/0,20/0,40 \n\n0,00/0,20/0,40 \n0,00/0,20/0,40 \n0,00/0,20/0,40 \n0,00/0,20/0,40 \n0,00/0,40 \n\n0,00/0,35 \n\n0,00/0,35 \n0,00/0,40 \n\n0,00/0,10/0,20/ \n0,30/0,40/0,50 \n\nTotal: \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n1) Ano: 2013 Banca: FGV Órgão: OAB Prova: X Exame de Ordem \n\nJéssica é gerente de uma sapataria e é responsável por oito funcionários da filial, orientando as atividades \n\ne  fiscalizando  as  tarefas  por  eles  realizadas,  tomando  todas  as  medidas  necessárias  para  o  bom \n\nandamento dos serviços, inclusive punindo-os, quando necessário. \n\nJéssica cumpre jornada de 2ª a 6ª feira das 10h às 20h com intervalo de uma hora para refeição e aos \n\nsábados das 10h às 17h, com pausa alimentar de uma hora e meia. No seu contracheque existem, na \n\ncoluna de crédito, os títulos “salário” – R$ 3.000,00 – e “gratificação de função” – R$ 1.000,00. \n\nCom base na hipótese acima, responda aos itens a seguir, de forma fundamentada. \n\nA) Quais são os elementos necessários para que um empregado seja considerado ocupante de \n\ncargo de confiança? (Valor: 0,65) \n\nB) Analise e justifique se é possível à empregada em questão reivindicar o pagamento de horas \n\nextras. (Valor: 0,60) \n\nObs.: o(a) examinando(a) deve fundamentar as respostas. A mera citação do dispositivo legal não confere "
+    },
+    {
+      "id": "espelho-exame_7",
+      "exame": "Exame 7",
+      "total_itens": 4,
+      "itens_pontuacao": [
+        {
+          "item": "gestão)  e objetivo (padrão salarial diferenciado ou gratificação",
+          "pontos_max": 0.25
+        },
+        {
+          "item": ". Indicação do Art. 62, II, da CLT OU Art. 62, p. único CLT ",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "elemento  objetivo,  descaracterizando  a  função  de  confiança  ",
+          "pontos_max": 0.4
+        },
+        {
+          "item": "49, da Secretaria de Inspeção do Trabalho ",
+          "pontos_max": 0.2
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nPONTUAÇÃO \n\nPONTUAÇÃO \nDO ALUNO \n\nA.  Os  elementos  subjetivos  (poder  de  mando,  controle,  direção, \ngestão) (0,25) e objetivo (padrão salarial diferenciado ou gratificação \nde função, se houver, de no mínimo 40% do salário do cargo efetivo) \n(0,20). Indicação do Art. 62, II, da CLT OU Art. 62, p. único CLT (0,20). \nObs.: a simples citação do artigo não pontua. \nB. Sim, porque descaracterizada a função de confiança em virtude de \na gratificação ser inferior a 40% do salário, OU sim, pois ausente o \nelemento  objetivo,  descaracterizando  a  função  de  confiança  (0,40). \nIndicação do Art. 62, § único, da CLT OU Precedente Administrativo \n49, da Secretaria de Inspeção do Trabalho (0,20). \nObs.: a simples citação do artigo não pontua. \n\n0,00/0,20/0,25/0,40/ \n0,45/0,65 \n\n0,00/0,40/0,60 \n\nTotal: \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n\n2) Ano: 2013 Banca: FGV Órgão: OAB Prova: X Exame de Ordem \n\nNuma  reclamação  trabalhista  movida  em  litisconsórcio  passivo,  o  autor  e  a  empresa  reclamada  “X” \n\n(sociedade  de  economia  mista)  foram  vencidos  reciprocamente  em  alguns  pedidos,  tendo  ambos  se \n\nquedado inertes no prazo recursal. Porém, a empresa reclamada “Y” (pessoa jurídica de direito privado), \n\nvencida também em relação a alguns pedidos na referida ação trabalhista, interpôs recurso ordinário, com \n\nobservância dos pressupostos legais de admissibilidade, tendo inclusive efetuado o preparo. Em seguida, \n\no  Juiz  do  Trabalho  notificou  as  partes  para  que  oferecessem  suas  razões  de  contrariedade,  em  igual \n\nprazo ao que teve o recorrente. \n\nConsiderando os fatos narrados acima, responda, de forma fundamentada, aos itens a seguir.:  \n\nA) Analise a possibilidade de o autor recorrer, ou não, dos pedidos em que foi vencido, e de que \n\nmaneira isso se daria, se possível for. (Valor: 0,65) \n\n\nsua exclusão da lide, analise e justifique quanto à necessidade, ou não, de a reclamada “X” efetuar \n\npreparo. (Valor: 0,60) \n\nA simples menção ou transcrição do dispositivo legal não pontua. \n\nPADRÃO RESPOSTA \n\nA) Ainda é possível ao reclamante manifestar seu inconformismo, que deverá materializar-se num recurso \n\nordinário adesivo, já que aplicável o Art. 500 do CPC em sede trabalhista.  \n\nB) A empresa “X”, por ser sociedade de economia mista, estará obrigada a efetuar o preparo, pois não é \n\ndele isento.  \n\n"
+    },
+    {
+      "id": "espelho-exame_8",
+      "exame": "Exame 8",
+      "total_itens": 3,
+      "itens_pontuacao": [
+        {
+          "item": ".  Indicação  do  Art.  500  do  CPC  OU  Súmula  283  do  TST  OU",
+          "pontos_max": 0.45
+        },
+        {
+          "item": "Instrução Normativa 3, IX, do TST ",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "condenação não foi solidária . Indicação do Art. 173, § 1º, II, da",
+          "pontos_max": 0.4
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nPONTUAÇÃO \n\nPONTUAÇÃO \nDO ALUNO \n\nA. É possível interpor recurso adesivo OU recurso ordinário adesivo \n(0,45).  Indicação  do  Art.  500  do  CPC  OU  Súmula  283  do  TST  OU \nInstrução Normativa 3, IX, do TST (0,20). \nObs.: a simples citação do artigo não pontua. \nB.  A  empresa  “X”  estará  obrigada  a  efetuar  o  preparo  porque  os \nrecursos  são  independentes  OU  há  necessidade  de  preparo  pois  a \ncondenação não foi solidária (0,40). Indicação do Art. 173, § 1º, II, da \nCRFB/88 OU Súmula n. 170 do TST  OU Súmula  n. 128, I ou III do \nTST (0,20).  \nObs.: a simples citação do artigo não pontua. \n\n0,00/0,45/0,65 \n\n0,00/0,40/0,60 \n\nTotal: \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n\n3) Ano: 2013 Banca: FGV Órgão: OAB Prova: X Exame de Ordem \n\nDEMÉTRIO ajuizou reclamação trabalhista pleiteando o pagamento de multas previstas no instrumento \n\nnormativo de sua categoria, cujo destinatário é o empregado lesado, em virtude do descumprimento, pelo \n\nempregador, da quitação do adicional de 50% sobre as horas extras e do acréscimo de 1/3 nas férias. \n\nEm  contestação,  a  reclamada  sustentou  que  tais  multas  eram  indevidas  porque  se  tratava  de  meras \n\nrepetições de dispositivo legal, sendo que a CLT não prevê multa para o empregador nessas hipóteses. \n\nAdiciona e comprova que, no tocante à multa pelo \n\ndescumprimento do terço de férias, isso já é objeto de ação anterior ajuizada pelo mesmo reclamante e \n\nque tramita em outra Vara, atualmente em fase de recurso. \n\nResponda, justificadamente, aos itens a seguir. \n\nA) Analise se são válidas as multas previstas no instrumento normativo. (Valor: 0,65) \n\nB) Informe que fenômeno jurídico processual ocorreu em relação ao pedido de multa pela ausência \n\nde pagamento do terço das férias. (Valor: 0,60)  \n\nA simples menção ou transcrição do dispositivo legal não pontua. \n\nPADRÃO RESPOSTA \n\nA) As multas previstas no instrumento normativo são válidas e aplicáveis em caso de descumprimento de \n\nobrigação prevista em lei, mesmo que a norma coletiva seja mera repetição de texto legal, na forma da \n\nSúmula n. 384, II do TST.  \n\nB) Ocorreu o fenômeno jurídico da litispendência, previsto no Art. 301, §§ 1º e 3º, do CPC.  \n\n"
+    },
+    {
+      "id": "espelho-exame_9",
+      "exame": "Exame 9",
+      "total_itens": 3,
+      "itens_pontuacao": [
+        {
+          "item": "previstos em Lei nem se referem a normas de ordem pública ",
+          "pontos_max": 0.45
+        },
+        {
+          "item": "Indicação da Súmula 384, II, TST ",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "B. Litispendência . Indicação do CPC, Art. 301, V OU § 1º, OU",
+          "pontos_max": 0.4
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nPONTUAÇÃO \n\nPONTUAÇÃO \nDO ALUNO \n\nA. São válidas, mesmo que a norma coletiva seja mera repetição de \ntexto legal OU são válidas, pois não afrontam os patamares mínimos \nprevistos em Lei nem se referem a normas de ordem pública (0,45). \nIndicação da Súmula 384, II, TST (0,20). \nOBS.: É necessária a indicação precisa do fundamento legal. A mera \nindicação  do  fundamento  legal  ou  jurisprudencial  não  credencia \npontuação. \nB. Litispendência (0,40). Indicação do CPC, Art. 301, V OU § 1º, OU \n§ 3º. (0,20).  \nOBS.: É necessária a indicação precisa do fundamento legal. A mera \nindicação  do  fundamento  legal  ou  jurisprudencial  não  credencia \npontuação. \n\n0,00/0,45/0,65 \n\n0,00/0,40/0,60 \n\nTotal: \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n\n4) Ano: 2013 Banca: FGV Órgão: OAB Prova: X Exame de Ordem \n\nPedro trabalhou numa empresa de 10.02.2011 a 20.05.2013, quando foi dispensado sem justa \n\ncausa e recebeu as verbas devidas. Após, ajuizou ação pleiteando a participação nos lucros (PL) \n\nde  2013,  prevista  em  acordo  coletivo,  requerendo  que  o  cálculo  fosse  proporcional  ao  tempo \n\ntrabalhado.  Defendendo-se,  a  empresa  advoga  que  a  parcela  é  indevida  porque  uma  das \n\ncondições para o recebimento da PL, prevista no acordo coletivo, é que o empregado esteja com \n\no contrato em vigor no mês de dezembro de 2013, o que não ocorre no caso. \n\nDiante dessa situação, responda: \n\nA)  Pedro  tem  direito  à  participação  proporcional  nos  lucros  de  2013?  Justifique  sua \n\nresposta. (Valor: 0,65) \n\nB)  Analise  se  a  participação  nos  lucros  está  sujeita  a  alguma  incidência  tributária. \n\nJustifique sua resposta. (Valor: 0,60) \n\nA simples menção ou transcrição do dispositivo legal não pontua. \n\nPADRÃO RESPOSTA \n\nA) Ele terá direito, pois a exigência do acordo coletivo não é aceita pela jurisprudência, conforme \n\nOJ 390, do TST.  \n\nB) Está sujeita à contribuição fiscal OU recolhe Imposto de Renda, conforme Lei 10.101/00, Art. \n\n3º, § 5º OU Regulamento do Imposto de Renda.  \n\n"
+    },
+    {
+      "id": "espelho-exame_10",
+      "exame": "Exame 10",
+      "total_itens": 3,
+      "itens_pontuacao": [
+        {
+          "item": ". Indicação da OJ 390, do TST ",
+          "pontos_max": 0.45
+        },
+        {
+          "item": "B.  Sujeita-se  à  contribuição  fiscal  OU  Imposto  de  Renda  ",
+          "pontos_max": 0.4
+        },
+        {
+          "item": "3.000/99 ",
+          "pontos_max": 0.2
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nA. Ele terá direito, pois a exigência do acordo coletivo fere a isonomia \n(0,45). Indicação da OJ 390, do TST (0,20). \nB.  Sujeita-se  à  contribuição  fiscal  OU  Imposto  de  Renda  (0,40). \nIndicação  da  Lei  10.101/00,  Art.  3º,  §  5º  OU  Art.  626  do  Decreto \n3.000/99 (0,20).  \nOBS: A indicação de outro tributo além do IR gerará perda de 0,1 no \ntópico. \n\nPONTUAÇÃO \n\n0,00/0,45/0,65 \n\nPONTUAÇÃO \nDO ALUNO \n\n0,00/0,30/0,40/0,60 \n\nTotal: \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n \n\nResolução do 42º Exame de Ordem \n\n"
+    },
+    {
+      "id": "espelho-42º_exame_de_ordem",
+      "exame": "42º Exame de Ordem",
+      "total_itens": 21,
+      "itens_pontuacao": [
+        {
+          "item": "2.  Indicação  da  reclamada    e  do  reclamante    Art",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "847 da CLT ",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "3.  Improcedência  porque  é  válido  o  acordo  individual  ,",
+          "pontos_max": 0.5
+        },
+        {
+          "item": "segundo o Art. 59 § 6º da CLT ou Súmula 85, I, TST ",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "4.  Improcedência  porque  desfrutado  .  Art.  71  da  CLT",
+          "pontos_max": 0.4
+        },
+        {
+          "item": "do autor . Art. 73 ou Art. 511, ambos da CLT ",
+          "pontos_max": 0.4
+        },
+        {
+          "item": "vigilante ou não estava exposto a risco . Art. 193, II, da",
+          "pontos_max": 0.5
+        },
+        {
+          "item": "ser doença relativa ao trabalho . Art. 118 da Lei 8.213/91",
+          "pontos_max": 0.4
+        },
+        {
+          "item": "ou a Súmula 378, II, do TST ",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "no término de contrato a termo . Indicação Art. 18, § 1º,",
+          "pontos_max": 0.3
+        },
+        {
+          "item": "da Lei 8.036/90 ou Art. 9º § 1º do Decreto 99.684/90. ",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "no término de contrato a termo . Indicação Arts. 2º, I ou",
+          "pontos_max": 0.3
+        },
+        {
+          "item": "3º da Lei 7.998/90 ",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "personalidade ou ato ilícito praticado pela ré . Arts. 186",
+          "pontos_max": 0.3
+        },
+        {
+          "item": "ou 927, ambos do CC ou Art. 223-B ou C, da CLT ",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "determinado . Indicação art. 443, § 2°, \"c\" da CLT ",
+          "pontos_max": 0.3
+        },
+        {
+          "item": "pedido supera o limite legal . Art. 791-A da CLT ",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "12. Requerimento de honorários advocatícios ",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "13. Requerimento de improcedência dos pedidos ",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "14. Requerimento de produção de provas ",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "15. Local, data, advogado e OAB ",
+          "pontos_max": 0.1
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nEstrutura \n1. Peça no formato de contestação endereçada à 100ª VT/GO \n(0,10). \n2.  Indicação  da  reclamada  (0,10)  e  do  reclamante  (0,10)  Art. \n847 da CLT (0,10). \nHoras Extras \n3.  Improcedência  porque  é  válido  o  acordo  individual  (0,50), \nsegundo o Art. 59 § 6º da CLT ou Súmula 85, I, TST (0,10). \nIntervalo \n4.  Improcedência  porque  desfrutado  (0,40).  Art.  71  da  CLT \n(0,10). \nAdicional noturno \n5. Improcedência porque a norma coletiva não é da categoria \ndo autor (0,40). Art. 73 ou Art. 511, ambos da CLT (0,10). \nAdicional de Periculosidade \n6.  Improcedência  porque  o  autor  não  exercia  a  função  de \nvigilante ou não estava exposto a risco (0,50). Art. 193, II, da \nCLT (0,10). \nEstabilidade e reintegração \n7.  Improcedência  por  não  haver  afastamento  previdenciário \nacidentário  ou  não  ter  recebido  benefício  acidentário  ou  não \nser doença relativa ao trabalho (0,40). Art. 118 da Lei 8.213/91 \nou a Súmula 378, II, do TST (0,10). \nIndenização FGTS \n8.  Improcedência  por  não  ter  ocorrido  dispensa  imotivada  ou \nno término de contrato a termo (0,30). Indicação Art. 18, § 1º, \nda Lei 8.036/90 ou Art. 9º § 1º do Decreto 99.684/90. (0,10). \nSeguro desemprego \n9.  Improcedência  por  não  ter  ocorrido  dispensa  imotivada  ou \nno término de contrato a termo (0,30). Indicação Arts. 2º, I ou \n3º da Lei 7.998/90 (0,10). \nDanos morais \n10. Improcedência por não haver ato de violação de direito da \npersonalidade ou ato ilícito praticado pela ré (0,30). Arts. 186 \nou 927, ambos do CC ou Art. 223-B ou C, da CLT (0,10).  \nOU  \nNão há vedação/proibição à contratação por experiência/prazo \ndeterminado (0,30). Indicação art. 443, § 2°, \"c\" da CLT (0,10). \nHonorários advocatícios para o autor \n\nPONTUAÇÃO \n\nPONTUAÇÃO \nDO ALUNO \n\n0,00/0,10 \n\n0,00/0,10/0,20/0,30 \n\n0,00/0,50/0,60 \n\n0,00/0,40/0,50 \n\n0,00/0,40/0,50 \n\n0,00/0,50/0,60 \n\n0,00/0,40/0,50 \n\n0,00/0,30/0,40 \n\n0,00/0,30/0,40 \n\n0,00/0,30/0,40 \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n \n \n\n11.  Improcedência  por  não  haver  sucumbência  ou  porque  o \npedido supera o limite legal (0,20). Art. 791-A da CLT (0,10). \nHonorários sucumbenciais para o réu \n12. Requerimento de honorários advocatícios (0,10). \nRequerimento finais \n13. Requerimento de improcedência dos pedidos (0,10). \n14. Requerimento de produção de provas (0,10). \n15. Local, data, advogado e OAB (0,10). \n\n0,00/0,20/0,30 \n\n0,00/0,10 \n\n0,00/0,10 \n0,00/0,10 \n0,00/0,10 \n\nTotal: \n\n\n \n \n"
+    },
+    {
+      "id": "espelho-exame_12",
+      "exame": "Exame 12",
+      "total_itens": 3,
+      "itens_pontuacao": [
+        {
+          "item": "A. No Juízo deprecado ou no juízo de Belo Horizonte/MG , na",
+          "pontos_max": 0.55
+        },
+        {
+          "item": "B. Deverá ser alegado bem de família , nos termos do Art. 1º ou",
+          "pontos_max": 0.5
+        },
+        {
+          "item": "Art. 5º, ambos da Lei nº 8.009/90 ",
+          "pontos_max": 0.1
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nPONTUAÇÃO \n\nPONTUAÇÃO \nDO ALUNO \n\nA. No Juízo deprecado ou no juízo de Belo Horizonte/MG (0,55), na \nforma da Súmula 419 do TST ou do Art. 676, parágrafo único, do CPC \n(0,10). \nB. Deverá ser alegado bem de família (0,50), nos termos do Art. 1º ou \nArt. 5º, ambos da Lei nº 8.009/90 (0,10). \n\n0,00/0,55/0,65 \n\n0,00/0,50/0,60 \n\nTotal: \n\n2) Ano: 2025 Banca: FGV Órgão: OAB Prova: 42º Exame de Ordem \n\nRafael Pereira trabalhava há um ano na sociedade empresária Mão de Obra Qualificada Ltda. \n\nOcorre  que  a  empregadora  não  pagou  os  salários  dos  últimos  quatro  meses  de  alguns \n\nfuncionários, dentre eles Rafael, que o(a) procurou como advogado(a). \n\nRafael  lhe  disse  que  gostaria  de  deixar  o  emprego  imediatamente  a  fim  de  buscar  outro,  em \n\nrazão de  estar passando por dificuldades  financeiras,  mas não  queria  pedir  demissão. Diante \n\ndesse fato, você ajuizou reclamação trabalhista com pedido de rescisão indireta. \n\nNo dia da audiência, a sociedade empresária quitou os salários em atraso, integralmente. Assim, \n\no  juiz  julgou  seu  pedido  improcedente.  Você  recorreu  ao  Tribunal  Regional  do  Trabalho,  que \n\nmanteve a decisão de primeira instância. Você ainda pretende reverter essa decisão, da qual foi \n\nnotificado há um dia. \n\nDiante disso, de acordo com o enunciado e com o entendimento jurisprudencial consolidado do \n\nTST,  além  da  legislação  trabalhista  em  vigor,  como  advogado(a)  de  Rafael  responda  às \n\nindagações a seguir.  \n\nA)  Qual  a  tese  jurídica  que  você,  em  virtude  da  defesa  da  ré,  deverá  sustentar  para  o \n\ndeferimento da rescisão indireta? Justifique. (Valor: 0,65) \n\nB)  Qual  a  medida  jurídica  processual  você  deverá  apresentar  a  fim  de  reverter  a  mais \n\nrecente decisão do processo que manteve a decisão de improcedência do seu pedido? \n\nJustifique. (Valor: 0,60) \n\nObs.: o(a) examinando(a) deve fundamentar as respostas. A mera citação do dispositivo legal \n\nnão confere pontuação. \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n\nPADRÃO RESPOSTA \n\nA) Deverá ser alegado que a quitação dos salários em atraso em audiência, não elide a \n\nmora salarial, conforme a Súmula 13 do TST. \n\nB)  Deverá  ser  interposto  recurso  de  revista,  por  contrariedade  à  súmula  do  TST,  com \n\nfundamento no Art. 896, alínea a, da CLT. \n\n"
+    },
+    {
+      "id": "espelho-exame_13",
+      "exame": "Exame 13",
+      "total_itens": 2,
+      "itens_pontuacao": [
+        {
+          "item": "salarial . Indicação da Súmula 13 do TST ",
+          "pontos_max": 0.55
+        },
+        {
+          "item": "B. Interpor recurso de revista . Indicação do Art. 896, alínea a,",
+          "pontos_max": 0.5
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nA. A quitação dos salários em atraso em audiência não elide a mora \nsalarial (0,55). Indicação da Súmula 13 do TST (0,10). \nB. Interpor recurso de revista (0,50). Indicação do Art. 896, alínea a, \nda CLT (0,10). \n\nPONTUAÇÃO \n\n0,00/0,55/0,65 \n\n0,00/0,50/0,60 \n\nPONTUAÇÃO \nDO ALUNO \n\nTotal: \n\n3) Ano: 2025 Banca: FGV Órgão: OAB Prova: 42º Exame de Ordem \n\nUma  sociedade  empresária  que  explora  a  atividade  de  metalurgia  tem  150  empregados  e \n\nmantém a cota mínima de pessoas com deficiência (PcD). \n\nOcorre que, no mês de outubro de 2024, a sociedade empresária dispensou uma pessoa com \n\ndeficiência  sem  justa  causa  e  uma  outra  pessoa  com  deficiência  pediu  demissão  porque \n\nconseguiu emprego em condições mais vantajosas. \n\nConsiderando esses fatos e a legislação de regência, responda às indagações a seguir. \n\nA)  É  válida  a  extinção  contratual  da  pessoa  dispensada  sem  justa  causa?  Justifique. \n\n(Valor: 0,65) \n\nB) Para o cumprimento da cota, que outra situação jurídica permite considerar a pessoa \n\nna cota legal de PcD? Justifique. (Valor: 0,60)  \n\nObs.: o(a) examinando(a) deve fundamentar as respostas. A mera citação do dispositivo legal \n\nnão confere pontuação. \n\nPADRÃO RESPOSTA \n\nA) O candidato deverá responder que a dispensa sem justa causa é inválida, porque somente \n\npoderia  ocorrer  após  a  contratação  de  outro  trabalhador  com  deficiência  ou  de  condição \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n \n\nsemelhante ou reabilitado, conforme os Arts. 93, § 1º, da Lei nº 8.213/1991 ou Art. 36, § 1º, do \n\ndecreto nº 3.298/99.  \n\nB)  O  candidato  deverá  responder que  a  pessoa  reabilitada  também  pode  ser  considerada  na \n\ncota,  conforme  o  Art.  93  caput  ou  §  1º  da  Lei  nº  8.213/1991  ou  pessoa  em  condições \n\nsemelhantes, conforme Art. 36, § 1º, do decreto nº 3.298/99.  \n\n"
+    },
+    {
+      "id": "espelho-exame_14",
+      "exame": "Exame 14",
+      "total_itens": 5,
+      "itens_pontuacao": [
+        {
+          "item": "reabilitado . Indicação do Art. 93, § 1º, da Lei 8.213/91 ou Art",
+          "pontos_max": 0.55
+        },
+        {
+          "item": "36, § 1º, do decreto nº 3.298/99 ",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "B. Pessoa reabilitada . Indicação do Art. 93 caput ou § 1º da Lei",
+          "pontos_max": 0.5
+        },
+        {
+          "item": "Pessoa em condições semelhantes . Indicação do Art. 36, § 1º,",
+          "pontos_max": 0.5
+        },
+        {
+          "item": "do decreto nº 3.298/99 ",
+          "pontos_max": 0.1
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nPONTUAÇÃO \n\nPONTUAÇÃO \nDO ALUNO \n\nA. Não. A dispensa somente poderia ocorrer após a contratação de \noutro  trabalhador  com  deficiência  ou  de  condição  semelhante  ou \nreabilitado (0,55). Indicação do Art. 93, § 1º, da Lei 8.213/91 ou Art. \n36, § 1º, do decreto nº 3.298/99 (0,10). \nB. Pessoa reabilitada (0,50). Indicação do Art. 93 caput ou § 1º da Lei \n8.213/91 (0,10)  \nou  \nPessoa em condições semelhantes (0,50). Indicação do Art. 36, § 1º, \ndo decreto nº 3.298/99 (0,10). \n\n0,00/0,55/0,65 \n\n0,00/0,50/0,60 \n\nTotal: \n\n4) Ano: 2025 Banca: FGV Órgão: OAB Prova: 42º Exame de Ordem \n\nUma  sociedade  empresária  de  grande  porte  dedica-se  à  venda  de  todo  tipo  de  material  de \n\nconstrução, possuindo o que denominam mega lojas, nas quais o cliente pode comprar tudo para \n\nconstruir e reformar em um único lugar. \n\nEm  uma  de  suas  unidades  a  sociedade  empresária  verificou,  por  meio  da  supervisão,  que  o \n\nempregado José utilizou a sua rede social para afirmar categoricamente, sem provas, que todos \n\nos materiais vendidos na empresa eram de segunda e terceira categorias, sendo muitos deles \n\nfalsificados. Recomendou a quem desse atenção às suas denúncias que não comprasse material \n\nno local. Na mesma unidade a supervisão detectou que outros três empregados (Jorge, Pedro e \n\nFilomena)  abriram,  sem  conhecimento  do  empregador,  uma  pequena  loja  de  tintas  em  local \n\npróximo. Nas oportunidades em que os clientes buscavam a compra de tinta, esses empregados \n\nentregavam-lhes um  cartão  com o  telefone e  o  endereço  da  loja que abriram,  recomendando \n\nfortemente que o cliente fosse lá fazer a compra porque era mais barato. \n\nConsiderando  a  legislação  de  regência  e  que  esses  fatos  estão  devidamente  documentados, \n\nresponda às indagações a seguir, na condição de advogado(a) da sociedade empresária. \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n\nA) Que recomendação jurídica específica e detalhada você daria em relação ao contrato \n\nde trabalho de José? Justifique. (Valor: 0,65) \n\nB) Que recomendação jurídica específica e detalhada você daria em relação aos contratos \n\nde trabalho de Jorge, Pedro e Filomena? Justifique. (Valor: 0,60) \n\nObs.: o(a) examinando(a) deve fundamentar as respostas. A mera citação do dispositivo legal \n\nnão confere pontuação. \n\nPADRÃO RESPOSTA \n\nA) O candidato deverá sugerir a dispensa por justa causa em razão de ato lesivo da honra ou da \n\nboa  fama  praticadas  cont"
+    },
+    {
+      "id": "espelho-exame_15",
+      "exame": "Exame 15",
+      "total_itens": 5,
+      "itens_pontuacao": [
+        {
+          "item": "boa  fama  praticadas  contra  o  empregador  .  Indicação  do  Art",
+          "pontos_max": 0.55
+        },
+        {
+          "item": "482, alínea k, da CLT ",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "Há violação do direito de imagem . Indicação do Art. 223-D, da",
+          "pontos_max": 0.55
+        },
+        {
+          "item": "CLT ou Art. 5º, V ou X, da CRFB/88 ",
+          "pontos_max": 0.1
+        },
+        {
+          "item": "concorrência desleal . Indicação do Art. 482, alínea c, da CLT",
+          "pontos_max": 0.5
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nPONTUAÇÃO \n\nPONTUAÇÃO \nDO ALUNO \n\nA. Dispensa por justa causa em razão de ato lesivo da honra ou da \nboa  fama  praticadas  contra  o  empregador  (0,55).  Indicação  do  Art. \n482, alínea k, da CLT (0,10).  \nou  \nHá violação do direito de imagem (0,55). Indicação do Art. 223-D, da \nCLT ou Art. 5º, V ou X, da CRFB/88 (0,10). \nB.  Dispensa  por  justa  causa  em  razão  de  negociação  habitual  por \nconta  própria  sem  permissão  do  empregador  ou  por  ato  de \nconcorrência desleal (0,50). Indicação do Art. 482, alínea c, da CLT \n(0,10). \n\n0,00/0,55/0,65 \n\n0,00/0,50/0,60 \n\nTotal: \n\n\n \n \n                 \n \n \n \n  \n \n \n \n \n \n \n \n \n\nResolução do XIIIº Exame de Ordem \n\n"
+    },
+    {
+      "id": "espelho-xiiiº_exame_de_ordem",
+      "exame": "XIIIº Exame de Ordem",
+      "total_itens": 10,
+      "itens_pontuacao": [
+        {
+          "item": "indicação do processo e qualificação do embargante ",
+          "pontos_max": 0.5
+        },
+        {
+          "item": "de 2 anos . Indicação do artigo 1003, § único OU 1032,",
+          "pontos_max": 0.8
+        },
+        {
+          "item": "passível  de  penhora    Indicação  do  art.  1º  da  Lei  nº",
+          "pontos_max": 0.8
+        },
+        {
+          "item": "8.009/90. ",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "seguinte  ao  da  prestação  dos  serviços  .  Indicação  da",
+          "pontos_max": 0.8
+        },
+        {
+          "item": "Súmula nº 381, do TST. ",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "ampliativa . Indicação do artigo 880, da CLT. ",
+          "pontos_max": 0.8
+        },
+        {
+          "item": "Requerimento de citação/notificação do embargado  e a",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "procedência dos embargos",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "Fechamento da Peça",
+          "pontos_max": 0.1
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nPONTUAÇÃO \n\nPONTUAÇÃO \nDO ALUNO \n\nde \n\nde \n\nembargos \n\ndevedor/embargos \n\nà \nFormato \nexecução/embargos  à  penhora,  com  citação  do  art.  884  CLT \ndirigido  à  50ª  Vara  do  Trabalho  de  Boa  Vista/Roraima,  com \nindicação do processo e qualificação do embargante (0,50).  \nObs: A omissão/erro de qualquer dos requisitos reduzirá a nota \nem 0,20 pontos. \nO embargante não pode ter a execução direcionada contra si \nOU ilegitimidade passiva, pois se retirou da sociedade há mais \nde 2 anos (0,80). Indicação do artigo 1003, § único OU 1032, \ndo CCB (0,20). \nO bem é de família por ser o único do executado, não sendo \npassível  de  penhora  (0,80)  Indicação  do  art.  1º  da  Lei  nº \n8.009/90. (0,20). \nCorreção monetária deveria ser calculada pelo índice do mês \nseguinte  ao  da  prestação  dos  serviços  (0,80).  Indicação  da \nSúmula nº 381, do TST. (0,20). \nA multa  do artigo 475-J é indevida no Processo do Trabalho, \npois  a  CLT  possui  regra  própria  OU  não  cabe  interpretação \nampliativa (0,80). Indicação do artigo 880, da CLT. (0,20). \nRequerimento de citação/notificação do embargado (0,20) e a \nprocedência dos embargos. (0,20) \nFechamento da Peça. (0,10)  \nData, Local, Advogado, OAB ...nº... \n\n0,00/0,30/0,50 \n\n0,00/0,80/1,00 \n\n0,00/0,80/1,00 \n\n0,00/0,80/1,00 \n\n0,00/0,80/1,00 \n\n0,00/0,20/0,40 \n\n0,00/0,10 \n\nTotal: \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n1) Ano: 2014 Banca: FGV Órgão: OAB Prova: XIII Exame de Ordem \n\nAproveitando  a  oportunidade  conferida  por  seu  empregador,  Renan  aderiu  ao  Programa  de \n\nDemissão Voluntária ofertado pela empresa e recebeu 10 salários adicionais de indenização (um \n\nsalário  por  cada  ano  trabalhado),  além  das  verbas  típicas  da  dispensa  sem  justa  causa.  No \n\nmesmo período, Renan dispensou sua empregada doméstica.  \n\nDiante da situação, responda aos itens a seguir. \n\nA) Haverá recolhimento de FGTS sobre a indenização de 10 salários adicionais? Justifique \n\nem qualquer hipótese. (Valor: 0,65) \n\nB) Analise se, em eventual reclamação trabalhista movida pela empregada doméstica de \n\nRenan, poderia haver penhora da conta do FGTS do empregador para que os valores lá \n\ndepositados sirvam para pagamento da doméstica na fase executória. Justifique. (Valor: \n\n0,60) \n\nObs.: o(a) examinando(a) deve fundamentar suas respostas. A mera citação do dispositivo legal \n\nnão confere pontuação. \n\nPADRÃO RESPOSTA \n\nA) Não haverá recolhimento de FGTS haja"
+    },
+    {
+      "id": "espelho-exame_17",
+      "exame": "Exame 17",
+      "total_itens": 4,
+      "itens_pontuacao": [
+        {
+          "item": "natureza  não  salarial  .  Indicação  do  artigo  15,  §6º  da  Lei  nº",
+          "pontos_max": 0.45
+        },
+        {
+          "item": "8.036/90 OU art. 9°, X da IN 99/2012 MTE ",
+          "pontos_max": 0.2
+        },
+        {
+          "item": "impenhoráveis . Indicação do artigo 2º, § 2º, da Lei nº 8.036/90",
+          "pontos_max": 0.4
+        },
+        {
+          "item": "OU art. 17 Decreto 99.684/90 ",
+          "pontos_max": 0.2
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nPONTUAÇÃO \n\nPONTUAÇÃO \nDO ALUNO \n\nA.  Não  haverá,  haja  vista  a  natureza  indenizatória  da  verba  ou \nnatureza  não  salarial  (0,45).  Indicação  do  artigo  15,  §6º  da  Lei  nº \n8.036/90 OU art. 9°, X da IN 99/2012 MTE (0,20). \nB.  Impossível  porque  as  contas  do  FGTS  são  absolutamente \nimpenhoráveis (0,40). Indicação do artigo 2º, § 2º, da Lei nº 8.036/90 \nOU art. 17 Decreto 99.684/90 (0,20). \n\n0,00/0,45/0,65 \n\n0,00/0,40/0,60 \n\nTotal: \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n \n\n2) Ano: 2014 Banca: FGV Órgão: OAB Prova: XIII Exame de Ordem \n\nPaulo,  soldador,  trabalha  na  empresa  Tubo  Forte  Ltda..  Em  abril  de  2013,  o  sindicato \n\nrepresentativo da categoria de Paulo firmou acordo coletivo com a empresa Tubo Forte Ltda., no \n\nqual estabelecia a concessão de vale refeição. Tal acordo teve validade de um ano e, até hoje, \n\nnão houve outra norma coletiva negociada. Em razão disso, desde que houve o decurso do prazo \n\nde vigência do acordo, a empresa cessou o pagamento do benefício.  \n\nNa qualidade de advogado de Paulo, responda, fundamentadamente, aos itens a seguir. \n\nA) O que você deverá alegar em eventual ação trabalhista? (Valor: 0,65) \n\nB) Qual o princípio de direito do trabalho está envolvido na questão? (Valor: 0,60) \n\nObs.: o examinando deve fundamentar suas respostas. A mera citação do dispositivo legal não \n\nconfere pontuação. \n\nPADRÃO RESPOSTA \n\nA) Não tem nada a ser feito, visto que quando um acordo perde sua vigência, pode a empresa \n\nretirar os direitos previstos no instrumento nos termos do art. 614 §3º da CLT. \n\nB)  Como  se  trata  de  direito  coletivo  do  trabalho,  não  é  possível  a  aplicação  do  princípio  da \n\nproteção. \n\n"
+    },
+    {
+      "id": "espelho-exame_18",
+      "exame": "Exame 18",
+      "total_itens": 2,
+      "itens_pontuacao": [
+        {
+          "item": "nos termos do art. 614 §3º da CLT",
+          "pontos_max": 0.45
+        },
+        {
+          "item": "aplicação do princípio da proteção",
+          "pontos_max": 0.6
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nPONTUAÇÃO \n\nPONTUAÇÃO \nDO ALUNO \n\nA. Não tem nada a ser feito, visto que quando um acordo perde sua \nvigência, pode a empresa retirar os direitos previstos no instrumento \n(0,45) nos termos do art. 614 §3º da CLT. (0,20) \nB.  Como  se  trata  de  direito  coletivo  do  trabalho,  não  é  possível  a \naplicação do princípio da proteção (0,60) \n\n0,00/0,45/0,65 \n\n0,00/0,60 \n\nTotal: \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n3) Ano: 2014 Banca: FGV Órgão: OAB Prova: XIII Exame de Ordem \n\nExtraída  carta  de  sentença  nos  autos  da  reclamação  trabalhista  movida  por  Jubert  Machado \n\ncontra a Sapataria Monte Belo Ltda., foram homologados os cálculos e citado o devedor para \n\npagamento  que,  no  prazo \n\nlegal,  ofereceu  um  bem  como  garantia,  comprovando \n\ndocumentalmente a propriedade do referido bem. O juiz conferiu vista à parte contrária, que não \n\naceitou o bem ofertado, desejando a penhora em dinheiro, com base nos artigos 882 da CLT e \n\n655,  I,  do  CPC.  Feita  a  conclusão,  o  juiz  determinou  que  a  penhora  recaísse  sobre  dinheiro, \n\ntendo o valor sido bloqueado das contas do executado.  \n\nA partir do caso apresentado, responda, fundamentadamente, aos itens a seguir.  \n\nA) À luz da jurisprudência consolidada do TST, analise se a decisão do juiz está correta. \n\n(Valor: 0,65) \n\nB) Se a empresa discorda da decisão judicial de apreensão de dinheiro, indique de qual \n\nmedida ela poderia valer-se para tentar a reversão e em que prazo. (Valor: 0,60) \n\nObs.: o examinando deve fundamentar suas respostas. A mera citação do dispositivo legal não \n\nconfere pontuação. \n\nPADRÃO RESPOSTA \n\nA) Está correta a decisão do juízo nos termos da súmula nº. 417, I do TST. \n\nB) Como o juízo não foi garantido, não há recurso a ser interposto e nem cabe mandado de segurança \n\nnos termos da súmula 417, I do TST. \n\n"
+    },
+    {
+      "id": "espelho-exame_19",
+      "exame": "Exame 19",
+      "total_itens": 1,
+      "itens_pontuacao": [
+        {
+          "item": "nem cabe mandado de segurança  nos termos da súmula 417,",
+          "pontos_max": 0.4
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nA. Está correta a decisão do juízo nos termos da súmula nº. 417, I do \nTST (0,65) \nB. Como o juízo não foi garantido, não há recurso a ser interposto e \nnem cabe mandado de segurança (0,40) nos termos da súmula 417, \nI do TST (0,20) \n\nPONTUAÇÃO \n\n0,00/0,65 \n\n0,00/0,40/0,60 \n\nPONTUAÇÃO \nDO ALUNO \n\nTotal: \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n4) Ano: 2014 Banca: FGV Órgão: OAB Prova: XIII Exame de Ordem \n\nJocimar é auxiliar de laboratório, ganha R$ 2.300,00 mensais e ajuizou reclamação trabalhista \n\ncontra  a  empresa  Recuperação  Fármacos  Ltda.,  sua  empregadora,  requerendo  o  pagamento \n\ndos adicionais de insalubridade e periculosidade. Designada perícia pelo juiz, foi constatado pelo \n\nexpert que no local de trabalho o frio era excessivo, sem a entrega de equipamento de proteção \n\nindividual  adequado,  além  de  perigoso,  pois  Jocimar  trabalhava  ao  lado  de  um  tanque  da \n\nempresa  onde  havia  grande  quantidade  de  combustível  armazenado.  Contudo,  a  empresa \n\nimpugnou expressamente o laudo pericial, afirmando que o perito designado era um engenheiro \n\nde segurança do Trabalho, e não um médico do trabalho, como deveria ser.  \n\nDiante do caso, responda: \n\nA)  Analise,  de acordo com  a  CLT,  a  possibilidade  de  condenação da empresa  nos  dois \n\nadicionais desejados, justificando. (Valor: 0,65) \n\nB)  Caso  Jocimar  postulasse  o  adicional  de  insalubridade,  alegando  que  o  ruído  era \n\nexcessivo, analise se seria possível o deferimento do adicional se a perícia constatou que \n\no único elemento insalubre presente no local era o frio. Justifique. (Valor: 0,60) \n\nObs.: o examinando deve fundamentar suas respostas. A mera citação do dispositivo legal não \n\nconfere pontuação. \n\nPADRÃO RESPOSTA \n\nA) Impossível o deferimento de ambos os adicionais cumulativamente, na forma da CLT, artigo 193, § 2º \n\nOU  NR  15,  item  15.3  do  MTE.  O  empregado  poderá  optar  pelo  adicional  de  insalubridade  ou \n\npericulosidade que porventura lhe seja devido. \n\nB) Seria possível, pois o juiz não fica adstrito ao agente agressor indicado pela parte, na forma da Súmula \n\n293, do TST. \n\n"
+    },
+    {
+      "id": "espelho-exame_20",
+      "exame": "Exame 20",
+      "total_itens": 2,
+      "itens_pontuacao": [
+        {
+          "item": ". Indicação do artigo 193, § 2º, da CLT OU NR 15, item 15.3 do",
+          "pontos_max": 0.45
+        },
+        {
+          "item": "indicado pela parte . Indicação da Súmula nº 293, do TST ",
+          "pontos_max": 0.4
+        }
+      ],
+      "raw": "Distribuição de pontos FGV \n\nITEM \n\nPONTUAÇÃO \n\nPONTUAÇÃO \nDO ALUNO \n\nA. Impossível o deferimento de ambos os adicionais cumulativamente \n(0,45). Indicação do artigo 193, § 2º, da CLT OU NR 15, item 15.3 do \nMTE (0,20). \nB.  Seria  possível,  pois  o  juiz  não  fica  adstrito  ao  agente  agressor \nindicado pela parte (0,40). Indicação da Súmula nº 293, do TST (0,20). \n\n0,00/0,45/0,65 \n\n0,00/0,40/0,60 \n\nTotal:"
+    }
+  ]
+}

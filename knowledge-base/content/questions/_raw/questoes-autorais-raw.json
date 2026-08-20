@@ -1,0 +1,42 @@
+{
+  "descricao": "Questões discursivas autorais para treino — OAB 2ª fase Direito do Trabalho.",
+  "total": 2,
+  "questoes_autorais": [
+    {
+      "id": "q-autoral-001",
+      "titulo": "Questão 01 do XXVII Exame de Ordem",
+      "ano": "",
+      "prova_referencia": "",
+      "n_itens": 156,
+      "enunciado": "Questão Modelo | Questão 01 do XXVII Exame de Ordem \n\nVitor e Vitória trabalham como vigilantes na mesma agência do Banco Cifrão S.A. Ele é vigilante \n\nterceirizado e ela é vigilante contratada diretamente pelo banco. Ambos trabalham em escala de \n\n12 x 36 horas, conforme acertado na convenção coletiva da categoria. De acordo com a situação \n\napresentada e com os termos da CLT, responda aos itens a seguir. \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n\nA) Os empregados citados integram a categoria dos bancários? Justifique. \n\nB)  Em  eventual  reclamação trabalhista,  com  pedido de  adicional  de  periculosidade  não \n\npago a ambos os empregados durante o contrato, deveria ser realizada prova pericial? \n\nJustifique. \n\nPasso 01: Leitura e identificação das matérias do conteúdo \n\nENUNCIADO  \nVitor e Vitória trabalham como vigilantes na mesma agência do Banco Cifrão S.A. Ele é vigilante \n\nterceirizado e ela é vigilante contratada diretamente pelo banco. Ambos trabalham em escala de \n\n12 x 36 horas, conforme acertado na convenção coletiva da categoria. De acordo com a situação \n\napresentada e com os termos da CLT, responda aos itens a seguir. \n\nA) Os empregados citados integram a categoria dos bancários? Justifique. \n\nB)  Em  eventual  reclamação trabalhista,  com  pedido de  adicional  de  periculosidade  não \n\npago a  ambos  os empregados  durante o contrato,  deveria  ser  realizada  prova  pericial? \n\nJustifique. \n\nAnalisando,  vemos  que  se  trata  de  Direito  Coletivo  do  Tr",
+      "gabarito": "",
+      "temas": [
+        "competencia_jt",
+        "empregado_domestico",
+        "dano_extrapatrimonial",
+        "terceirizacao",
+        "verbas_rescisorias",
+        "prescricao",
+        "recurso_ordinario",
+        "estabilidade",
+        "fgts"
+      ]
+    }
+  ],
+  "questoes_mentorias": [
+    {
+      "id": "q-autoral-001",
+      "titulo": "Questão 01 do XXVII Exame de Ordem",
+      "ano": "",
+      "prova_referencia": "",
+      "n_itens": 46,
+      "enunciado": "Questão Modelo | Questão 01 do XXVII Exame de Ordem \n\nVitor e Vitória trabalham como vigilantes na mesma agência do Banco Cifrão S.A. Ele é vigilante \n\nterceirizado e ela é vigilante contratada diretamente pelo banco. Ambos trabalham em escala de \n\n12 x 36 horas, conforme acertado na convenção coletiva da categoria. De acordo com a situação \n\napresentada e com os termos da CLT, responda aos itens a seguir. \n\nA) Os empregados citados integram a categoria dos bancários? Justifique. \n\nB)  Em  eventual  reclamação trabalhista,  com  pedido de  adicional  de  periculosidade  não \n\npago a ambos os empregados durante o contrato, deveria ser realizada prova pericial? \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n\nJustifique. \n\nPasso 01: Leitura e identificação das matérias do conteúdo \n\nENUNCIADO  \nVitor e Vitória trabalham como vigilantes na mesma agência do Banco Cifrão S.A. Ele é vigilante \n\nterceirizado e ela é vigilante contratada diretamente pelo banco. Ambos trabalham em escala de \n\n12 x 36 horas, conforme acertado na convenção coletiva da categoria. De acordo com a situação \n\napresentada e com os termos da CLT, responda aos itens a seguir. \n\nA) Os empregados citados integram a categoria dos bancários? Justifique. \n\nB)  Em  eventual  reclamação trabalhista,  com  pedido de  adicional  de  periculosidade  não \n\npago a  ambos  os empregados  durante o contrato,  deveria  ser  realizada  prova  pericial? \n\nJustifique. \n\nAnalisando,  vemos  que  se  trata  de  Direito  Coletivo  do  Tr",
+      "gabarito": "",
+      "temas": [
+        "verbas_rescisorias",
+        "vinculo_empregaticio",
+        "terceirizacao"
+      ]
+    }
+  ]
+}

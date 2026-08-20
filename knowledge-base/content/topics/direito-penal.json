@@ -1,0 +1,802 @@
+{
+  "area": "Direito Penal",
+  "version": "1.0",
+  "exam_reference": "46º Exame OAB 2ª Fase",
+  "total_chunks": 24,
+  "chunks": [
+    {
+      "id": "penal-001",
+      "title": "Peças mais cobradas — Direito Penal",
+      "area": "Direito Penal",
+      "subject": "Levantamento histórico de provas",
+      "topic": "Peças processuais penais",
+      "piece_type": [
+        "apelacao",
+        "resposta-acusacao",
+        "habeas-corpus",
+        "queixa-crime",
+        "agravo-execucao",
+        "revisao-criminal"
+      ],
+      "content_type": "statistics",
+      "legal_basis": [],
+      "evaluation_criteria": [],
+      "common_errors": [],
+      "content": "Peças mais cobradas em Direito Penal na 2ª Fase OAB (FGV, histórico): 1º Apelação (mais frequente — defesa contra sentença condenatória); 2º Memoriais (alegações finais escritas); 3º Resposta à Acusação (art. 396-A CPP — 1ª resposta do réu após recebimento da denúncia, pode buscar absolvição sumária); 4º Recurso em Sentido Estrito (RESE — decisões específicas do Art. 581 CPP: rejeição denúncia, decretação extinção punibilidade, livramento condicional); 5º Contrarrazões de Apelação; 6º Agravo em Execução (decisões do juiz da execução penal — LEP); 7º Queixa-Crime (ação penal privada ou pública condicionada à queixa); 8º Revisão Criminal (Art. 621 CPP — pós-trânsito em julgado, só pró-réu); 9º Relaxamento de Prisão (prisão ilegal — Art. 310, I CPP). Temas mais cobrados: Teoria da Pena (81x), Crimes em espécie (33x), Tipicidade (33x), Princípios (22x), Nulidades (22x), Recursos (37x).",
+      "tags": [
+        "levantamento",
+        "peças",
+        "frequência",
+        "apelação",
+        "resposta acusação",
+        "habeas corpus"
+      ],
+      "difficulty": "basic",
+      "oab_relevance": "high"
+    },
+    {
+      "id": "penal-002",
+      "title": "Prisões e remédios constitucionais — flagrante, preventiva, temporária",
+      "area": "Direito Penal",
+      "subject": "Direito Processual Penal",
+      "topic": "Prisões e liberdade",
+      "piece_type": [
+        "habeas-corpus",
+        "relaxamento-prisao"
+      ],
+      "content_type": "rule",
+      "legal_basis": [
+        "Art. 310 CPP",
+        "Art. 312 CPP",
+        "Lei 7.960/89",
+        "Art. 5º, LXV CF",
+        "Art. 5º, LXVIII CF"
+      ],
+      "evaluation_criteria": [
+        "Identificar o remédio adequado",
+        "Distinguir ilegalidade de desnecessidade da prisão"
+      ],
+      "common_errors": [
+        "Usar habeas corpus para prisão preventiva legal (deve questionar necessidade, não ilegalidade)",
+        "Esquecer que relaxamento é para prisão ilegal, não para desnecessária"
+      ],
+      "content": "Flagrante delito: autoridade deve comunicar ao juiz em 24h (Art. 306 CPP). O juiz, em 24h, decide (Art. 310 CPP): (I) RELAXAR a prisão — se ilegal (art. 5º, LXV CF + Art. 310, I CPP); (II) converter em PREVENTIVA — se cabível e necessária; (III) conceder LIBERDADE PROVISÓRIA — com ou sem fiança, se a prisão for legal mas não houver necessidade de preventiva. Prisão Preventiva (Art. 312 CPP): garantia da ordem pública, garantia da ordem econômica, conveniência da instrução criminal, assegurar aplicação da lei penal + prova da existência do crime + indícios de autoria. Cabível em qualquer fase do inquérito ou processo. Prisão Temporária (Lei 7.960/89): prazos — 5 dias prorrogáveis por mais 5 (crimes comuns) ou 30 dias prorrogáveis por mais 30 (crimes hediondos). Remédios: Habeas Corpus (Art. 5º, LXVIII CF) — contra ameaça ou privação ilegal da liberdade de locomoção; Relaxamento de Prisão — específico para prisão ilegal; Liberdade Provisória — para substituir prisão legal desnecessária.",
+      "tags": [
+        "flagrante",
+        "preventiva",
+        "temporária",
+        "habeas corpus",
+        "relaxamento",
+        "liberdade provisória",
+        "Art. 310 CPP"
+      ],
+      "difficulty": "intermediate",
+      "oab_relevance": "high"
+    },
+    {
+      "id": "penal-003",
+      "title": "Competência penal — JF, JE, júri e foro por prerrogativa",
+      "area": "Direito Penal",
+      "subject": "Direito Processual Penal",
+      "topic": "Competência",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Art. 109 CF",
+        "Art. 70 CPP",
+        "Súmula 42 STJ",
+        "Súmula 546 STJ",
+        "AP 937 QO/RJ STF Info 900"
+      ],
+      "evaluation_criteria": [
+        "Definir corretamente se é JF ou JE",
+        "Identificar foro por prerrogativa correto",
+        "Aplicar teoria correta para determinação de competência territorial"
+      ],
+      "common_errors": [
+        "Atribuir à JF o crime praticado contra funcionário público estadual",
+        "Esquecer que foro por prerrogativa só vale para crimes durante o exercício + relacionados à função"
+      ],
+      "content": "Justiça Federal (Art. 109 CF): crimes contra bens, serviços ou interesses da União, autarquias federais ou empresas públicas federais; tratados internacionais; tráfico transnacional; moeda falsa; crimes que envolvam exploração do trabalho análogo à escravidão (JF). Justiça Estadual (regra residual): demais crimes. Súmula 42 STJ: Sentença Estrangeira — competência do STJ (não JF de 1ª instância). Súmula 546 STJ: uso de documento falso — competência onde o documento foi apresentado/utilizado, não onde foi falsificado. Competência territorial: teoria do resultado (Art. 70 CPP) — local onde o crime se consumou. Exceção: crimes contra a vida (tentados e consumados) → teoria da atividade — local onde a ação foi praticada (para o Júri). Foro por prerrogativa de função (AP 937 QO/RJ — Info 900/STF): aplica-se SOMENTE para crimes praticados DURANTE o exercício do mandato/cargo E RELACIONADOS às funções. Crime anterior ao mandato ou sem relação funcional → competência regular.",
+      "tags": [
+        "competência",
+        "JF",
+        "JE",
+        "foro prerrogativa",
+        "teoria resultado",
+        "teoria atividade",
+        "Súmula 42 STJ"
+      ],
+      "difficulty": "intermediate",
+      "oab_relevance": "high"
+    },
+    {
+      "id": "penal-004",
+      "title": "Sistema de provas — contraditório, ilicitude e exceções",
+      "area": "Direito Penal",
+      "subject": "Direito Processual Penal",
+      "topic": "Sistema probatório",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Art. 155 CPP",
+        "Art. 157 CPP"
+      ],
+      "evaluation_criteria": [],
+      "common_errors": [
+        "Confundir elementos de informação com elementos de prova",
+        "Esquecer que prova ilícita contamina as derivadas (teoria dos frutos da árvore envenenada)"
+      ],
+      "content": "Sistema: livre convencimento motivado — o juiz aprecia livremente mas deve fundamentar (Art. 155 CPP). Distinção essencial: Elementos de informação (fase investigatória/inquérito): produzidos sem contraditório e ampla defesa — não podem, por si sós, embasar condenação. Elementos de prova (fase judicial/instrução): produzidos com contraditório — podem fundamentar condenação. Prova ilícita (Art. 157 CPP): obtida em violação a normas constitucionais ou legais → inadmissível. Teoria dos frutos da árvore envenenada: provas derivadas de prova ilícita também são ilícitas. Exceções: fonte independente (prova que seria obtida independentemente) e descoberta inevitável. Provas não sujeitas ao contraditório diferido: prova cautelar (risco de desaparecimento — interceptação telefônica), prova irrepetível (não pode ser reproduzida — laudo de local), prova antecipada (Art. 156, I CPP — produzida antes do processo por urgência).",
+      "tags": [
+        "provas",
+        "contraditório",
+        "prova ilícita",
+        "elementos de informação",
+        "frutos da árvore envenenada",
+        "prova cautelar"
+      ],
+      "difficulty": "intermediate",
+      "oab_relevance": "high"
+    },
+    {
+      "id": "penal-005",
+      "title": "Lei de Drogas — Lei 11.343/06",
+      "area": "Direito Penal",
+      "subject": "Legislação penal especial",
+      "topic": "Lei de Drogas",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Lei 11.343/06",
+        "Art. 28 Lei 11.343/06",
+        "Art. 33 Lei 11.343/06",
+        "Art. 36 Lei 11.343/06",
+        "Art. 40 Lei 11.343/06",
+        "Portaria 344 ANVISA",
+        "Súmula 501 STJ"
+      ],
+      "evaluation_criteria": [
+        "Distinguir usuário de traficante",
+        "Conhecer as formas qualificadas do tráfico",
+        "Aplicar os laudos corretos conforme a fase processual"
+      ],
+      "common_errors": [
+        "Exigir laudo definitivo para prisão em flagrante (suficiente o laudo de mera constatação)",
+        "Combinar leis de drogas distintas — vedado pela Súmula 501 STJ"
+      ],
+      "content": "Norma penal em branco: a Lei 11.343/06 é completada pela Portaria 344/98 da ANVISA (lista de substâncias entorpecentes). Usuário vs traficante: art. 28 (usuário) — nunca preso; condenação não gera reincidência; rito da Lei 9.099/95; STF estabeleceu presunção relativa de usuário para até 40g de cannabis sativa ou 6 plantas-fêmeas (RE 635.659 — Tema 506, 2024). Presunção é relativa: flagrante por tráfico é possível com quantidades inferiores se houver elementos de mercancia. Tráfico (Art. 33 Lei 11.343/06): 18 verbos; crime único se praticados no mesmo contexto fático; venda a menor — aplicar Art. 243 ECA se droga não listada na Portaria 344, ou Art. 33 se listada. Tráfico de menor potencial ofensivo: oferecer droga a conhecido para consumo conjunto — pena de 6 meses a 1 ano (JEC). Financiamento/custeio do tráfico (Art. 36): não pratica os atos de traficar, apenas investe. Difere do Art. 40, VII (investe E trafica). Laudos: (1) Laudo de mera constatação (Blue Teste): suficiente para flagrante e oferecimento de denúncia; (2) Laudo definitivo: necessário para CONDENAÇÃO — sem ele, não há materialidade. Crimes hediondos: Art. 33 caput, Art. 33 §1º, Art. 34, Art. 36 e Art. 37 são hediondos. Procedimento especial (Art. 54–56 Lei 11.343/06): IP 30+30 dias preso / 90+90 dias solto; denúncia em 10 dias; defesa preliminar em 10 dias; juiz decide em 5 dias sobre recebimento; audiência una concentrada. Súmula 501 STJ: vedada 'lex tertia' — combinação de leis; retroatividade da Lei 11.343/06 só em bloco se mais favorável que Lei 6.368/76.",
+      "tags": [
+        "drogas",
+        "tráfico",
+        "usuário",
+        "40 gramas",
+        "laudo",
+        "hediondo",
+        "Portaria 344 ANVISA",
+        "Súmula 501 STJ"
+      ],
+      "difficulty": "intermediate",
+      "oab_relevance": "high"
+    },
+    {
+      "id": "penal-006",
+      "title": "Tortura — Lei 9.455/97",
+      "area": "Direito Penal",
+      "subject": "Legislação penal especial",
+      "topic": "Lei de Tortura",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Lei 9.455/97"
+      ],
+      "evaluation_criteria": [
+        "Distinguir tortura de maus tratos",
+        "Identificar modalidades de tortura",
+        "Saber qual tipo é equiparado a hediondo"
+      ],
+      "common_errors": [
+        "Afirmar que tortura por omissão é equiparada a hediondo — NÃO É",
+        "Confundir tortura qualificada pela morte com homicídio qualificado por tortura"
+      ],
+      "content": "Tortura x maus tratos: distinção pela intensidade do sofrimento físico/mental. Modalidades: tortura-prova (para obter confissão/informação), tortura-castigo (para aplicar castigo), tortura-discriminatória (por preconceito de raça, cor, etc.), tortura-crime (crime executado por outro crime). Todos os tipos são equiparados a hediondo, EXCETO a tortura por omissão (Art. 1º, §2º Lei 9.455/97 — omissão do agente público que, tendo o dever, não impede a tortura). Tortura qualificada pela morte (Art. 1º, §3º): querendo torturar, a vítima morre — dolo na tortura, culpa na morte. Crime preterdoloso. Homicídio qualificado pela tortura (Art. 121, §2º, III CP): quer matar e usa a tortura como meio. A tortura é instrumento do homicídio. Extraterritorialidade: a lei aplica-se mesmo que o crime não tenha sido cometido em território nacional, desde que a vítima seja brasileira ou o território seja de administração brasileira.",
+      "tags": [
+        "tortura",
+        "maus tratos",
+        "hediondo",
+        "omissão",
+        "preterdoloso",
+        "extraterritorialidade"
+      ],
+      "difficulty": "intermediate",
+      "oab_relevance": "medium"
+    },
+    {
+      "id": "penal-007",
+      "title": "Terrorismo — Lei 13.260/16",
+      "area": "Direito Penal",
+      "subject": "Legislação penal especial",
+      "topic": "Lei Antiterrorismo",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Lei 13.260/16"
+      ],
+      "evaluation_criteria": [],
+      "common_errors": [
+        "Exigir mais de um agente para caracterização",
+        "Esquecer que o ato preparatório também é crime"
+      ],
+      "content": "Terrorismo (Lei 13.260/16): crime individual — não é exigível mais de um agente para caracterizar-se. Elementos: (1) ato violento; (2) finalidade específica (causar terror, coagir autoridade, violar direitos fundamentais); (3) elemento teatral (visibilidade, publicidade); (4) ausência de arrependimento. O ato de PREPARAÇÃO para o terrorismo já é crime tipificado — não é necessário o consumado. Competência: sempre Justiça Federal. Atribuição investigativa: Polícia Federal.",
+      "tags": [
+        "terrorismo",
+        "Lei 13.260",
+        "JF",
+        "PF",
+        "ato preparatório"
+      ],
+      "difficulty": "intermediate",
+      "oab_relevance": "medium"
+    },
+    {
+      "id": "penal-008",
+      "title": "Crimes contra a ordem tributária — Lei 8.137/90 e SV 24",
+      "area": "Direito Penal",
+      "subject": "Legislação penal especial",
+      "topic": "Crimes tributários",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Lei 8.137/90",
+        "SV 24 STF"
+      ],
+      "evaluation_criteria": [
+        "Aplicar SV 24 para verificar tipicidade",
+        "Saber que pagamento a qualquer tempo extingue punibilidade"
+      ],
+      "common_errors": [
+        "Considerar crime tipificado antes do lançamento definitivo",
+        "Esquecer que o pagamento do tributo extingue a punibilidade a qualquer tempo"
+      ],
+      "content": "Crime de omissão de pagamento de tributo (Art. 1º, I–IV Lei 8.137/90): crime material — a materialidade depende do LANÇAMENTO DEFINITIVO. SV 24 STF: 'Não se tipifica crime material contra a ordem tributária, previsto no art. 1º, incisos I a IV, da Lei nº 8.137/90, antes do lançamento definitivo do tributo.' Consequência: sem lançamento, não há crime — atipicidade. Antes do lançamento definitivo, a ação penal não pode ser iniciada. O pagamento do débito tributário, a qualquer tempo, EXTINGUE A PUNIBILIDADE do acusado — inclusive após o trânsito em julgado da condenação.",
+      "tags": [
+        "ordem tributária",
+        "Lei 8.137",
+        "SV 24",
+        "lançamento definitivo",
+        "extinção punibilidade",
+        "pagamento"
+      ],
+      "difficulty": "intermediate",
+      "oab_relevance": "medium"
+    },
+    {
+      "id": "penal-009",
+      "title": "Organização criminosa — Lei 12.850/13",
+      "area": "Direito Penal",
+      "subject": "Legislação penal especial",
+      "topic": "Organização criminosa",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Art. 1º, §1º Lei 12.850/13"
+      ],
+      "evaluation_criteria": [
+        "Saber os 4 requisitos do conceito legal",
+        "Distinguir organização criminosa de associação criminosa"
+      ],
+      "common_errors": [
+        "Exigir apenas 3 pessoas — ORCRIM exige 4",
+        "Confundir com quadrilha/bando (revogada) ou associação criminosa (3 pessoas, Art. 288 CP)"
+      ],
+      "content": "Conceito legal de organização criminosa (Art. 1º, §1º Lei 12.850/13): associação de (a) 4 ou mais pessoas; (b) estruturalmente ordenada; (c) caracterizada pela divisão de tarefas, ainda que informalmente; (d) com objetivo de obter vantagem de qualquer natureza mediante prática de infrações penais cujas penas máximas sejam superiores a 4 anos OU que sejam de caráter transnacional. Distinção: associação criminosa (Art. 288 CP) = 3 ou mais pessoas + associação estável + finalidade de praticar crimes. ORCRIM é crime hediondo quando direcionada à prática de crime hediondo ou equiparado (Lei 8.072/90, Art. 1º, V — incluído pela Lei 13.964/19).",
+      "tags": [
+        "organização criminosa",
+        "ORCRIM",
+        "4 pessoas",
+        "associação criminosa",
+        "hediondo",
+        "Lei 12.850"
+      ],
+      "difficulty": "intermediate",
+      "oab_relevance": "medium"
+    },
+    {
+      "id": "penal-010",
+      "title": "Colaboração premiada — Lei 12.850/13",
+      "area": "Direito Penal",
+      "subject": "Legislação penal especial",
+      "topic": "Colaboração premiada",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Art. 4º Lei 12.850/13",
+        "ADI 5508/DF STF"
+      ],
+      "evaluation_criteria": [
+        "Saber os 3 requisitos de validade",
+        "Conhecer as 3 fases procedimentais",
+        "Saber que vedação de condenação exclusiva com declarações do colaborador"
+      ],
+      "common_errors": [
+        "Afirmar que somente Ministério Público pode celebrar acordo — Delegado também pode (ADI 5508)",
+        "Esquecer que se o delator envolver autoridade com foro por prerrogativa, o Tribunal competente deve homologar"
+      ],
+      "content": "Colaboração premiada (Art. 4º Lei 12.850/13): acordo entre o investigado/acusado (com defensor) e autoridade investigante (MP ou, por delegado — ADI 5508/DF). Requisitos de validade: (1) deve ser submetida ao contraditório; (2) deve conter confissão do acusado; (3) deve encontrar amparo em outros meios de prova; (4) se extrajudicial, deve ser confirmada em juízo. Procedimento — 3 fases: (1) Fase de negociação e acordo; (2) Fase de homologação judicial (juiz competente verifica legalidade, voluntariedade e adequação); (3) Fase de sentença. Vedações: (1) Nenhuma sentença condenatória pode ser proferida com fundamento APENAS nas declarações do agente colaborador (Art. 4º, §16); (2) Nos depoimentos, o colaborador renuncia ao direito ao silêncio e fica sujeito ao compromisso de dizer a verdade. Nos depoimentos que prestar, o colaborador renuncia, na presença de seu defensor, ao direito ao silêncio. Se o delator envolver autoridade com foro por prerrogativa de função, o Tribunal competente para julgar a autoridade DEVE HOMOLOGAR o acordo.",
+      "tags": [
+        "colaboração premiada",
+        "delação premiada",
+        "confissão",
+        "delegado",
+        "vedação",
+        "fases",
+        "ADI 5508"
+      ],
+      "difficulty": "advanced",
+      "oab_relevance": "medium"
+    },
+    {
+      "id": "penal-011",
+      "title": "Crimes hediondos — Lei 8.072/90 atualizada",
+      "area": "Direito Penal",
+      "subject": "Legislação penal especial",
+      "topic": "Crimes hediondos",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Lei 8.072/90",
+        "Art. 1º, parágrafo único Lei 8.072/90",
+        "Lei 13.964/19",
+        "Lei 14.688/23",
+        "Lei 14.811/24"
+      ],
+      "evaluation_criteria": [
+        "Saber a lista de crimes hediondos e equiparados",
+        "Lembrar das inclusões recentes (pacote anticrime, etc.)"
+      ],
+      "common_errors": [
+        "Esquecer que genocídio, porte de arma de uso proibido e ORCRIM direcionada foram incluídos como hediondos em 2019"
+      ],
+      "content": "Crimes hediondos (Art. 1º Lei 8.072/90): homicídio qualificado (inclusive feminicídio), lesão corporal dolosa seguida de morte, latrocínio, extorsão qualificada pela morte, extorsão mediante sequestro, estupro (qualquer forma), estupro de vulnerável, epidemia com resultado morte, falsificação, corrupção, adulteração ou alteração de produto destinado a fins terapêuticos, genocídio, posse/porte de arma de uso proibido (Art. 16 Lei 10.826/03), comércio ilegal de armas (Art. 17), tráfico internacional de arma (Art. 18), ORCRIM direcionada a crime hediondo ou equiparado, crimes do Código Penal Militar que apresentem identidade com crimes da Lei 8.072 (Lei 14.688/23), fotos de pornografia infantil (Art. 240 §1º e Art. 241-B ECA — Lei 14.811/24). Equiparados a hediondos: tráfico de drogas, tortura (exceto por omissão), terrorismo. Restrições: cumprimento de pena em regime inicialmente fechado, sem anistia/graça, liberdade provisória vedada (constitucionalidade questionada), livramento condicional após 2/3 (sem reincidência) ou 3/4 (reincidente específico).",
+      "tags": [
+        "hediondo",
+        "equiparado",
+        "tráfico",
+        "tortura",
+        "terrorismo",
+        "regime fechado",
+        "pacote anticrime"
+      ],
+      "difficulty": "intermediate",
+      "oab_relevance": "high"
+    },
+    {
+      "id": "penal-012",
+      "title": "Lei Maria da Penha — Lei 11.340/06",
+      "area": "Direito Penal",
+      "subject": "Legislação penal especial",
+      "topic": "Violência doméstica e familiar",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Lei 11.340/06",
+        "Art. 12-C Lei 11.340/06",
+        "Art. 16 Lei 11.340/06",
+        "Art. 24-A Lei 11.340/06",
+        "Art. 41 Lei 11.340/06",
+        "Súmula 536 STJ",
+        "Súmula 542 STJ",
+        "Súmula 588 STJ",
+        "Súmula 589 STJ"
+      ],
+      "evaluation_criteria": [
+        "Saber quem pode afastar o agressor do lar",
+        "Distinguir retratação válida de inválida",
+        "Saber que não se aplica Lei 9.099/95"
+      ],
+      "common_errors": [
+        "Afirmar que a mulher pode retratar a representação a qualquer tempo — só até o recebimento da denúncia e em audiência",
+        "Aplicar princípio da insignificância — inaplicável (Súmula 589 STJ)"
+      ],
+      "content": "Afastamento do agressor do lar (Art. 12-C Lei 11.340/06): pode ser determinado por: (I) autoridade judicial; (II) delegado de polícia, quando o município não for sede de comarca; (III) policial, quando o município não for sede de comarca E não houver delegado disponível. Nos casos II e III: o juiz deve ser comunicado em 24h e decidirá em 24h sobre manutenção ou revogação. Retratação (Art. 16 Lei 11.340/06): nas ações penais públicas condicionadas à representação, a renúncia só é admitida PERANTE O JUIZ, em audiência especialmente designada, ANTES DO RECEBIMENTO DA DENÚNCIA, ouvido o Ministério Público. Crime de descumprimento de medida protetiva (Art. 24-A): pena de 3 meses a 2 anos; em caso de prisão em flagrante, somente o juiz pode conceder fiança. Não aplica Lei 9.099/95 (Art. 41 Lei 11.340/06): independentemente da pena prevista. Súmulas: 536 STJ: suspensão condicional e transação penal não se aplicam em delitos da Lei Maria da Penha; 542 STJ: lesão corporal resultante de violência doméstica é ação pública incondicionada; 588 STJ: crime com violência no âmbito doméstico impossibilita substituição de PPL por restritiva de direitos; 589 STJ: inaplicável princípio da insignificância nos crimes e contravenções penais praticados contra a mulher no âmbito doméstico.",
+      "tags": [
+        "Maria da Penha",
+        "violência doméstica",
+        "afastamento",
+        "retratação",
+        "ação pública incondicionada",
+        "Lei 9.099",
+        "insignificância"
+      ],
+      "difficulty": "intermediate",
+      "oab_relevance": "high"
+    },
+    {
+      "id": "penal-013",
+      "title": "Teoria do Delito — conceito, teoria bipartite e tripartite",
+      "area": "Direito Penal",
+      "subject": "Teoria geral do crime",
+      "topic": "Conceito de crime",
+      "piece_type": [],
+      "content_type": "concept",
+      "legal_basis": [
+        "Art. 13 CP",
+        "Art. 23 CP"
+      ],
+      "evaluation_criteria": [
+        "Diferenciar conceito material, formal e analítico de infração penal",
+        "Identificar corretamente o modelo tripartite (fato típico, ilícito e culpável) como o adotado pelo CP"
+      ],
+      "common_errors": [
+        "Confundir infração penal (gênero) com crime (espécie) — contravenção penal também é infração penal",
+        "Aplicar o modelo bipartite (fato típico + ilícito) em vez do tripartite, que é o adotado pelo Código Penal brasileiro"
+      ],
+      "content": "Infração penal é gênero (teoria dicotômica), do qual crime/delito e contravenção penal são espécies — a distinção depende da gravidade da conduta e do momento histórico/social. Conceito material: o que justifica a criminalização de uma conduta. Conceito formal: as consequências jurídicas (a sanção). Conceito analítico: os elementos estruturais do delito — é o mais relevante para a prova. Existem dois modelos analíticos: (1) Bipartite (teoria causalista): crime é fato típico e antijurídico; culpabilidade só dosa a pena, sem diferenciar dolo de culpa na conduta — modelo minoritário, criticado por não explicar bem crimes omissivos e de mera conduta. (2) Tripartite (teoria finalista, adotada pelo Código Penal): crime é conduta típica, antijurídica (ilícita) e culpável — os três elementos são cumulativos; a ausência de qualquer um deles torna o fato atípico ou não punível. A Teoria Finalista deslocou dolo e culpa para dentro do tipo penal (tipicidade), tornando a análise da vontade do agente relevante já na tipicidade, não apenas na culpabilidade.",
+      "tags": [
+        "teoria do crime",
+        "fato típico",
+        "ilicitude",
+        "culpabilidade",
+        "teoria tripartite",
+        "teoria bipartite",
+        "teoria finalista"
+      ],
+      "difficulty": "basic",
+      "oab_relevance": "high"
+    },
+    {
+      "id": "penal-014",
+      "title": "Tipicidade formal — conduta, nexo causal e relevância da omissão",
+      "area": "Direito Penal",
+      "subject": "Teoria geral do crime",
+      "topic": "Tipicidade formal",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Art. 13 CP",
+        "Art. 13, §1º CP",
+        "Art. 13, §2º CP",
+        "Art. 135 CP"
+      ],
+      "evaluation_criteria": [
+        "Identificar o nexo de causalidade (conditio sine qua non) entre conduta e resultado",
+        "Diferenciar dolo de culpa (negligência, imprudência, imperícia) na caracterização da conduta",
+        "Reconhecer as hipóteses em que a omissão é penalmente relevante (art. 13, §2º CP)"
+      ],
+      "common_errors": [
+        "Considerar conduta penalmente relevante os atos de mera cogitação ou preparação (só a execução interessa ao Direito Penal)",
+        "Ignorar a superveniência de causa relativamente independente (art. 13, §1º CP), que exclui a imputação do resultado mais grave quando este, por si só, o produziu",
+        "Não fundamentar o dever de agir do omitente (garantidor) nas três hipóteses do art. 13, §2º: lei, assunção de responsabilidade, ou criação do risco pelo comportamento anterior"
+      ],
+      "content": "Tipicidade formal é a subsunção da conduta ao tipo penal. Conduta penalmente relevante: ação ou omissão humana, consciente e voluntária, dolosa ou culposa, voltada a produzir ou tentar produzir o resultado descrito em lei — coação física irresistível exclui a conduta (falta voluntariedade), diferente da coação moral irresistível, que exclui a culpabilidade. Dolo é a intenção do agente; culpa é o descuido — negligência (descuido total, assume o risco), imprudência (age sem considerar o resultado) ou imperícia (falta de habilidade técnica). Nexo de causalidade (art. 13 CP, conditio sine qua non): considera-se causa a ação/omissão sem a qual o resultado não teria ocorrido — a análise do nexo independe de dolo/culpa. Superveniência de causa relativamente independente (art. 13, §1º): exclui a imputação do resultado quando, por si só, o produziu; os fatos anteriores continuam imputáveis a quem os praticou (ex.: vítima de lesão corporal morre em acidente da ambulância — autor responde só por lesão corporal, não por homicídio). Relevância da omissão (art. 13, §2º): a omissão só é penalmente relevante quando o agente devia e podia agir para evitar o resultado, na condição de garantidor — por (a) obrigação legal de cuidado/proteção/vigilância, (b) assunção voluntária da responsabilidade de impedir o resultado, ou (c) criação do risco por comportamento anterior. O dever de agir não é absoluto (não se exige risco desproporcional à própria vida). Omissão de socorro está tipificada separadamente no art. 135 CP.",
+      "tags": [
+        "tipicidade formal",
+        "conduta",
+        "nexo causal",
+        "conditio sine qua non",
+        "omissão",
+        "dolo",
+        "culpa",
+        "garantidor"
+      ],
+      "difficulty": "intermediate",
+      "oab_relevance": "high"
+    },
+    {
+      "id": "penal-015",
+      "title": "Tipicidade material — princípios da lesividade, insignificância, adequação social e alteridade",
+      "area": "Direito Penal",
+      "subject": "Teoria geral do crime",
+      "topic": "Tipicidade material",
+      "piece_type": [],
+      "content_type": "concept",
+      "legal_basis": [],
+      "evaluation_criteria": [
+        "Aplicar o princípio da insignificância (bagatela) para afastar a tipicidade material em furtos/lesões de valor ínfimo",
+        "Diferenciar tipicidade formal (subsunção ao texto legal) de tipicidade material (lesão relevante ao bem jurídico)"
+      ],
+      "common_errors": [
+        "Confundir princípio da insignificância com adequação social — o primeiro trata de lesão irrelevante, o segundo de conduta socialmente aceita",
+        "Aplicar o princípio da insignificância a réus reincidentes ou criminosos habituais sem analisar a jurisprudência restritiva do STJ/STF sobre o tema"
+      ],
+      "content": "Tipicidade material verifica se há efetiva lesão ou ameaça relevante ao bem jurídico tutelado (tipicidade formal + material = tipicidade penal, na doutrina moderna). Analisa-se a criação de risco proibido (Roxin) e o resultado jurídico da conduta. Princípios que afastam a tipicidade material: (1) Lesividade — é atípica a conduta que não gera sequer ameaça de lesão ao bem jurídico; (2) Insignificância (bagatela) — é atípica a conduta que gera lesão irrelevante ao bem jurídico (ex.: furto de objeto de valor ínfimo), evitando saturação do sistema penal/carcerário com danos desprezíveis; (3) Adequação social — é atípica a conduta socialmente aceita, ainda que formalmente descrita como crime (ex.: furar orelha de bebê para brinco, que formalmente seria lesão corporal); (4) Alteridade — é atípica a conduta que não lesa bem jurídico de terceiro (autolesão, em regra, não é punível). Esses princípios são ferramentas de argumentação recorrentes em peças de defesa (resposta à acusação, alegações finais) para pleitear atipicidade material mesmo diante de tipicidade formal aparente.",
+      "tags": [
+        "tipicidade material",
+        "princípio da insignificância",
+        "bagatela",
+        "adequação social",
+        "lesividade",
+        "alteridade"
+      ],
+      "difficulty": "intermediate",
+      "oab_relevance": "high"
+    },
+    {
+      "id": "penal-016",
+      "title": "Ilicitude e excludentes — estado de necessidade, legítima defesa, estrito cumprimento e exercício regular de direito",
+      "area": "Direito Penal",
+      "subject": "Teoria geral do crime",
+      "topic": "Ilicitude",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Art. 23 CP",
+        "Art. 24 CP",
+        "Art. 25 CP"
+      ],
+      "evaluation_criteria": [
+        "Distinguir estado de necessidade de legítima defesa (origem do perigo: natureza/animal/pessoa vs. agressão humana injusta)",
+        "Verificar os requisitos cumulativos de cada excludente antes de alegá-la em peça de defesa",
+        "Identificar o excesso doloso ou culposo nas excludentes (art. 23, parágrafo único CP)"
+      ],
+      "common_errors": [
+        "Alegar estado de necessidade para quem tinha dever legal de enfrentar o perigo (art. 24, §1º CP — ex.: policiais, bombeiros)",
+        "Confundir legítima defesa real com putativa (o agente apenas supõe a agressão) — a putativa pode excluir a culpabilidade por erro, não a ilicitude",
+        "Não fundamentar a moderação dos meios necessários na legítima defesa, gerando risco de excesso"
+      ],
+      "content": "O art. 23 CP exclui a ilicitude (não há crime) em quatro hipóteses: estado de necessidade, legítima defesa, estrito cumprimento de dever legal e exercício regular de direito. Em qualquer delas, o agente responde por excesso doloso ou culposo (art. 23, parágrafo único). Estado de necessidade (art. 24): pratica o fato para salvar de perigo atual (não provocado por vontade própria, inevitável de outro modo) direito próprio ou alheio, quando o sacrifício não era razoável exigir-se. Requisitos: perigo atual, situação não provocada voluntariamente pelo agente, ameaça a direito próprio ou alheio, inexistência de dever legal de enfrentar o perigo, inevitabilidade do comportamento lesivo. Pode ser agressivo (sacrifica bem de quem não causou o perigo) ou defensivo (sacrifica bem de quem causou o perigo); real ou putativo (agente apenas supõe o perigo). Teoria unitária (adotada): se o bem sacrificado for de maior valor que o salvo, apenas reduz a pena (1/3 a 2/3) — não exclui a ilicitude nem a culpabilidade. Legítima defesa (art. 25): repele injusta agressão, atual ou iminente, a direito próprio ou de outrem, usando moderadamente dos meios necessários. Requisitos: agressão injusta (atual ou iminente, real ou putativa), uso moderado de meios necessários, proteção de direito próprio ou alheio. A Lei 13.964/2019 incluiu o parágrafo único, reconhecendo legítima defesa do agente de segurança pública que repele agressão ou risco de agressão a vítima mantida refém durante a prática de crimes. Estrito cumprimento de dever legal: exclui a ilicitude de agente público (ou particular em função pública) que executa dever imposto por lei, sem excesso. Exercício regular de direito: exclui a ilicitude quando a conduta é amparada por direito previsto em lei (ex.: prisão em flagrante por qualquer pessoa, art. 301 CPP); requisitos: indispensabilidade, proporcionalidade e conhecimento da situação.",
+      "tags": [
+        "ilicitude",
+        "excludentes",
+        "estado de necessidade",
+        "legítima defesa",
+        "estrito cumprimento do dever legal",
+        "exercício regular de direito",
+        "excesso"
+      ],
+      "difficulty": "intermediate",
+      "oab_relevance": "high"
+    },
+    {
+      "id": "penal-017",
+      "title": "Culpabilidade — imputabilidade, potencial consciência da ilicitude, erro e exigibilidade de conduta diversa",
+      "area": "Direito Penal",
+      "subject": "Teoria geral do crime",
+      "topic": "Culpabilidade",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Art. 20 CP",
+        "Art. 21 CP",
+        "Art. 26 CP",
+        "Art. 27 CP",
+        "Art. 28 CP",
+        "Art. 65, II CP"
+      ],
+      "evaluation_criteria": [
+        "Diferenciar erro de tipo (art. 20 — exclui dolo, permite punição culposa se prevista) de erro de proibição (art. 21 — recai sobre a ilicitude do fato)",
+        "Identificar corretamente as excludentes de culpabilidade por inexigibilidade de conduta diversa (coação moral irresistível, obediência hierárquica)",
+        "Aplicar as hipóteses de inimputabilidade do art. 26 CP (doença mental, desenvolvimento mental incompleto/retardado) e do art. 27 (menoridade)"
+      ],
+      "common_errors": [
+        "Confundir coação física irresistível (exclui a conduta/tipicidade) com coação moral irresistível (exclui a culpabilidade por inexigibilidade de conduta diversa)",
+        "Alegar que emoção, paixão ou embriaguez voluntária/culposa excluem a imputabilidade — o art. 28 CP expressamente afasta essa exclusão, salvo embriaguez completa por caso fortuito ou força maior",
+        "Tratar o mero desconhecimento da lei como escusa — o art. 21 CP é claro que é inescusável, mas pode atenuar a pena (art. 65, II) se não configurar erro de proibição inevitável"
+      ],
+      "content": "Culpabilidade é o juízo de reprovação sobre a conduta típica e ilícita, composto por três elementos: imputabilidade, potencial consciência da ilicitude e exigibilidade de conduta diversa (teoria normativa pura/extremada, adotada no Brasil — dolo e culpa migraram para o fato típico). Imputabilidade (arts. 26-28 CP): é isento de pena quem, por doença mental ou desenvolvimento mental incompleto/retardado, era inteiramente incapaz de entender o caráter ilícito do fato ou de se determinar conforme esse entendimento (art. 26) — se a incapacidade for parcial, a pena pode ser reduzida de 1/3 a 2/3. Menores de 18 anos são penalmente inimputáveis (art. 27), sujeitos a medidas socioeducativas do ECA. Emoção, paixão e embriaguez voluntária/culposa NÃO excluem a imputabilidade (art. 28) — exceção: embriaguez completa proveniente de caso fortuito ou força maior isenta de pena se retirar inteiramente a capacidade de entendimento. Potencial consciência da ilicitude: possibilidade de o agente, nas circunstâncias, entender o caráter ilícito do fato — relaciona-se ao erro de proibição (art. 21): o desconhecimento da lei é inescusável, mas o erro sobre a ilicitude do fato, se inevitável, isenta de pena; se evitável, reduz a pena de 1/6 a 1/3. Erro de tipo (art. 20) x erro de proibição (art. 21): no erro de tipo o agente não sabe o que faz (engana-se sobre um elemento do tipo — exclui o dolo, mas permite punição por culpa se prevista em lei); no erro de proibição o agente sabe o que faz, mas acredita ser lícito. Exigibilidade de conduta diversa: exclui a culpabilidade quando o Direito não podia exigir comportamento diferente — hipóteses: estado de necessidade exculpante (bem sacrificado de valor igual/maior ao protegido), coação moral irresistível, obediência hierárquica a ordem não manifestamente ilegal (proferida por autoridade competente, dentro de relação de subordinação de direito público).",
+      "tags": [
+        "culpabilidade",
+        "imputabilidade",
+        "erro de tipo",
+        "erro de proibição",
+        "inexigibilidade de conduta diversa",
+        "coação moral irresistível",
+        "obediência hierárquica",
+        "menoridade"
+      ],
+      "difficulty": "advanced",
+      "oab_relevance": "high"
+    },
+    {
+      "id": "penal-018",
+      "title": "Criminologia — objetos de estudo (crime, criminoso, vítima, controle social)",
+      "area": "Direito Penal",
+      "subject": "Criminologia",
+      "topic": "Objetos da criminologia",
+      "piece_type": [],
+      "content_type": "concept",
+      "legal_basis": [],
+      "evaluation_criteria": [
+        "Diferenciar o objeto de estudo da criminologia (fenômeno social, empírico) do objeto do Direito Penal (normativo, legal)"
+      ],
+      "common_errors": [
+        "Tratar criminologia e Direito Penal como sinônimos — a criminologia é ciência empírica/multidisciplinar que explica o fenômeno; o Direito Penal aplica a solução normativa"
+      ],
+      "content": "Criminologia é ramo multidisciplinar que estuda, com método empírico, os fatores que levam à ocorrência de crimes, visando à prevenção. Seus quatro objetos de estudo são: (1) Crime — para o Direito Penal é um fenômeno jurídico-normativo (previsto em tipos penais); para a criminologia é um problema social e comunitário anterior ao Direito (fenômeno 'pré-jurídico'); (2) Criminoso — a forma de compreendê-lo varia por escola: pecador de livre-arbítrio (escola clássica), atávico/determinismo biológico (escola positiva), ser inferior a corrigir (correcionalismo), vítima das estruturas econômicas (marxismo), ou, na visão atual, pessoa comum influenciada por fatores internos e externos complexos; (3) Vítima — seu papel histórico passou da autotutela (justiça pelas próprias mãos) ao monopólio estatal da jurisdição, com revalorização do seu papel após a 2ª Guerra Mundial (vitimologia, aparatos estatais de reparação); (4) Controle social — mecanismos de contenção do crime, formal (exercido pelo Estado) e informal (valores e normas de conduta ensinados e disseminados socialmente). [Nota: baseado em material introdutório de terceiros com acesso parcial — cobre só o início do tema; aprofundar com fontes complementares.]",
+      "tags": [
+        "criminologia",
+        "objetos da criminologia",
+        "vitimologia",
+        "controle social",
+        "crime",
+        "criminoso"
+      ],
+      "difficulty": "basic",
+      "oab_relevance": "medium"
+    },
+    {
+      "id": "penal-019",
+      "title": "Escolas Penais — Escola Clássica",
+      "area": "Direito Penal",
+      "subject": "Criminologia",
+      "topic": "Escolas penais",
+      "piece_type": [],
+      "content_type": "concept",
+      "legal_basis": [],
+      "evaluation_criteria": [
+        "Situar a Escola Clássica no contexto histórico (reação ao Estado Absolutista, influência iluminista)"
+      ],
+      "common_errors": [
+        "Confundir a Escola Clássica (foco no ato-crime, livre-arbítrio, pena retributiva) com a Escola Positiva (foco no criminoso, determinismo)"
+      ],
+      "content": "A Escola Penal Clássica (ou Idealista) predominou do final do séc. XVIII à metade do séc. XIX, como reação ao totalitarismo do Estado Absolutista, sob influência iluminista. Principal expoente: Cesare Beccaria ('Dos Delitos e Das Penas'); também Carmignani, Rossi e Francesco Carrara. Características: método racionalista (do geral ao específico); a pena é retribuição a um ato grave cometido voluntária e conscientemente (livre-arbítrio); valorização da defesa do indivíduo contra arbitrariedades estatais; o crime é tratado como conceito jurídico. Dois períodos: Filosófico/Teórico (Beccaria — base contratualista: o pacto social obriga o indivíduo às leis; a punição estatal restaura a ordem) e Jurídico/Prático (Carrara — a pena é resposta do Estado para conservação da sociedade e proteção de direitos, com observância da Justiça). Conclusão da escola: o crime é violação do Direito; a pena deve ser retributiva, proporcional e não arbitrária; o criminoso não é objeto central de estudo (diferentemente da Escola Positiva, que viria a seguir), pois age conscientemente por livre-arbítrio. [Nota: baseado em material introdutório de terceiros com acesso parcial — cobre só o início do tema; aprofundar com fontes complementares.]",
+      "tags": [
+        "escolas penais",
+        "escola clássica",
+        "criminologia",
+        "Beccaria",
+        "livre-arbítrio",
+        "pena retributiva"
+      ],
+      "difficulty": "basic",
+      "oab_relevance": "low"
+    },
+    {
+      "id": "penal-020",
+      "title": "Classificação de crimes — comuns, próprios e de mão própria",
+      "area": "Direito Penal",
+      "subject": "Teoria geral do crime",
+      "topic": "Classificação doutrinária de crimes",
+      "piece_type": [],
+      "content_type": "concept",
+      "legal_basis": [
+        "Art. 121 CP",
+        "Art. 123 CP",
+        "Art. 342 CP"
+      ],
+      "evaluation_criteria": [
+        "Identificar se o tipo penal exige qualidade especial do sujeito ativo (crime próprio) para avaliar quem pode ser réu/coautor",
+        "Reconhecer que crimes de mão própria admitem participação, mas não coautoria"
+      ],
+      "common_errors": [
+        "Admitir coautoria em crime de mão própria (só se admite participação — a execução é infungível, só quem tem a qualidade especial pode praticá-la pessoalmente)",
+        "Classificar crime próprio pela vítima quando a exigência de qualidade especial é do sujeito ativo, e vice-versa"
+      ],
+      "content": "Classificação legal (nomen iuris/rubrica marginal) é o nome dado ao crime pela própria lei (ex.: art. 121 CP = homicídio); classificação doutrinária organiza os tipos penais por critérios teóricos. Quanto ao sujeito: (1) Crimes comuns — podem ser praticados por qualquer pessoa (sujeito ativo comum) e contra qualquer pessoa (sujeito passivo comum); ex.: homicídio (art. 121 CP). (2) Crimes próprios (ou especiais) — exigem qualidade ou característica especial do sujeito ativo (e às vezes do passivo); só quem detém essa qualidade pode praticá-los; ex.: infanticídio (art. 123 CP — só a mãe, sob influência do estado puerperal, durante ou logo após o parto; só o filho pode ser vítima); também crimes de funcionário público contra a Administração. (3) Crimes de mão própria (atuação pessoal/conduta infungível) — só a pessoa determinada pode praticar a conduta, sendo impossível a coautoria (mas admite-se participação, como instigação); ex.: falso testemunho ou falsa perícia (art. 342 CP) — um terceiro pode induzir a testemunha a mentir (participação), mas não pode mentir 'por ela'. [Nota: baseado em material introdutório de terceiros com acesso parcial — cobre só o início do tema; aprofundar com fontes complementares.]",
+      "tags": [
+        "classificação de crimes",
+        "crime comum",
+        "crime próprio",
+        "crime de mão própria",
+        "sujeito ativo",
+        "coautoria",
+        "participação"
+      ],
+      "difficulty": "basic",
+      "oab_relevance": "medium"
+    },
+    {
+      "id": "penal-021",
+      "title": "Concurso de pessoas — conceito, crimes mono/plurissubjetivos e teoria monista",
+      "area": "Direito Penal",
+      "subject": "Teoria geral do crime",
+      "topic": "Concurso de pessoas",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Art. 180 CP",
+        "Art. 288 CP",
+        "Art. 137 CP"
+      ],
+      "evaluation_criteria": [
+        "Aplicar a teoria monista (adotada no Brasil): todos os concorrentes respondem pelo mesmo crime, na medida de sua culpabilidade",
+        "Diferenciar crimes monossubjetivos (concurso eventual) de plurissubjetivos (concurso necessário, exige pluralidade de agentes para a consumação)"
+      ],
+      "common_errors": [
+        "Aplicar concurso de pessoas depois da consumação do crime principal — após a consumação, a colaboração configura crime autônomo (ex.: receptação, art. 180 CP), não concurso",
+        "Confundir crime plurissubjetivo (exige pluralidade de agentes por definição legal, ex.: associação criminosa art. 288, rixa art. 137) com concurso eventual de pessoas em crime monossubjetivo"
+      ],
+      "content": "Concurso de pessoas (codelinquência) é a colaboração voluntária e consciente de duas ou mais pessoas para a prática de um crime ou contravenção, possível até a consumação — depois dela, a colaboração configura crime autônomo (ex.: receptação do art. 180 CP, favorecimento real/pessoal). Crimes monossubjetivos: em regra praticados por uma só pessoa, mas admitem concurso eventual (ex.: homicídio, furto, roubo) — são o objeto de estudo do concurso de pessoas. Crimes plurissubjetivos: de concurso necessário, só se consumam com pluralidade mínima de agentes definida em lei (ex.: associação criminosa, art. 288 CP, exige 3+ pessoas; rixa, art. 137 CP, exige 3+ pessoas). Três teorias explicam o concurso: Pluralística (cada concorrente pratica um crime autônomo e distinto — não adotada no Brasil); Dualística (autor/coautores respondem por um crime, partícipes por outro — não adotada); Monista (adotada no Brasil): todos os concorrentes — autores, coautores e partícipes — respondem pelo mesmo tipo penal, na medida de sua culpabilidade, e não por crimes diferentes. [Nota: baseado em material introdutório de terceiros com acesso parcial — cobre só o início do tema; aprofundar com fontes complementares.]",
+      "tags": [
+        "concurso de pessoas",
+        "teoria monista",
+        "crimes monossubjetivos",
+        "crimes plurissubjetivos",
+        "coautoria",
+        "codelinquência"
+      ],
+      "difficulty": "intermediate",
+      "oab_relevance": "medium"
+    },
+    {
+      "id": "penal-022",
+      "title": "Princípios penais — direitos, garantias e sistema de proteção dos direitos fundamentais",
+      "area": "Direito Penal",
+      "subject": "Princípios penais",
+      "topic": "Introdução aos princípios penais",
+      "piece_type": [],
+      "content_type": "concept",
+      "legal_basis": [
+        "Art. 5º CF",
+        "Art. 5º, §3º CF"
+      ],
+      "evaluation_criteria": [
+        "Diferenciar direitos (conteúdo declaratório) de garantias (instrumento assecuratório do direito)",
+        "Conhecer o status hierárquico dos tratados internacionais de direitos humanos (supralegal, ou equivalente a emenda constitucional se aprovado pelo rito do art. 5º, §3º CF)"
+      ],
+      "common_errors": [
+        "Tratar todo tratado internacional de direitos humanos como equivalente a emenda constitucional — só tem esse status se aprovado em 2 turnos, por 3/5 dos votos, em cada Casa do Congresso (art. 5º, §3º CF); os demais têm status supralegal",
+        "Confundir princípios (mandamentos de otimização, resolvidos por ponderação em caso de conflito) com regras (aplicação binária, resolvida por hierarquia/especialidade/cronologia)"
+      ],
+      "content": "Direitos e Garantias Fundamentais (Título II da CF) não se confundem: direitos são conteúdos declaratórios que conferem vantagens/interesses ao indivíduo (ex.: direito à vida, à liberdade); garantias são instrumentos assecuratórios pelos quais os direitos são exercidos/protegidos (ex.: habeas corpus como garantia do direito de ir e vir). Norma é gênero que abrange princípios e regras: princípios são o norte do ordenamento, resolvidos por ponderação em caso de conflito (não há aniquilação mútua); regras têm aplicação binária (aplicável ou não), resolvidas por critérios de hierarquia, especialidade e cronologia em caso de conflito. Sistema de proteção dos direitos fundamentais no Brasil: a CF prevê rol extenso no art. 5º; a Convenção Americana de Direitos Humanos (1969) foi ratificada pelo Brasil em 1992, com natureza subsidiária e suplementar. Tratados de direitos humanos aprovados em cada Casa do Congresso, em 2 turnos, por 3/5 dos votos (art. 5º, §3º CF, EC 45/04) equivalem a emendas constitucionais. Os demais tratados de direitos humanos (aprovados antes de 2008 ou fora desse rito) têm status supralegal — abaixo da Constituição, acima da legislação infraconstitucional, conforme entendimento do STF a partir de 2008. [Nota: baseado em material introdutório de terceiros com acesso parcial — cobre só o início do tema; aprofundar com fontes complementares.]",
+      "tags": [
+        "princípios penais",
+        "direitos fundamentais",
+        "garantias",
+        "tratados internacionais",
+        "status supralegal",
+        "princípios e regras"
+      ],
+      "difficulty": "basic",
+      "oab_relevance": "medium"
+    },
+    {
+      "id": "penal-023",
+      "title": "Suspensão condicional da pena (sursis) — natureza jurídica",
+      "area": "Direito Penal",
+      "subject": "Teoria da pena",
+      "topic": "Suspensão condicional da pena",
+      "piece_type": [],
+      "content_type": "rule",
+      "legal_basis": [
+        "Art. 77 CP",
+        "Art. 157 LEP"
+      ],
+      "evaluation_criteria": [
+        "Sustentar a suspensão condicional da pena como direito subjetivo do réu, não mera faculdade discricionária do juiz, quando preenchidos os requisitos legais"
+      ],
+      "common_errors": [
+        "Interpretar literalmente o verbo 'poderá' do art. 77 CP como discricionariedade do juiz — a leitura conjugada com o art. 157 da LEP (o juiz 'deverá' se pronunciar motivadamente) revela que, preenchidos os requisitos, trata-se de direito subjetivo do condenado"
+      ],
+      "content": "A suspensão condicional da pena (sursis — art. 77 CP) é instituto de política criminal que evita o encarceramento de condenados a penas privativas de liberdade de curta duração, substituindo o cumprimento por um período de prova sujeito a condições fiscalizáveis. Discussão relevante para peças de defesa/recursais: é faculdade do juiz ou direito do réu? O art. 77 CP usa 'poderá', sugerindo discricionariedade, mas o art. 157 da Lei de Execuções Penais determina que o juiz 'deverá se pronunciar, motivadamente' sobre a suspensão, concedendo-a ou negando-a. O entendimento doutrinário e jurisprudencial predominante é de que, preenchidos os requisitos legais objetivos e subjetivos, a suspensão condicional da pena é direito subjetivo do réu — o juiz deve concedê-la, sendo a negativa passível de impugnação recursal se não fundamentada adequadamente. [Nota: baseado em material introdutório de terceiros com acesso parcial — cobre só o início do tema; aprofundar com fontes complementares.]",
+      "tags": [
+        "suspensão condicional da pena",
+        "sursis",
+        "direito subjetivo",
+        "execução penal"
+      ],
+      "difficulty": "basic",
+      "oab_relevance": "medium"
+    },
+    {
+      "id": "penal-024",
+      "title": "Iter Criminis — conceito e etapas (cogitação, preparação, execução, consumação)",
+      "area": "Direito Penal",
+      "subject": "Teoria geral do crime",
+      "topic": "Iter criminis",
+      "piece_type": [],
+      "content_type": "concept",
+      "legal_basis": [
+        "Art. 121 CP"
+      ],
+      "evaluation_criteria": [
+        "Identificar em qual etapa do iter criminis a conduta do agente se encontra para avaliar a punibilidade",
+        "Reconhecer que cogitação e atos preparatórios não são, em regra, puníveis"
+      ],
+      "common_errors": [
+        "Considerar puníveis os atos de mera cogitação ou os atos preparatórios em geral — só a fase de execução em diante interessa penalmente, salvo tipos penais que criminalizam atos preparatórios especificamente (ex.: alguns crimes da Lei 13.260/16, de terrorismo)"
+      ],
+      "content": "Iter criminis é o 'caminho do crime' — a sequência de fases que o agente percorre até a consumação da infração penal (crime ou contravenção), com consequências jurídicas distintas conforme a fase atingida. Quatro etapas: (1) Cogitação — o agente apenas pensa/planeja o crime, nunca é punível isoladamente; (2) Atos preparatórios — o agente reúne meios para a execução (ex.: adquirir a arma), em regra não puníveis, salvo quando a lei tipifica autonomamente o ato preparatório como crime específico (ex.: determinados atos da Lei de Terrorismo, 13.260/16); (3) Execução — o agente inicia a realização do verbo nuclear do tipo penal; a partir daqui a conduta passa a ser penalmente relevante, admitindo tentativa; (4) Consumação — reúnem-se todos os elementos do tipo penal (ex.: no homicídio do art. 121 CP, a morte da vítima). Exemplo didático: agente planeja matar a vítima (cogitação), adquire arma e arma emboscada (preparação), atira contra a vítima (execução), a vítima morre (consumação). [Nota: baseado em material introdutório de terceiros com acesso parcial — cobre só o início do tema; aprofundar com fontes complementares.]",
+      "tags": [
+        "iter criminis",
+        "cogitação",
+        "atos preparatórios",
+        "execução",
+        "consumação",
+        "tentativa"
+      ],
+      "difficulty": "basic",
+      "oab_relevance": "medium"
+    }
+  ]
+}

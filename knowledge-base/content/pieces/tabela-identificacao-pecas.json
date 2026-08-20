@@ -1,0 +1,331 @@
+{
+  "descricao": "Tabela de identificação de todos os tipos de peças para OAB 2ª fase – Direito do Trabalho. Use para identificar qual peça o enunciado exige antes de corrigir.",
+  "instrucao_ia": "Ao analisar um enunciado: (1) identifique quem é representado e qual a situação; (2) compare com 'como_identificar' de cada peça; (3) confirme com 'fundamento_legal'; (4) use 'estrutura_basica' para validar o formato; (5) verifique 'fique_atento' para erros comuns.",
+  "total_tipos": 36,
+  "pecas": [
+    {
+      "id": "reclama__o_trabalhista",
+      "nome": "Reclamação Trabalhista",
+      "fundamento_legal": "Art. 840, §1º da CLT",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "Peça do empregado em face do empregador em razão de direitos violados.",
+      "fique_atento": "No art. 840 CLT e art. 319 CPC tem dicas sobre a elaboração da petição inicial.",
+      "categoria": "inicial"
+    },
+    {
+      "id": "contesta__o",
+      "nome": "Contestação",
+      "fundamento_legal": "Art. 847 da CLT",
+      "estrutura_basica": "Contestação",
+      "como_identificar": "Peça de defesa do réu. Feita depois da reclamada ser citada.",
+      "fique_atento": "No art. 337 CPC tem rol de preliminares. No art. 11 CLT tem a prescrição.",
+      "categoria": "defesa"
+    },
+    {
+      "id": "recurso_ordin_rio",
+      "nome": "Recurso Ordinário",
+      "fundamento_legal": "Art. 895, I da CLT",
+      "estrutura_basica": "Recurso",
+      "como_identificar": "Recurso cabível da sentença. Os pedidos terão sido julgados.",
+      "fique_atento": "Tem peça de interposição e peça de razões. Busca a reforma ou anulação da decisão.",
+      "categoria": "recurso"
+    },
+    {
+      "id": "a__o_de_consigna__o_em_pagamento",
+      "nome": "Ação de Consignação em Pagamento",
+      "fundamento_legal": "Art. 539 do CPC",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "Alguém quer pagar ou entregar alguma coisa e não consegue.",
+      "fique_atento": "Observe arts. 542 e 546 para saber o que pedir.",
+      "categoria": "inicial"
+    },
+    {
+      "id": "contrarraz_es",
+      "nome": "Contrarrazões",
+      "fundamento_legal": "Art. 900 da CLT",
+      "estrutura_basica": "Recurso",
+      "como_identificar": "Resposta da parte recorrida em razão de recurso apresentado pela outra parte.",
+      "fique_atento": "Tem peça de interposição e peça de razões. Busca que a decisão seja mantida.",
+      "categoria": "recurso"
+    },
+    {
+      "id": "recurso_adesivo",
+      "nome": "Recurso Adesivo",
+      "fundamento_legal": "Súmula 283 do TST",
+      "estrutura_basica": "Recurso",
+      "como_identificar": "Recurso feito no prazo das contrarrazões por quem não fez o recurso no prazo.",
+      "fique_atento": "Cabe em caso de RO, AP, RR e ETST. Precisa ter sucumbência recíproca e recurso da outra parte.",
+      "categoria": "recurso"
+    },
+    {
+      "id": "embargos___execu__o",
+      "nome": "Embargos à Execução",
+      "fundamento_legal": "Art. 884 da CLT",
+      "estrutura_basica": "Mista",
+      "como_identificar": "Resposta do executado, depois que o juízo estiver garantido.",
+      "fique_atento": "O enunciado terá que dizer que teve penhora ou garantia do juízo integral.",
+      "categoria": "mista"
+    },
+    {
+      "id": "mandado_de_seguran_a",
+      "nome": "Mandado de Segurança",
+      "fundamento_legal": "Art. 5º, LXIX da CF / Art. 114 da CF",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "Haverá uma violação de um direito líquido e certo e não caberá outra medida.",
+      "fique_atento": "Cabimento: OJ 98 SBDI2, Súmula 414 II TST. Leia a Lei do MS — lá tem o direcionamento sobre como fazer e o que pedir.",
+      "categoria": "inicial"
+    },
+    {
+      "id": "a__o_rescis_ria",
+      "nome": "Ação Rescisória",
+      "fundamento_legal": "Art. 836 da CLT / Art. 966 do CPC",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "Haverá uma decisão com trânsito em julgado e você deverá buscar alterar/rescindir essa decisão.",
+      "fique_atento": "Observe art. 968 sobre a estrutura e art. 974 sobre o que pedir.",
+      "categoria": "inicial"
+    },
+    {
+      "id": "a__o_monit_ria",
+      "nome": "Ação Monitória",
+      "fundamento_legal": "Art. 700 do CPC",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "Há prova documental da dívida, mas esse documento não é título executivo.",
+      "fique_atento": "Lembre-se de verificar se aquele documento é título executivo (art. 876 CLT).",
+      "categoria": "inicial"
+    },
+    {
+      "id": "inqu_rito_para_apura__o_de_falta_grave",
+      "nome": "Inquérito para Apuração de Falta Grave",
+      "fundamento_legal": "Art. 853 da CLT",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "É uma ação do empregador para dispensar trabalhador estável que praticou ato que leva à justa causa.",
+      "fique_atento": "Súmula 379 do TST.",
+      "categoria": "inicial"
+    },
+    {
+      "id": "homologa__o_de_acordo_extrajudicial",
+      "nome": "Homologação de Acordo Extrajudicial",
+      "fundamento_legal": "Art. 855-B da CLT",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "Empregado e empregador fizeram acordo extrajudicial e buscam que seja homologado.",
+      "fique_atento": "Necessidade de advogados distintos para cada parte.",
+      "categoria": "inicial"
+    },
+    {
+      "id": "a__o_anulat_ria",
+      "nome": "Ação Anulatória",
+      "fundamento_legal": "Sem previsão em artigo específico",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "Busca-se a anulação de um ato jurídico. Ex.: Art. 611-A, §4º da CLT.",
+      "fique_atento": "Sem fundamento em artigo específico — fundamentar no princípio geral de nulidade.",
+      "categoria": "inicial"
+    },
+    {
+      "id": "diss_dio_coletivo",
+      "nome": "Dissídio Coletivo",
+      "fundamento_legal": "Art. 856 e ss da CLT",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "O enunciado vai mencionar a frustração da negociação coletiva (AC ou CC).",
+      "fique_atento": "Observe art. 858 da CLT.",
+      "categoria": "inicial"
+    },
+    {
+      "id": "embargos_de_declara__o",
+      "nome": "Embargos de Declaração",
+      "fundamento_legal": "Art. 897-A da CLT",
+      "estrutura_basica": "Mista",
+      "como_identificar": "O enunciado indica uma decisão com omissão, obscuridade ou contradição.",
+      "fique_atento": "Busca sanar vício. Observe o efeito modificativo.",
+      "categoria": "mista"
+    },
+    {
+      "id": "a__o_de_cumprimento",
+      "nome": "Ação de Cumprimento",
+      "fundamento_legal": "Art. 872 da CLT",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "O enunciado menciona que teve acordo ou julgamento em dissídio coletivo que não está sendo cumprido.",
+      "fique_atento": "Ler a lei — ela tem orientações de como fazer a peça.",
+      "categoria": "inicial"
+    },
+    {
+      "id": "a__o_civil_p_blica__acp",
+      "nome": "Ação Civil Pública (ACP)",
+      "fundamento_legal": "Lei 7.347/85",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "Busca responsabilidade por danos causados envolvendo uma coletividade.",
+      "fique_atento": "Ler a lei — ela tem orientações de como fazer a peça e o que pedir.",
+      "categoria": "inicial"
+    },
+    {
+      "id": "habeas_corpus__hc",
+      "nome": "Habeas Corpus (HC)",
+      "fundamento_legal": "Art. 5º, LXVIII da CF",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "Alguém está sendo ameaçado ou privado de sua liberdade de locomoção.",
+      "fique_atento": "Liberdade de locomoção é o bem jurídico tutelado.",
+      "categoria": "inicial"
+    },
+    {
+      "id": "habeas_data__hd",
+      "nome": "Habeas Data (HD)",
+      "fundamento_legal": "Art. 5º, LXXII da CF",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "Alguém não está tendo acesso ou não consegue retificar suas informações em banco de dados de entidades governamentais ou de caráter público.",
+      "fique_atento": "Banco de dados governamentais ou de caráter público — não cabe para dados privados.",
+      "categoria": "inicial"
+    },
+    {
+      "id": "agravo_de_instrumento",
+      "nome": "Agravo de Instrumento",
+      "fundamento_legal": "Art. 897, alínea b da CLT",
+      "estrutura_basica": "Recurso",
+      "como_identificar": "O enunciado menciona que um recurso foi denegado pelo juízo a quo.",
+      "fique_atento": "Tem peça de interposição e peça de razões. Depósito recursal de 50% (se for o caso).",
+      "categoria": "recurso"
+    },
+    {
+      "id": "agravo_de_peti__o",
+      "nome": "Agravo de Petição",
+      "fundamento_legal": "Art. 897, alínea a da CLT",
+      "estrutura_basica": "Recurso",
+      "como_identificar": "O enunciado vai dizer que teve uma decisão na execução.",
+      "fique_atento": "Tem peça de interposição e peça de razões. Delimitar a matéria e os valores.",
+      "categoria": "recurso"
+    },
+    {
+      "id": "agravo_interno",
+      "nome": "Agravo Interno",
+      "fundamento_legal": "Art. 1.021 do CPC",
+      "estrutura_basica": "Recurso",
+      "como_identificar": "O enunciado vai dizer que teve decisão do relator.",
+      "fique_atento": "Busca levar a discussão para o colegiado.",
+      "categoria": "recurso"
+    },
+    {
+      "id": "embargos_no_tst",
+      "nome": "Embargos no TST",
+      "fundamento_legal": "Art. 894 da CLT",
+      "estrutura_basica": "Recurso",
+      "como_identificar": "Já terá decisão do TST: em dissídio coletivo (decisão não unânime) ou em dissídios individuais (decisão de turma que diverge de outra decisão do TST ou contrária a Súmula).",
+      "fique_atento": "Tem peça de interposição e peça de razões. Verificar no enunciado se há divergência em entendimentos.",
+      "categoria": "recurso"
+    },
+    {
+      "id": "recurso_de_revista",
+      "nome": "Recurso de Revista",
+      "fundamento_legal": "Art. 896 da CLT",
+      "estrutura_basica": "Recurso",
+      "como_identificar": "O enunciado vai dizer que teve decisão do TRT em grau de RO ou AP.",
+      "fique_atento": "Fale sobre o prequestionamento e a transcedência.",
+      "categoria": "recurso"
+    },
+    {
+      "id": "recurso_ordin_rio__compet_ncia_origin_ria",
+      "nome": "Recurso Ordinário (competência originária)",
+      "fundamento_legal": "Art. 895, II da CLT",
+      "estrutura_basica": "Recurso",
+      "como_identificar": "Terá sido julgado no TRT uma AR, MS ou DC.",
+      "fique_atento": "Busca a reforma ou anulação da decisão.",
+      "categoria": "recurso"
+    },
+    {
+      "id": "recurso_extraordin_rio",
+      "nome": "Recurso Extraordinário",
+      "fundamento_legal": "Art. 102, III da CF",
+      "estrutura_basica": "Recurso",
+      "como_identificar": "Terá tido decisão no TST e não caberá mais nenhum outro recurso.",
+      "fique_atento": "Tem peça de interposição e peça de razões.",
+      "categoria": "recurso"
+    },
+    {
+      "id": "correi__o_parcial",
+      "nome": "Correição Parcial",
+      "fundamento_legal": "Regimentos Internos dos Tribunais",
+      "estrutura_basica": "Mista",
+      "como_identificar": "É cabível contra atos que tumultuam o processo praticados pelo juiz.",
+      "fique_atento": "Ver os artigos nos regimentos internos dos tribunais.",
+      "categoria": "mista"
+    },
+    {
+      "id": "reclama__o_constitucional",
+      "nome": "Reclamação Constitucional",
+      "fundamento_legal": "Art. 988 do CPC",
+      "estrutura_basica": "Mista",
+      "como_identificar": "Cabe para preservar a competência do tribunal, garantir a autoridade das decisões do tribunal e a observância de enunciado de SV e de decisão do STF em controle concentrado, bem como para observância de acórdão em IRDR e AC.",
+      "fique_atento": "Ver os artigos no CPC.",
+      "categoria": "mista"
+    },
+    {
+      "id": "impugna__o_na_execu__o",
+      "nome": "Impugnação na Execução",
+      "fundamento_legal": "Art. 884, §3º da CLT",
+      "estrutura_basica": "Mista",
+      "como_identificar": "Você será advogado do exequente e quer impugnar os cálculos de liquidação.",
+      "fique_atento": "",
+      "categoria": "mista"
+    },
+    {
+      "id": "embargos_de_terceiro",
+      "nome": "Embargos de Terceiro",
+      "fundamento_legal": "Art. 674 do CPC",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "Você será advogado de um terceiro — alguém que não é parte do processo, mas foi atingido pela penhora.",
+      "fique_atento": "Observe arts. 676, 677 e 678 para lembrar como fazer a peça e o que pedir.",
+      "categoria": "inicial"
+    },
+    {
+      "id": "exce__o_de_pr__executividade",
+      "nome": "Exceção de Pré-Executividade",
+      "fundamento_legal": "Sem previsão legal",
+      "estrutura_basica": "Mista",
+      "como_identificar": "Defesa do executado para questões de ordem pública na execução.",
+      "fique_atento": "Não tem dilação probatória.",
+      "categoria": "mista"
+    },
+    {
+      "id": "incidente_de_desconsidera__o_da_pj__idpj",
+      "nome": "Incidente de Desconsideração da PJ (IDPJ)",
+      "fundamento_legal": "Art. 855-A da CLT / Arts. 135 e ss do CPC",
+      "estrutura_basica": "Mista",
+      "como_identificar": "O enunciado indicará que não foi logrado êxito na busca de bens da PJ e você vai buscar a responsabilidade dos sócios.",
+      "fique_atento": "Teoria adotada para desconsiderar a PJ — CPC.",
+      "categoria": "mista"
+    },
+    {
+      "id": "exce__o_de_suspei__o_e_impedimento",
+      "nome": "Exceção de Suspeição e Impedimento",
+      "fundamento_legal": "Art. 801 da CLT",
+      "estrutura_basica": "Mista",
+      "como_identificar": "O enunciado deixará claro que o juiz é suspeito ou impedido para julgar aquele processo.",
+      "fique_atento": "Lembre-se das hipóteses de suspeição e impedimento dos arts. 144 e 145 do CPC.",
+      "categoria": "mista"
+    },
+    {
+      "id": "exce__o_de_incompet_ncia",
+      "nome": "Exceção de Incompetência",
+      "fundamento_legal": "Art. 800 da CLT",
+      "estrutura_basica": "Contestação",
+      "como_identificar": "O enunciado demonstrará que a ação foi ajuizada em local incompetente.",
+      "fique_atento": "Lembre-se das regras de competência territorial — art. 651 da CLT.",
+      "categoria": "defesa"
+    },
+    {
+      "id": "a__o_possess_ria",
+      "nome": "Ação Possessória",
+      "fundamento_legal": "S.V. 23 STF / Arts. 554 e ss do CPC",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "O enunciado narrará que seu cliente está sendo ameaçado, esbulhado ou turbado no exercício da posse.",
+      "fique_atento": "Pode ser manutenção ou reintegração de posse ou interdito proibitório.",
+      "categoria": "inicial"
+    },
+    {
+      "id": "a__o_de_exigir_contas",
+      "nome": "Ação de Exigir Contas",
+      "fundamento_legal": "Art. 550 do CPC",
+      "estrutura_basica": "Petição Inicial",
+      "como_identificar": "O enunciado vai narrar que seu cliente quer exigir contas.",
+      "fique_atento": "",
+      "categoria": "inicial"
+    }
+  ]
+}

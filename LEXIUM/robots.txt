@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin-login.html
+Disallow: /admin-dashboard.html
+
+# Não indexar a área logada do app
+Disallow: /lexium-app.html
+
+# Base de conteúdo interna (inclui material com gabarito) — não indexar
+Disallow: /knowledge-base/
+
+Sitemap: https://lexium.com.br/sitemap.xml

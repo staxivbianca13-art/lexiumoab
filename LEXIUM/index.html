@@ -1,0 +1,2433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://plausible.io https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://plausible.io https://www.google-analytics.com https://analytics.google.com https://api.lexiumoab.com.br; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
+<meta name="description" content="LEXIUM — Descubra o que falta para você ser aprovado na 2ª fase da OAB. Diagnóstico personalizado de aprovação com IA: identifica suas lacunas e traça o caminho certo.">
+<link rel="canonical" href="https://lexiumoab.com.br/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<title>LEXIUM — IA para a 2ª Fase da OAB</title>
+
+<!-- Open Graph / redes sociais -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LEXIUM">
+<meta property="og:url" content="https://lexiumoab.com.br/">
+<meta property="og:title" content="LEXIUM — IA para a 2ª Fase da OAB">
+<meta property="og:description" content="Descubra o que falta para você ser aprovado na 2ª fase da OAB. Diagnóstico personalizado de aprovação com IA: identifica suas lacunas e traça o caminho certo.">
+<meta property="og:locale" content="pt_BR">
+<!-- TODO: adicionar og:image (1200x630) quando houver uma arte social pronta -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LEXIUM — IA para a 2ª Fase da OAB">
+<meta name="twitter:description" content="Descubra o que falta para você ser aprovado na 2ª fase da OAB.">
+
+
+<!-- ── LEXIUM Analytics Config ───────────────────────────────────
+     Configure os valores abaixo para ativar o tracking.
+     Deixe as strings vazias para desativar um provider.
+     Não coloque dados sensíveis aqui — apenas IDs públicos.
+     Ver: ANALYTICS.md para instruções completas.
+     ──────────────────────────────────────────────────────────── -->
+<script>
+window.__LEXIUM_ANALYTICS__ = {
+  // Plausible: seu domínio exato cadastrado no painel (ex: 'lexiumoab.com.br')
+  // Recomendado: LGPD-compliant, sem cookies, sem banner necessário.
+  plausibleDomain: '',
+
+  // GA4: seu Measurement ID (ex: 'G-XXXXXXXXXX')
+  // Atenção: GA4 usa cookies — exige banner de consentimento para LGPD.
+  ga4Id: '',
+
+  // true = exibe logs de eventos no console do navegador (use em dev only)
+  debug: false,
+};
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   LEXIUM DESIGN SYSTEM
+   ============================================================ */
+:root {
+  /* Brand Colors */
+  --brand-900: #7A1E00;
+  --brand-800: #C23200;
+  --brand-700: #E84100;
+  --brand-600: #FF4E00;
+  --brand-500: #FF6A00;
+  --brand-400: #FF8C00;
+  --brand-300: #FFA733;
+  --brand-200: #FFB84D;
+  --brand-100: #FFD08A;
+  --brand-50:  #FFF3E0;
+
+  /* Gradient */
+  --grad-primary: linear-gradient(135deg, #FF4E00 0%, #FF8C00 60%, #FFB300 100%);
+  --grad-text: linear-gradient(90deg, #FF6A00 0%, #FFB300 100%);
+  --grad-glow: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(255,110,0,0.18) 0%, transparent 70%);
+
+  /* Neutrals (dark mode) */
+  --bg-base:    #060608;
+  --bg-surface: #0E0E12;
+  --bg-raised:  #16161C;
+  --bg-overlay: #1E1E26;
+  --bg-hover:   #252530;
+
+  /* Borders */
+  --border-subtle:  rgba(255,255,255,0.06);
+  --border-default: rgba(255,255,255,0.10);
+  --border-strong:  rgba(255,255,255,0.18);
+  --border-brand:   rgba(255,110,0,0.35);
+
+  /* Text */
+  --text-primary:   #F5F5FA;
+  --text-secondary: #A0A0B0;
+  --text-muted:     #606070;
+  --text-brand:     #FF7A00;
+
+  /* Status */
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --error:   #EF4444;
+  --info:    #3B82F6;
+
+  /* Typography */
+  --font-display: 'Outfit', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+  /* Spacing (8px base) */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px;
+  --s5: 20px; --s6: 24px; --s8: 32px; --s10: 40px;
+  --s12: 48px; --s16: 64px; --s20: 80px; --s24: 96px;
+
+  /* Radius */
+  --r-sm: 6px; --r-md: 10px; --r-lg: 16px; --r-xl: 24px; --r-full: 9999px;
+
+  /* Shadow */
+  --shadow-sm:   0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md:   0 4px 20px rgba(0,0,0,0.5);
+  --shadow-lg:   0 8px 40px rgba(0,0,0,0.6);
+  --shadow-brand: 0 0 40px rgba(255,100,0,0.25);
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg-base);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+ul { list-style: none; }
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+.display-xl {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+.display-lg {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+.display-md {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.text-lg  { font-size: 1.125rem; }
+.text-md  { font-size: 1rem; }
+.text-sm  { font-size: 0.875rem; }
+.text-xs  { font-size: 0.75rem; }
+.text-brand { background: var(--grad-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.text-muted { color: var(--text-secondary); }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--s6);
+}
+.container-wide {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--s6);
+}
+.section { padding: var(--s24) 0; }
+.section-sm { padding: var(--s16) 0; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s8); }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s6); }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s6); }
+.flex { display: flex; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.flex-between { display: flex; align-items: center; justify-content: space-between; }
+.flex-col { display: flex; flex-direction: column; }
+.gap-2 { gap: var(--s2); } .gap-3 { gap: var(--s3); }
+.gap-4 { gap: var(--s4); } .gap-6 { gap: var(--s6); }
+.gap-8 { gap: var(--s8); }
+.text-center { text-align: center; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+/* ============================================================
+   COMPONENTS
+   ============================================================ */
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: var(--r-full);
+  padding: 14px 28px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--grad-primary);
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(255,100,0,0.35);
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 32px rgba(255,100,0,0.5);
+}
+.btn-secondary {
+  background: var(--bg-raised);
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+}
+.btn-secondary:hover {
+  background: var(--bg-overlay);
+  border-color: var(--border-strong);
+}
+.btn-ghost {
+  color: var(--text-secondary);
+  padding: 14px 20px;
+}
+.btn-ghost:hover { color: var(--text-primary); }
+.btn-sm { padding: 9px 18px; font-size: 0.8125rem; }
+.btn-lg { padding: 17px 36px; font-size: 1rem; }
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: var(--r-full);
+  border: 1px solid var(--border-brand);
+  background: rgba(255,100,0,0.08);
+  color: var(--brand-300);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.badge-dot {
+  width: 6px; height: 6px;
+  background: var(--brand-400);
+  border-radius: 50%;
+  animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot {
+  0%,100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.3); }
+}
+
+/* Card */
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-lg);
+  padding: var(--s8);
+  transition: border-color 0.2s, transform 0.2s;
+}
+.card:hover {
+  border-color: var(--border-default);
+  transform: translateY(-2px);
+}
+.card-raised {
+  background: var(--bg-raised);
+  border-color: var(--border-default);
+}
+
+/* Icon box */
+.icon-box {
+  width: 48px; height: 48px;
+  border-radius: var(--r-md);
+  background: rgba(255,100,0,0.1);
+  border: 1px solid var(--border-brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.icon-box svg { width: 22px; height: 22px; color: var(--brand-400); }
+
+/* Section header */
+.section-header {
+  max-width: 640px;
+  margin-bottom: var(--s16);
+}
+.section-header.centered {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand-400);
+  margin-bottom: var(--s4);
+}
+.section-title { margin-bottom: var(--s4); }
+.section-subtitle { color: var(--text-secondary); font-size: 1.0625rem; line-height: 1.7; }
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 0;
+}
+
+/* ============================================================
+   LOGO SVG
+   ============================================================ */
+.logo-svg { width: 36px; height: 36px; }
+.logo-wordmark {
+  display: flex; align-items: center; gap: 10px;
+}
+.logo-wordmark span {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  background: rgba(6,6,8,0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background 0.3s;
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+}
+.nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 6px 14px;
+  border-radius: var(--r-full);
+  transition: color 0.2s;
+}
+.nav-link:hover { color: var(--text-primary); }
+.nav-actions { display: flex; align-items: center; gap: var(--s3); }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  padding-top: 140px;
+  padding-bottom: var(--s24);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 900px; height: 600px;
+  background: var(--grad-glow);
+  pointer-events: none;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s16);
+  align-items: center;
+}
+.hero-content { max-width: 580px; }
+.hero-badge { margin-bottom: var(--s6); }
+.hero-title { margin-bottom: var(--s6); }
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: var(--s8);
+  max-width: 480px;
+}
+.hero-actions { display: flex; align-items: center; gap: var(--s4); flex-wrap: wrap; }
+.hero-note {
+  margin-top: var(--s5);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+}
+.hero-visual { position: relative; }
+
+/* Hero mockup - main platform UI */
+.platform-mockup {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg), 0 0 80px rgba(255,100,0,0.12);
+}
+.mockup-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  padding: 12px 16px;
+  background: var(--bg-raised);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.mockup-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+}
+.dot-red   { background: #FF5F57; }
+.dot-amber { background: #FFBD2E; }
+.dot-green { background: #28C840; }
+.mockup-title {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-left: var(--s2);
+  font-weight: 500;
+}
+.mockup-body { padding: var(--s6); }
+
+/* Stat chips */
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s3);
+  margin-bottom: var(--s5);
+}
+.stat-chip {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  padding: var(--s4);
+}
+.stat-chip-label { font-size: 0.7rem; color: var(--text-muted); margin-bottom: 4px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; }
+.stat-chip-value { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--text-primary); }
+.stat-chip-value.green { color: var(--success); }
+.stat-chip-value.orange { background: var(--grad-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+/* Mini chart bars */
+.mini-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 48px;
+  margin-bottom: var(--s4);
+}
+.bar {
+  flex: 1;
+  background: var(--bg-overlay);
+  border-radius: 3px 3px 0 0;
+  transition: background 0.2s;
+}
+.bar.active { background: var(--grad-primary); }
+
+/* Score ring */
+.score-ring-wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--s4);
+  background: var(--bg-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  padding: var(--s4);
+  margin-bottom: var(--s4);
+}
+.score-ring {
+  position: relative;
+  width: 56px; height: 56px;
+  flex-shrink: 0;
+}
+.score-ring svg { transform: rotate(-90deg); }
+.score-ring-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--brand-300);
+}
+.score-info-title { font-size: 0.8125rem; font-weight: 600; color: var(--text-primary); margin-bottom: 3px; }
+.score-info-sub { font-size: 0.7rem; color: var(--text-muted); }
+
+/* Tag pills */
+.tag-row { display: flex; gap: var(--s2); flex-wrap: wrap; }
+.tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--r-full);
+}
+.tag-success { background: rgba(34,197,94,0.1); color: var(--success); }
+.tag-warning { background: rgba(245,158,11,0.1); color: var(--warning); }
+.tag-error   { background: rgba(239,68,68,0.1);  color: var(--error); }
+.tag-brand   { background: rgba(255,100,0,0.1);  color: var(--brand-300); }
+
+/* ============================================================
+   TRUST BAR
+   ============================================================ */
+.trust-bar {
+  padding: var(--s10) 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+}
+.trust-bar-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--s10);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.trust-icon { color: var(--brand-400); }
+
+/* ============================================================
+   HOW IT WORKS
+   ============================================================ */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s6);
+  position: relative;
+}
+.steps-grid::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: calc(12.5% + 24px);
+  right: calc(12.5% + 24px);
+  height: 1px;
+  background: linear-gradient(90deg, var(--border-brand), var(--border-subtle));
+}
+.step-card {
+  text-align: center;
+  position: relative;
+}
+.step-number {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: var(--bg-raised);
+  border: 1px solid var(--border-brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 800;
+  background: var(--grad-primary);
+  color: white;
+  margin: 0 auto var(--s5);
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(255,100,0,0.3);
+}
+.step-title { font-weight: 700; font-size: 0.9375rem; margin-bottom: var(--s2); }
+.step-desc { font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.6; }
+
+/* ============================================================
+   MODULES
+   ============================================================ */
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--s6);
+}
+.module-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-xl);
+  padding: var(--s8);
+  transition: all 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+.module-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad-primary);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.module-card:hover::before { opacity: 1; }
+.module-card:hover {
+  border-color: var(--border-brand);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3), 0 0 30px rgba(255,100,0,0.08);
+}
+.module-icon { margin-bottom: var(--s5); }
+.module-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-300);
+  margin-bottom: var(--s3);
+}
+.module-title { font-family: var(--font-display); font-size: 1.375rem; font-weight: 700; margin-bottom: var(--s3); }
+.module-desc { color: var(--text-secondary); font-size: 0.9375rem; line-height: 1.7; margin-bottom: var(--s6); }
+.module-features { display: flex; flex-direction: column; gap: var(--s2); }
+.module-feature {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+.module-feature::before {
+  content: '';
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: rgba(34,197,94,0.15);
+  border: 1px solid rgba(34,197,94,0.3);
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 8l3 3 7-7' stroke='%2322C55E' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size: contain;
+}
+
+/* ============================================================
+   DASHBOARD SECTION
+   ============================================================ */
+.dashboard-mockup {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.dash-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--s5) var(--s6);
+  background: var(--bg-raised);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.dash-title-sm { font-size: 0.875rem; font-weight: 600; }
+.dash-body { padding: var(--s6); }
+
+.dash-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s4);
+  margin-bottom: var(--s6);
+}
+.dash-stat {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  padding: var(--s4) var(--s5);
+}
+.dash-stat-label { font-size: 0.7rem; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--s1); }
+.dash-stat-value { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; }
+.dash-stat-delta { font-size: 0.7rem; font-weight: 600; }
+.delta-up { color: var(--success); }
+.delta-down { color: var(--error); }
+
+.dash-two-col { display: grid; grid-template-columns: 2fr 1fr; gap: var(--s4); }
+.dash-chart-card {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  padding: var(--s5);
+}
+.dash-chart-label { font-size: 0.8125rem; font-weight: 600; margin-bottom: var(--s4); }
+
+/* Line chart */
+.line-chart-wrap {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+}
+.line-chart-svg { width: 100%; height: 100%; overflow: visible; }
+
+/* Radar mock */
+.radar-mock {
+  width: 120px; height: 120px;
+  margin: 0 auto var(--s3);
+  position: relative;
+}
+.radar-mock svg { width: 100%; height: 100%; }
+
+/* Competency bars */
+.comp-list { display: flex; flex-direction: column; gap: var(--s3); }
+.comp-item {}
+.comp-top { display: flex; justify-content: space-between; margin-bottom: 5px; }
+.comp-name { font-size: 0.75rem; color: var(--text-secondary); font-weight: 500; }
+.comp-pct  { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; }
+.comp-bar-track {
+  height: 6px;
+  background: var(--bg-overlay);
+  border-radius: var(--r-full);
+  overflow: hidden;
+}
+.comp-bar-fill {
+  height: 100%;
+  border-radius: var(--r-full);
+  background: var(--grad-primary);
+}
+
+/* ============================================================
+   CORRECTION REPORT
+   ============================================================ */
+.report-mockup {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.report-top {
+  display: flex;
+  align-items: center;
+  gap: var(--s5);
+  padding: var(--s6);
+  background: var(--bg-raised);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.grade-circle {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  background: var(--grad-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 20px rgba(255,100,0,0.4);
+}
+.grade-num { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: white; line-height: 1; }
+.grade-denom { font-size: 0.65rem; color: rgba(255,255,255,0.7); }
+.report-meta-title { font-weight: 700; margin-bottom: var(--s1); }
+.report-meta-sub { font-size: 0.8125rem; color: var(--text-muted); }
+.report-body { padding: var(--s6); }
+.report-section-title { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin-bottom: var(--s3); }
+
+.comp-score-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s3); margin-bottom: var(--s6); }
+.comp-score-item {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  padding: var(--s3) var(--s4);
+  text-align: center;
+}
+.comp-score-name { font-size: 0.65rem; color: var(--text-muted); margin-bottom: 4px; }
+.comp-score-val { font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; }
+.comp-score-val.full { color: var(--success); }
+.comp-score-val.partial { color: var(--warning); }
+.comp-score-val.zero { color: var(--error); }
+
+.feedback-item {
+  display: flex;
+  gap: var(--s3);
+  padding: var(--s4);
+  background: var(--bg-raised);
+  border-radius: var(--r-md);
+  margin-bottom: var(--s3);
+  border-left: 3px solid transparent;
+}
+.feedback-item.warning { border-left-color: var(--warning); }
+.feedback-item.error   { border-left-color: var(--error); }
+.feedback-item.success { border-left-color: var(--success); }
+.feedback-icon { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+.feedback-text { font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.6; }
+.feedback-text strong { color: var(--text-primary); }
+
+/* ============================================================
+   COMPARISON SECTION
+   ============================================================ */
+.comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s6); }
+.compare-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+}
+.compare-head {
+  padding: var(--s4) var(--s6);
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+.compare-head.expected { background: rgba(34,197,94,0.06); color: var(--success); }
+.compare-head.student  { background: rgba(59,130,246,0.06); color: var(--info); }
+.compare-body { padding: var(--s5) var(--s6); }
+.compare-line {
+  font-size: 0.8125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: var(--s2) 0;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s2);
+}
+.compare-line:last-child { border-bottom: none; }
+.compare-line.present { color: var(--success); }
+.compare-line.absent  { color: var(--error); opacity: 0.6; text-decoration: line-through; }
+.compare-line.partial { color: var(--warning); }
+.line-icon { flex-shrink: 0; margin-top: 3px; }
+
+.diff-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s4);
+  margin-top: var(--s6);
+}
+.diff-box {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  padding: var(--s4);
+  text-align: center;
+}
+.diff-count { font-family: var(--font-display); font-size: 1.75rem; font-weight: 800; }
+.diff-count.g { color: var(--success); }
+.diff-count.w { color: var(--warning); }
+.diff-count.e { color: var(--error); }
+.diff-label { font-size: 0.7rem; color: var(--text-muted); margin-top: 2px; }
+
+/* ============================================================
+   KNOWLEDGE BASE
+   ============================================================ */
+.kb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s6); align-items: center; }
+.kb-topics { display: flex; flex-direction: column; gap: var(--s3); }
+.kb-topic {
+  display: flex;
+  align-items: center;
+  gap: var(--s4);
+  background: var(--bg-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  padding: var(--s4) var(--s5);
+  transition: border-color 0.2s;
+}
+.kb-topic:hover { border-color: var(--border-brand); }
+.kb-topic-icon {
+  width: 36px; height: 36px;
+  border-radius: var(--r-sm);
+  background: rgba(255,100,0,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.kb-topic-name { font-size: 0.875rem; font-weight: 600; }
+.kb-topic-count { font-size: 0.75rem; color: var(--text-muted); }
+.kb-status {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: var(--r-full);
+  margin-left: auto;
+}
+.kb-status.active   { background: rgba(34,197,94,0.12); color: var(--success); }
+.kb-status.soon     { background: rgba(245,158,11,0.12); color: var(--warning); }
+
+/* ============================================================
+   SIMULADOS
+   ============================================================ */
+.sim-builder {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.sim-sidebar {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+.sim-side {
+  background: var(--bg-raised);
+  border-right: 1px solid var(--border-subtle);
+  padding: var(--s6);
+}
+.sim-main { padding: var(--s6); }
+.sim-select-group { margin-bottom: var(--s5); }
+.sim-select-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin-bottom: var(--s2); }
+.sim-select {
+  width: 100%;
+  background: var(--bg-overlay);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-md);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  padding: 8px 12px;
+  appearance: none;
+}
+.sim-option-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s2); }
+.sim-option {
+  background: var(--bg-overlay);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  padding: var(--s3);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.sim-option.selected {
+  border-color: var(--brand-500);
+  background: rgba(255,100,0,0.1);
+  color: var(--brand-300);
+}
+.sim-case-title { font-weight: 700; margin-bottom: var(--s3); }
+.sim-case-text {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: var(--s5);
+  padding: var(--s4);
+  background: var(--bg-raised);
+  border-radius: var(--r-md);
+  border-left: 3px solid var(--brand-500);
+}
+.sim-textarea-mock {
+  width: 100%;
+  background: var(--bg-raised);
+  border: 1px solid var(--border-default);
+  border-radius: var(--r-md);
+  min-height: 80px;
+  padding: var(--s4);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+}
+
+/* ============================================================
+   PLANS
+   ============================================================ */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s5);
+  align-items: start;
+}
+.plan-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-xl);
+  padding: var(--s8);
+  position: relative;
+  transition: all 0.2s;
+}
+.plan-card:hover { transform: translateY(-3px); }
+.plan-card.featured {
+  border-color: var(--border-brand);
+  background: linear-gradient(145deg, var(--bg-raised), var(--bg-surface));
+  box-shadow: 0 0 40px rgba(255,100,0,0.15);
+}
+.plan-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--grad-primary);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 16px;
+  border-radius: var(--r-full);
+  white-space: nowrap;
+}
+.plan-name { font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; margin-bottom: var(--s2); }
+.plan-price {
+  font-family: var(--font-display);
+  margin-bottom: var(--s2);
+}
+.plan-price-main { font-size: 2.5rem; font-weight: 800; }
+.plan-price-note { font-size: 0.8125rem; color: var(--text-muted); }
+.plan-desc { font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: var(--s6); line-height: 1.6; }
+.plan-features { display: flex; flex-direction: column; gap: var(--s3); margin-bottom: var(--s8); }
+.plan-feature {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+.plan-feature .check { color: var(--success); flex-shrink: 0; }
+.plan-feature .cross { color: var(--text-muted); flex-shrink: 0; }
+.plan-divider { height: 1px; background: var(--border-subtle); margin: var(--s5) 0; }
+
+/* ============================================================
+   DIFFERENTIALS
+   ============================================================ */
+.diff-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s5);
+}
+.diff-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-lg);
+  padding: var(--s6);
+  transition: all 0.2s;
+}
+.diff-item:hover {
+  border-color: var(--border-brand);
+  background: var(--bg-raised);
+}
+.diff-item-icon { margin-bottom: var(--s4); font-size: 1.5rem; }
+.diff-item-title { font-weight: 700; margin-bottom: var(--s2); font-size: 0.9375rem; }
+.diff-item-desc { font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.7; }
+
+/* ============================================================
+   FINAL CTA
+   ============================================================ */
+.cta-section {
+  padding: var(--s24) 0;
+  position: relative;
+  overflow: hidden;
+}
+.cta-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255,100,0,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cta-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.cta-actions { display: flex; gap: var(--s4); justify-content: center; flex-wrap: wrap; margin-top: var(--s8); }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  padding: var(--s12) 0 var(--s8);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--s10);
+  margin-bottom: var(--s10);
+}
+.footer-col-title { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin-bottom: var(--s4); }
+.footer-links { display: flex; flex-direction: column; gap: var(--s2); }
+.footer-link { font-size: 0.875rem; color: var(--text-secondary); transition: color 0.2s; }
+.footer-link:hover { color: var(--text-primary); }
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--s6);
+  border-top: 1px solid var(--border-subtle);
+}
+.footer-copy { font-size: 0.8125rem; color: var(--text-muted); }
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.fade-up { animation: fadeUp 0.6s ease forwards; }
+.fade-up-delay-1 { animation-delay: 0.1s; opacity: 0; }
+.fade-up-delay-2 { animation-delay: 0.2s; opacity: 0; }
+.fade-up-delay-3 { animation-delay: 0.3s; opacity: 0; }
+
+/* Observe animation */
+.reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb { background: var(--bg-overlay); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--bg-hover); }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-visual { max-width: 560px; margin: 0 auto; }
+  .steps-grid { grid-template-columns: repeat(2, 1fr); }
+  .steps-grid::before { display: none; }
+  .dash-two-col { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4, .modules-grid, .plans-grid, .diff-grid, .comparison-grid, .kb-grid { grid-template-columns: 1fr; }
+  .steps-grid { grid-template-columns: 1fr 1fr; }
+  .dash-stats-row { grid-template-columns: repeat(2, 1fr); }
+  .comp-score-grid { grid-template-columns: repeat(3, 1fr); }
+  .sim-sidebar { grid-template-columns: 1fr; }
+  .sim-side { border-right: none; border-bottom: 1px solid var(--border-subtle); }
+  .nav-links { display: none; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="logo-wordmark">
+        <!-- Logo SVG recreated from brand identity -->
+        <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#FF4E00"/>
+              <stop offset="60%" stop-color="#FF8C00"/>
+              <stop offset="100%" stop-color="#FFB300"/>
+            </linearGradient>
+          </defs>
+          <!-- Shield shape -->
+          <path d="M50 8 L82 22 L82 55 Q82 78 50 92 Q18 78 18 55 L18 22 Z" fill="url(#logoGrad)" opacity="0.15" stroke="url(#logoGrad)" stroke-width="2.5"/>
+          <!-- L letterform -->
+          <rect x="30" y="24" width="8" height="44" rx="3" fill="url(#logoGrad)"/>
+          <rect x="30" y="60" width="22" height="8" rx="3" fill="url(#logoGrad)"/>
+          <!-- Checkmark -->
+          <path d="M45 46 L53 56 L70 36" stroke="url(#logoGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <!-- Arc -->
+          <path d="M62 20 Q84 30 84 55 Q84 75 62 86" stroke="url(#logoGrad)" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.7"/>
+        </svg>
+        <span>Lexium</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#como-funciona" class="nav-link">Como funciona</a>
+        <a href="#modulos" class="nav-link">Módulos</a>
+        <a href="#simulados" class="nav-link">Simulados</a>
+        <a href="#planos" class="nav-link">Planos</a>
+        <a href="#diferenciais" class="nav-link">Diferenciais</a>
+      </div>
+
+      <div class="nav-actions">
+        <button id="nav-login-btn" class="btn btn-ghost btn-sm">Entrar</button>
+        <button id="nav-waitlist-btn" class="btn btn-primary btn-sm">Ver planos</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- Left: content -->
+      <div class="hero-content fade-up">
+        <div class="hero-badge">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            2ª Fase OAB · Diagnóstico Personalizado de Aprovação
+          </div>
+        </div>
+
+        <h1 class="display-xl hero-title">
+          Descubra o que falta<br>
+          para você ser<br>
+          <span class="text-brand">aprovado na OAB.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          A LEXIUM analisa sua peça, identifica suas lacunas e traça o caminho exato até a aprovação — na sua área da 2ª fase, com diagnóstico preciso e orientação a cada etapa.
+        </p>
+
+        <div class="hero-actions">
+          <button id="hero-cta-btn" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Começar agora
+          </button>
+          <button id="hero-demo-btn" class="btn btn-secondary btn-lg">Ver demonstração</button>
+        </div>
+      </div>
+
+      <!-- Right: platform mockup -->
+      <div class="hero-visual fade-up fade-up-delay-2">
+        <div class="platform-mockup">
+          <div class="mockup-bar">
+            <div class="mockup-dot dot-red"></div>
+            <div class="mockup-dot dot-amber"></div>
+            <div class="mockup-dot dot-green"></div>
+            <span class="mockup-title">lexium.app — Direito Civil · Dashboard</span>
+          </div>
+          <div class="mockup-body">
+
+            <!-- Stats row -->
+            <div class="stat-row">
+              <div class="stat-chip">
+                <div class="stat-chip-label">Nota Média</div>
+                <div class="stat-chip-value orange">7,4</div>
+              </div>
+              <div class="stat-chip">
+                <div class="stat-chip-label">Peças Corrigidas</div>
+                <div class="stat-chip-value">28</div>
+              </div>
+              <div class="stat-chip">
+                <div class="stat-chip-label">Evolução</div>
+                <div class="stat-chip-value green">↑ 18%</div>
+              </div>
+            </div>
+
+            <!-- Mini chart -->
+            <div class="dash-chart-card" style="margin-bottom:12px;">
+              <div class="dash-chart-label">Evolução das Notas</div>
+              <div class="mini-chart">
+                <div class="bar" style="height:40%"></div>
+                <div class="bar" style="height:55%"></div>
+                <div class="bar" style="height:48%"></div>
+                <div class="bar" style="height:62%"></div>
+                <div class="bar" style="height:70%"></div>
+                <div class="bar active" style="height:75%"></div>
+                <div class="bar active" style="height:82%"></div>
+                <div class="bar active" style="height:88%"></div>
+              </div>
+            </div>
+
+            <!-- Score ring -->
+            <div class="score-ring-wrap">
+              <div class="score-ring">
+                <svg viewBox="0 0 56 56">
+                  <circle cx="28" cy="28" r="22" fill="none" stroke="rgba(255,100,0,0.15)" stroke-width="5"/>
+                  <circle cx="28" cy="28" r="22" fill="none" stroke="url(#heroGrad)" stroke-width="5"
+                    stroke-dasharray="138.2" stroke-dashoffset="34.5" stroke-linecap="round"/>
+                  <defs>
+                    <linearGradient id="heroGrad" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FF4E00"/><stop offset="1" stop-color="#FFB300"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div class="score-ring-label">75%</div>
+              </div>
+              <div>
+                <div class="score-info-title">Índice de Aprovação</div>
+                <div class="score-info-sub">Continue praticando peças trabalhistas</div>
+              </div>
+              <div class="tag tag-warning" style="margin-left:auto">Em progresso</div>
+            </div>
+
+            <!-- Tags -->
+            <div class="tag-row">
+              <div class="tag tag-success">Petição Inicial ✓</div>
+              <div class="tag tag-success">Recurso ✓</div>
+              <div class="tag tag-warning">Contestação</div>
+              <div class="tag tag-error">Dissídio</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST BAR
+     ============================================================ -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <svg class="trust-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Todas as áreas da 2ª fase cobertas
+      </div>
+      <div class="trust-item">
+        <svg class="trust-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        Correção em segundos
+      </div>
+      <div class="trust-item">
+        <svg class="trust-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        Diagnóstico de aprovação personalizado
+      </div>
+      <div class="trust-item">
+        <svg class="trust-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        Dashboard de evolução
+      </div>
+      <div class="trust-item">
+        <svg class="trust-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        PDF, imagem ou texto
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     COMO FUNCIONA
+     ============================================================ -->
+<section class="section" id="como-funciona">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <div class="section-label">Como funciona</div>
+      <h2 class="display-lg section-title">Da peça ao diagnóstico<br><span class="text-brand">em 4 etapas</span></h2>
+      <p class="section-subtitle">Cada peça enviada vira um passo a mais em direção à aprovação — com feedback preciso, diagnóstico de lacunas e orientação para o que estudar a seguir.</p>
+    </div>
+
+    <div class="steps-grid reveal">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <div class="step-title">Envie sua peça</div>
+        <p class="step-desc">Envie sua petição, resposta discursiva, PDF ou imagem digitalizada diretamente na plataforma.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <div class="step-title">LEXIUM analisa</div>
+        <p class="step-desc">A base jurídica da sua matéria alimenta a análise jurídica, estrutural e estratégica da resposta.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <div class="step-title">Nota e pontos perdidos</div>
+        <p class="step-desc">A plataforma atribui nota, identifica erros, fundamentos ausentes e compara com o padrão esperado.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <div class="step-title">Diagnóstico e próximo passo</div>
+        <p class="step-desc">Você recebe o diagnóstico do que ainda falta, o que já domina e exatamente o que deve estudar para ser aprovado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MÓDULOS
+     ============================================================ -->
+<section class="section" id="modulos" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <div class="section-label">Plataforma</div>
+      <h2 class="display-lg section-title">Não apenas correção.<br><span class="text-brand">O caminho até a aprovação.</span></h2>
+      <p class="section-subtitle">A LEXIUM mostra onde você perde pontos, o que ainda falta dominar e qual é o próximo passo — para que cada hora de estudo te aproxime da aprovação.</p>
+    </div>
+
+    <div class="modules-grid reveal">
+
+      <!-- Módulo 1: Correção -->
+      <div class="module-card">
+        <div class="module-icon">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <path d="M9 15l2 2 4-4"/>
+            </svg>
+          </div>
+        </div>
+        <div class="module-tag">Módulo 01</div>
+        <h3 class="module-title">Correção Inteligente</h3>
+        <p class="module-desc">Envie sua peça e descubra exatamente onde você perde pontos: erros jurídicos, estruturais e estratégicos identificados com precisão, com sugestões concretas para melhorar.</p>
+        <div class="module-features">
+          <div class="module-feature">Nota detalhada por competência</div>
+          <div class="module-feature">Erros jurídicos e estruturais identificados</div>
+          <div class="module-feature">Fundamentação ausente apontada</div>
+          <div class="module-feature">Sugestões de melhoria precisas</div>
+          <div class="module-feature">Envio por texto, PDF ou imagem</div>
+        </div>
+      </div>
+
+      <!-- Módulo 2: Evolução -->
+      <div class="module-card">
+        <div class="module-icon">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+        </div>
+        <div class="module-tag">Módulo 02</div>
+        <h3 class="module-title">Evolução</h3>
+        <p class="module-desc">Acompanhe sua trajetória e veja, com clareza, se você está evoluindo na direção certa — ou o que precisa mudar para chegar à aprovação.</p>
+        <div class="module-features">
+          <div class="module-feature">Histórico completo de notas</div>
+          <div class="module-feature">Gráfico de evolução temporal</div>
+          <div class="module-feature">Progresso por tipo de peça</div>
+          <div class="module-feature">Evolução por competência avaliada</div>
+          <div class="module-feature">Quantidade total de peças corrigidas</div>
+        </div>
+      </div>
+
+      <!-- Módulo 3: Diagnóstico -->
+      <div class="module-card">
+        <div class="module-icon">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 8v4M12 16h.01"/>
+            </svg>
+          </div>
+        </div>
+        <div class="module-tag">Módulo 03</div>
+        <h3 class="module-title">Diagnóstico de Aprovação</h3>
+        <p class="module-desc">Saiba o que falta para você ser aprovado: suas lacunas reais, os pontos que ainda custam nota e o que priorizar agora para chegar lá.</p>
+        <div class="module-features">
+          <div class="module-feature">Lacunas identificadas com precisão</div>
+          <div class="module-feature">O que já domina vs. o que precisa reforçar</div>
+          <div class="module-feature">Temas que continuam custando pontos</div>
+          <div class="module-feature">Índice de Aprovação atualizado a cada peça</div>
+          <div class="module-feature">Próximo passo de estudo recomendado</div>
+        </div>
+      </div>
+
+      <!-- Módulo 4: Simulados -->
+      <div class="module-card">
+        <div class="module-icon">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <rect x="5" y="2" width="14" height="20" rx="2"/>
+              <path d="M9 7h6M9 11h6M9 15h4"/>
+            </svg>
+          </div>
+        </div>
+        <div class="module-tag">Módulo 04</div>
+        <h3 class="module-title">Simulados</h3>
+        <p class="module-desc">Pratique com casos reais calibrados para a sua área da 2ª fase. Resolva o caso, receba correção automática e veja o impacto direto no seu diagnóstico de aprovação.</p>
+        <div class="module-features">
+          <div class="module-feature">Casos práticos gerados por IA</div>
+          <div class="module-feature">Correção automática após envio</div>
+          <div class="module-feature">Impacto registrado no diagnóstico</div>
+          <div class="module-feature">Desempenho histórico consolidado</div>
+          <div class="module-feature">Calibrado para o padrão da FGV/OAB</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DASHBOARD MOCKUP
+     ============================================================ -->
+<section class="section">
+  <div class="container-wide">
+    <div class="kb-grid" style="gap: var(--s16); align-items: start;">
+
+      <div class="reveal">
+        <div class="section-label">Módulo Evolução</div>
+        <h2 class="display-lg section-title" style="margin-bottom: var(--s4);">Seu painel de<br><span class="text-brand">evolução completo</span></h2>
+        <p class="section-subtitle" style="margin-bottom: var(--s6);">Visualize todas as métricas que importam: nota média, histórico de peças, competências e seu índice de aprovação em tempo real.</p>
+        <div class="flex-col gap-3">
+          <div class="trust-item" style="color: var(--text-secondary);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-400)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Gráfico de evolução das notas ao longo do tempo
+          </div>
+          <div class="trust-item" style="color: var(--text-secondary);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-400)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Radar de competências e pontos de reforço
+          </div>
+          <div class="trust-item" style="color: var(--text-secondary);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-400)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Últimas atividades e histórico de peças
+          </div>
+          <div class="trust-item" style="color: var(--text-secondary);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-400)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Indicador de prontidão para a prova
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" style="animation-delay:0.15s;">
+        <div class="dashboard-mockup">
+          <div class="dash-header">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-400)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              <span class="dash-title-sm">Dashboard · Maria S.</span>
+            </div>
+            <div class="tag tag-brand">Direito Civil · Área selecionada</div>
+          </div>
+          <div class="dash-body">
+
+            <div class="dash-stats-row">
+              <div class="dash-stat">
+                <div class="dash-stat-label">Nota Média</div>
+                <div class="dash-stat-value" style="background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">7,4</div>
+                <div class="dash-stat-delta delta-up">▲ +0.8 este mês</div>
+              </div>
+              <div class="dash-stat">
+                <div class="dash-stat-label">Peças Corrigidas</div>
+                <div class="dash-stat-value">28</div>
+                <div class="dash-stat-delta delta-up">▲ +6 esta semana</div>
+              </div>
+              <div class="dash-stat">
+                <div class="dash-stat-label">Melhor Nota</div>
+                <div class="dash-stat-value" style="color:var(--success)">9,2</div>
+                <div class="dash-stat-delta" style="color:var(--text-muted)">Petição Inicial</div>
+              </div>
+              <div class="dash-stat">
+                <div class="dash-stat-label">Índice OAB</div>
+                <div class="dash-stat-value">75%</div>
+                <div class="dash-stat-delta delta-up">▲ Em progresso</div>
+              </div>
+            </div>
+
+            <div class="dash-two-col">
+              <!-- Line chart mock -->
+              <div class="dash-chart-card">
+                <div class="dash-chart-label">Evolução das notas — últimas 8 peças</div>
+                <div style="position:relative;height:80px;">
+                  <svg viewBox="0 0 300 80" style="width:100%;height:100%">
+                    <defs>
+                      <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#FF6A00" stop-opacity="0.3"/>
+                        <stop offset="100%" stop-color="#FF6A00" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+                    <path d="M0,65 L40,58 L80,62 L120,48 L160,40 L200,35 L240,25 L300,18"
+                      fill="none" stroke="url(#lgHeroGrad)" stroke-width="2.5" stroke-linecap="round"/>
+                    <defs><linearGradient id="lgHeroGrad" x1="0" y1="0" x2="300" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#FF4E00"/><stop offset="1" stop-color="#FFB300"/></linearGradient></defs>
+                    <path d="M0,65 L40,58 L80,62 L120,48 L160,40 L200,35 L240,25 L300,18 L300,80 L0,80 Z"
+                      fill="url(#lineGrad)"/>
+                    <!-- Dots -->
+                    <circle cx="300" cy="18" r="4" fill="#FFB300"/>
+                    <circle cx="240" cy="25" r="3" fill="#FF8C00" opacity="0.7"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Competency progress -->
+              <div class="dash-chart-card">
+                <div class="dash-chart-label">Competências</div>
+                <div class="comp-list">
+                  <div class="comp-item">
+                    <div class="comp-top"><span class="comp-name">Técnica Jurídica</span><span class="comp-pct">88%</span></div>
+                    <div class="comp-bar-track"><div class="comp-bar-fill" style="width:88%"></div></div>
+                  </div>
+                  <div class="comp-item">
+                    <div class="comp-top"><span class="comp-name">Fundamentação</span><span class="comp-pct">72%</span></div>
+                    <div class="comp-bar-track"><div class="comp-bar-fill" style="width:72%"></div></div>
+                  </div>
+                  <div class="comp-item">
+                    <div class="comp-top"><span class="comp-name">Estrutura da Peça</span><span class="comp-pct">65%</span></div>
+                    <div class="comp-bar-track"><div class="comp-bar-fill" style="width:65%"></div></div>
+                  </div>
+                  <div class="comp-item">
+                    <div class="comp-top"><span class="comp-name">Pedidos</span><span class="comp-pct">55%</span></div>
+                    <div class="comp-bar-track"><div class="comp-bar-fill" style="width:55%"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RELATÓRIO DE CORREÇÃO
+     ============================================================ -->
+<section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle);">
+  <div class="container-wide">
+    <div class="kb-grid" style="gap:var(--s16);align-items:start;">
+
+      <div class="reveal" style="order:2;">
+        <div class="report-mockup">
+          <div class="report-top">
+            <div class="grade-circle">
+              <div class="grade-num">7,8</div>
+              <div class="grade-denom">/ 10</div>
+            </div>
+            <div>
+              <div class="report-meta-title">Petição Inicial Trabalhista</div>
+              <div class="report-meta-sub">Assédio Moral · enviada há 2 min · corrigida ✓</div>
+              <div class="tag-row" style="margin-top:8px;">
+                <div class="tag tag-warning">Fundamentos incompletos</div>
+                <div class="tag tag-success">Estrutura adequada</div>
+              </div>
+            </div>
+          </div>
+          <div class="report-body">
+
+            <div class="report-section-title">Competências avaliadas</div>
+            <div class="comp-score-grid">
+              <div class="comp-score-item"><div class="comp-score-name">Técnica Jurídica</div><div class="comp-score-val full">2,0/2</div></div>
+              <div class="comp-score-item"><div class="comp-score-name">Fundamentação</div><div class="comp-score-val partial">1,8/2</div></div>
+              <div class="comp-score-item"><div class="comp-score-name">Pedidos</div><div class="comp-score-val partial">1,5/2</div></div>
+              <div class="comp-score-item"><div class="comp-score-name">Estrutura</div><div class="comp-score-val full">2,0/2</div></div>
+              <div class="comp-score-item"><div class="comp-score-name">Coerência</div><div class="comp-score-val zero">0,5/2</div></div>
+            </div>
+
+            <div class="report-section-title">Análise da IA</div>
+            <div class="feedback-item success">
+              <div class="feedback-icon">✅</div>
+              <div class="feedback-text"><strong>Estrutura correta:</strong> Endereçamento, qualificação das partes, dos fatos e pedidos estão bem organizados.</div>
+            </div>
+            <div class="feedback-item warning">
+              <div class="feedback-icon">⚠️</div>
+              <div class="feedback-text"><strong>Fundamentação incompleta:</strong> Ausência de citação do art. 223-A a 223-G da CLT para dano extrapatrimonial. Inclua a base legal específica.</div>
+            </div>
+            <div class="feedback-item error">
+              <div class="feedback-icon">❌</div>
+              <div class="feedback-text"><strong>Pedido de tutela ausente:</strong> Em casos de assédio moral grave, é esperado pedido de tutela de urgência. Pontos perdidos neste item.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" style="order:1;">
+        <div class="section-label">Módulo Correção</div>
+        <h2 class="display-lg section-title" style="margin-bottom:var(--s4);">Relatório de correção<br><span class="text-brand">com profundidade real</span></h2>
+        <p class="section-subtitle" style="margin-bottom:var(--s6);">Cada peça corrigida gera um relatório completo: nota por competência, comentários contextuais da IA, erros apontados e um plano de revisão recomendado.</p>
+        <div class="flex-col gap-3">
+          <div class="trust-item" style="color:var(--text-secondary);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-400)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Nota final e nota por competência
+          </div>
+          <div class="trust-item" style="color:var(--text-secondary);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-400)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Fundamentos legais ausentes identificados
+          </div>
+          <div class="trust-item" style="color:var(--text-secondary);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-400)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Comentários contextuais ponto a ponto
+          </div>
+          <div class="trust-item" style="color:var(--text-secondary);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-400)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Plano de revisão e temas a estudar
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     COMPARAÇÃO COM PADRÃO ESPERADO
+     ============================================================ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <div class="section-label">Comparação</div>
+      <h2 class="display-lg section-title">Veja exatamente<br><span class="text-brand">o que você perdeu</span></h2>
+      <p class="section-subtitle">A LEXIUM compara sua resposta com o padrão esperado de correção da banca, mostrando ponto a ponto onde você acertou, onde perdeu e como melhorar.</p>
+    </div>
+
+    <div class="comparison-grid reveal">
+      <!-- Padrão esperado -->
+      <div class="compare-card">
+        <div class="compare-head expected">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Resposta esperada pela banca
+        </div>
+        <div class="compare-body">
+          <div class="compare-line present"><span class="line-icon">✓</span> Qualificação completa das partes (Reclamante e Reclamada)</div>
+          <div class="compare-line present"><span class="line-icon">✓</span> Narração dos fatos com cronologia clara</div>
+          <div class="compare-line present"><span class="line-icon">✓</span> Fundamento: art. 223-A a 223-G da CLT (dano extrapatrimonial)</div>
+          <div class="compare-line present"><span class="line-icon">✓</span> Fundamento: Súmula 443 do TST (dispensa discriminatória)</div>
+          <div class="compare-line present"><span class="line-icon">✓</span> Pedido de indenização por dano moral</div>
+          <div class="compare-line present"><span class="line-icon">✓</span> Pedido de tutela de urgência (art. 300 CPC)</div>
+          <div class="compare-line present"><span class="line-icon">✓</span> Valor da causa</div>
+          <div class="compare-line present"><span class="line-icon">✓</span> Requerimento de provas</div>
+        </div>
+      </div>
+
+      <!-- Resposta do aluno -->
+      <div class="compare-card">
+        <div class="compare-head student">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Sua resposta
+        </div>
+        <div class="compare-body">
+          <div class="compare-line present"><span class="line-icon">✓</span> Qualificação completa das partes</div>
+          <div class="compare-line present"><span class="line-icon">✓</span> Narração dos fatos com cronologia clara</div>
+          <div class="compare-line absent"><span class="line-icon">✗</span> Fundamento: art. 223-A a 223-G da CLT — ausente</div>
+          <div class="compare-line partial"><span class="line-icon">~</span> Súmula 443 TST mencionada sem desenvolvimento</div>
+          <div class="compare-line present"><span class="line-icon">✓</span> Pedido de indenização por dano moral</div>
+          <div class="compare-line absent"><span class="line-icon">✗</span> Pedido de tutela de urgência — ausente</div>
+          <div class="compare-line present"><span class="line-icon">✓</span> Valor da causa</div>
+          <div class="compare-line partial"><span class="line-icon">~</span> Requerimento de provas incompleto</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="diff-summary reveal" style="max-width:480px;margin:0 auto;margin-top:var(--s6);">
+      <div class="diff-box">
+        <div class="diff-count g">5</div>
+        <div class="diff-label">Pontos atendidos</div>
+      </div>
+      <div class="diff-box">
+        <div class="diff-count w">2</div>
+        <div class="diff-label">Pontos parciais</div>
+      </div>
+      <div class="diff-box">
+        <div class="diff-count e">2</div>
+        <div class="diff-label">Pontos perdidos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BASE DE CONHECIMENTO
+     ============================================================ -->
+<section class="section" style="background:var(--bg-surface);border-top:1px solid var(--border-subtle);">
+  <div class="container">
+    <div class="kb-grid" style="gap:var(--s16);">
+
+      <div class="reveal">
+        <div class="section-label">Base de Conhecimento</div>
+        <h2 class="display-lg section-title" style="margin-bottom:var(--s4);">Fundada em<br><span class="text-brand">base jurídica real</span></h2>
+        <p class="section-subtitle" style="margin-bottom:var(--s4);">A LEXIUM é alimentada com conteúdo jurídico de todas as áreas cobradas na 2ª fase da OAB — garantindo que cada correção e diagnóstico seja preciso, fundamentado e alinhado ao padrão da banca.</p>
+        <p style="color:var(--text-muted);font-size:0.875rem;margin-bottom:var(--s6);">Você escolhe sua área. A LEXIUM já tem o conteúdo para te orientar até a aprovação.</p>
+        <div class="badge" style="display:inline-flex;">
+          <span class="badge-dot"></span>
+          Base ativa · Todas as áreas da 2ª fase · OAB
+        </div>
+      </div>
+
+      <div class="kb-topics reveal" style="animation-delay:0.15s;">
+        <div class="kb-topic">
+          <div class="kb-topic-icon">⚖️</div>
+          <div>
+            <div class="kb-topic-name">Direito do Trabalho</div>
+            <div class="kb-topic-count">Peças, recursos, dissídio, requisitos processuais</div>
+          </div>
+          <div class="kb-status active">Ativo</div>
+        </div>
+        <div class="kb-topic">
+          <div class="kb-topic-icon">📋</div>
+          <div>
+            <div class="kb-topic-name">Direito Civil</div>
+            <div class="kb-topic-count">Contratos, responsabilidade, petição inicial</div>
+          </div>
+          <div class="kb-status active">Ativo</div>
+        </div>
+        <div class="kb-topic">
+          <div class="kb-topic-icon">🔒</div>
+          <div>
+            <div class="kb-topic-name">Direito Penal</div>
+            <div class="kb-topic-count">Denúncia, queixa-crime, habeas corpus</div>
+          </div>
+          <div class="kb-status active">Ativo</div>
+        </div>
+        <div class="kb-topic">
+          <div class="kb-topic-icon">🏛️</div>
+          <div>
+            <div class="kb-topic-name">Direito Constitucional</div>
+            <div class="kb-topic-count">Mandado de segurança, ADPF, controle de constitucionalidade</div>
+          </div>
+          <div class="kb-status active">Ativo</div>
+        </div>
+        <div class="kb-topic">
+          <div class="kb-topic-icon">💰</div>
+          <div>
+            <div class="kb-topic-name">Direito Tributário</div>
+            <div class="kb-topic-count">Mandado de segurança, ação anulatória, exceção de pré-executividade</div>
+          </div>
+          <div class="kb-status active">Ativo</div>
+        </div>
+        <div class="kb-topic">
+          <div class="kb-topic-icon">📄</div>
+          <div>
+            <div class="kb-topic-name">Direito Administrativo</div>
+            <div class="kb-topic-count">Improbidade, mandado de segurança, ação popular</div>
+          </div>
+          <div class="kb-status active">Ativo</div>
+        </div>
+        <div class="kb-topic">
+          <div class="kb-topic-icon">🏢</div>
+          <div>
+            <div class="kb-topic-name">Direito Empresarial</div>
+            <div class="kb-topic-count">Recuperação judicial, dissolução, contratos empresariais</div>
+          </div>
+          <div class="kb-status active">Ativo</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SIMULADOS
+     ============================================================ -->
+<section class="section" id="simulados">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <div class="section-label">Módulo Simulados</div>
+      <h2 class="display-lg section-title">Pratique como se<br><span class="text-brand">fosse a prova real</span></h2>
+      <p class="section-subtitle">Escolha área, tipo de peça e tema — ou deixe o sorteio decidir. Receba o caso prático, responda e envie para correção automática imediata.</p>
+    </div>
+
+    <div class="sim-builder reveal">
+      <div class="sim-sidebar">
+
+        <!-- Sidebar de configuração -->
+        <div class="sim-side">
+          <div class="sim-select-group">
+            <div class="sim-select-label">Área do Direito</div>
+            <select class="sim-select">
+              <option>Direito Civil</option>
+              <option>Direito Penal</option>
+              <option>Direito do Trabalho</option>
+              <option>Direito Constitucional</option>
+              <option>Direito Tributário</option>
+              <option>Direito Administrativo</option>
+              <option>Direito Empresarial</option>
+            </select>
+          </div>
+          <div class="sim-select-group">
+            <div class="sim-select-label">Tipo de Peça</div>
+            <div class="sim-option-grid">
+              <div class="sim-option selected">Petição Inicial</div>
+              <div class="sim-option">Contestação</div>
+              <div class="sim-option">Recurso</div>
+              <div class="sim-option">Dissídio</div>
+            </div>
+          </div>
+          <div class="sim-select-group">
+            <div class="sim-select-label">Tema</div>
+            <select class="sim-select">
+              <option>Assédio Moral</option>
+              <option>Horas Extras</option>
+              <option>Verbas Rescisórias</option>
+              <option>🎲 Sorteio aleatório</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" style="width:100%;justify-content:center;border-radius:var(--r-md);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Gerar Caso Prático
+          </button>
+        </div>
+
+        <!-- Área do caso -->
+        <div class="sim-main">
+          <div class="sim-case-title">Caso Prático — Petição Inicial Trabalhista</div>
+          <div class="sim-case-text">
+            <strong>Enunciado:</strong> João da Silva, operário, foi dispensado sem justa causa pela empresa Alfa Ltda após 5 anos de serviço. Não recebeu aviso prévio indenizado, FGTS e multa de 40%, décimo terceiro proporcional e férias vencidas acrescidas de 1/3. Além disso, relata que sofria assédio moral por parte do seu supervisor direto, com humilhações públicas frequentes. Elabore a peça processual adequada.
+          </div>
+          <div class="report-section-title" style="margin-bottom:var(--s3);">Sua resposta</div>
+          <div class="sim-textarea-mock">Excelentíssimo Senhor Doutor Juiz do Trabalho da ___ Vara do Trabalho de ___...</div>
+          <div style="display:flex;gap:var(--s3);margin-top:var(--s4);">
+            <button class="btn btn-primary btn-sm" style="border-radius:var(--r-md);">Enviar para correção</button>
+            <button class="btn btn-secondary btn-sm" style="border-radius:var(--r-md);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              Upload PDF
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PLANOS
+     ============================================================ -->
+<section class="section" id="planos" style="background:var(--bg-surface);border-top:1px solid var(--border-subtle);">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <div class="section-label">Planos</div>
+      <h2 class="display-lg section-title">Escolha o plano<br><span class="text-brand">ideal para você</span></h2>
+      <p class="section-subtitle">Ao assinar, você indica sua área da 2ª fase e a LEXIUM personaliza o diagnóstico, as correções e os próximos passos para a sua aprovação.</p>
+    </div>
+
+    <div class="plans-grid reveal">
+
+      <!-- Plano Mensal -->
+      <div class="plan-card">
+        <div class="plan-name">Plano Mensal</div>
+        <div class="plan-price">
+          <div class="plan-price-main text-brand">R$ 69,90<span style="font-size:1rem;font-weight:500;">/mês</span></div>
+          <div class="plan-price-note">10 simulados inclusos por mês</div>
+        </div>
+        <p class="plan-desc">Para praticar com regularidade: correção de peças e um pacote de simulados todo mês, sem compromisso de longo prazo.</p>
+        <div class="plan-features">
+          <div class="plan-feature"><span class="check">✓</span> 10 simulados por mês (padrão FGV)</div>
+          <div class="plan-feature"><span class="check">✓</span> Correção de peças incluída</div>
+          <div class="plan-feature"><span class="check">✓</span> Relatório de correção completo</div>
+          <div class="plan-feature"><span class="check">✓</span> Dashboard de evolução básico</div>
+          <div class="plan-feature"><span class="cross">–</span> Simulados ilimitados</div>
+          <div class="plan-feature"><span class="cross">–</span> Diagnóstico e Radar de Aprovação</div>
+        </div>
+        <button class="btn btn-secondary plans-cta" data-plan="mensal" style="width:100%;justify-content:center;border-radius:var(--r-md);">Assinar</button>
+      </div>
+
+      <!-- Plano Premium — destaque -->
+      <div class="plan-card featured">
+        <div class="plan-badge">Recomendado</div>
+        <div class="plan-name">Plano Premium</div>
+        <div class="plan-price">
+          <div class="plan-price-main text-brand">R$ 239,90</div>
+          <div class="plan-price-note">acesso completo até a sua próxima prova · parcelável</div>
+        </div>
+        <p class="plan-desc">Tudo o que você precisa para saber o que falta e chegar à aprovação: simulados ilimitados, correções, diagnóstico personalizado e orientação a cada passo até a data da prova.</p>
+        <div class="plan-features">
+          <div class="plan-feature"><span class="check">✓</span> Diagnóstico personalizado de aprovação</div>
+          <div class="plan-feature"><span class="check">✓</span> Correções ilimitadas</div>
+          <div class="plan-feature"><span class="check">✓</span> Simulados ilimitados (padrão FGV)</div>
+          <div class="plan-feature"><span class="check">✓</span> Relatório de correção completo</div>
+          <div class="plan-feature"><span class="check">✓</span> Comparação com padrão esperado</div>
+          <div class="plan-feature"><span class="check">✓</span> Dashboard de evolução completo</div>
+          <div class="plan-feature"><span class="check">✓</span> Diagnóstico e Radar de Aprovação</div>
+          <div class="plan-feature"><span class="check">✓</span> Recomendação de estudo personalizada</div>
+        </div>
+        <button class="btn btn-primary plans-cta" data-plan="premium" style="width:100%;justify-content:center;border-radius:var(--r-md);">Assinar</button>
+      </div>
+
+
+    </div>
+
+
+      <h3 style="font-weight:700;margin-bottom:var(--s3);">Pagamento seguro e integrado</h3>
+      <p style="color:var(--text-secondary);font-size:0.875rem;line-height:1.7;">O checkout acontece dentro da própria plataforma LEXIUM, processado com segurança via Mercado Pago (Pix, boleto ou cartão). Histórico de compras e gestão de assinatura disponíveis no painel do usuário.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     DIFERENCIAIS
+     ============================================================ -->
+<section class="section" id="diferenciais">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <div class="section-label">Por que a LEXIUM</div>
+      <h2 class="display-lg section-title">Não é um corretor.<br><span class="text-brand">É uma plataforma de evolução.</span></h2>
+      <p class="section-subtitle">A LEXIUM acompanha o candidato de forma contínua, diagnostica com precisão e orienta o caminho até a aprovação.</p>
+    </div>
+
+    <div class="diff-grid reveal">
+      <div class="diff-item">
+        <div class="diff-item-icon">🎯</div>
+        <h4 class="diff-item-title">Diagnóstico de precisão</h4>
+        <p class="diff-item-desc">Não apenas aponta erros — identifica padrões, temas recorrentes e exatamente onde você perde pontos em cada tipo de peça.</p>
+      </div>
+      <div class="diff-item">
+        <div class="diff-item-icon">📈</div>
+        <h4 class="diff-item-title">Acompanhamento contínuo</h4>
+        <p class="diff-item-desc">Sua evolução é registrada e visualizável. Você sabe se está progredindo, estagnando ou regredindo — e age com dados, não intuição.</p>
+      </div>
+      <div class="diff-item">
+        <div class="diff-item-icon">🧠</div>
+        <h4 class="diff-item-title">Base jurídica especializada</h4>
+        <p class="diff-item-desc">A IA é alimentada com materiais reais da 2ª fase da OAB, não com dados genéricos. A análise é juridicamente fundamentada e contextualizada.</p>
+      </div>
+      <div class="diff-item">
+        <div class="diff-item-icon">🔄</div>
+        <h4 class="diff-item-title">Comparação com o padrão</h4>
+        <p class="diff-item-desc">Cada correção mostra o que a banca esperava versus o que você escreveu, ponto a ponto. Sem achismo, sem subjetividade.</p>
+      </div>
+      <div class="diff-item">
+        <div class="diff-item-icon">🗂️</div>
+        <h4 class="diff-item-title">Simulados inteligentes</h4>
+        <p class="diff-item-desc">Casos práticos gerados com base na base jurídica real, corrigidos automaticamente. Não é banco de questões — é simulação real da prova.</p>
+      </div>
+      <div class="diff-item">
+        <div class="diff-item-icon">🚀</div>
+        <h4 class="diff-item-title">Expansível e escalável</h4>
+        <p class="diff-item-desc">Cobre as 7 matérias da 2ª fase da OAB. A arquitetura permite expansão contínua da base jurídica em cada área.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="cta-section">
+  <div class="cta-bg"></div>
+  <div class="container">
+    <div class="cta-inner reveal">
+      <div class="badge" style="margin:0 auto var(--s6);">
+        <span class="badge-dot"></span>
+        Já disponível
+      </div>
+      <h2 class="display-lg" style="margin-bottom:var(--s5);">Pronto para descobrir onde<br><span class="text-brand">você perde pontos?</span></h2>
+      <p style="color:var(--text-secondary);font-size:1.0625rem;line-height:1.7;">
+        A IA corrige. A LEXIUM diagnostica. <strong style="color:var(--text-primary);">O aluno evolui.</strong><br>
+        Crie sua conta e comece seu diagnóstico de aprovação.
+      </p>
+      <div class="cta-actions">
+        <button id="cta-main-btn" class="btn btn-primary btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Ver planos e assinar
+        </button>
+        <button id="cta-demo-btn" class="btn btn-secondary btn-lg">Ver demonstração</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo-wordmark" style="margin-bottom:var(--s4);">
+          <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="logoGradFt" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FF4E00"/><stop offset="60%" stop-color="#FF8C00"/><stop offset="100%" stop-color="#FFB300"/></linearGradient></defs>
+            <path d="M50 8 L82 22 L82 55 Q82 78 50 92 Q18 78 18 55 L18 22 Z" fill="url(#logoGradFt)" opacity="0.15" stroke="url(#logoGradFt)" stroke-width="2.5"/>
+            <rect x="30" y="24" width="8" height="44" rx="3" fill="url(#logoGradFt)"/>
+            <rect x="30" y="60" width="22" height="8" rx="3" fill="url(#logoGradFt)"/>
+            <path d="M45 46 L53 56 L70 36" stroke="url(#logoGradFt)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M62 20 Q84 30 84 55 Q84 75 62 86" stroke="url(#logoGradFt)" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.7"/>
+          </svg>
+          <span>Lexium</span>
+        </div>
+        <p style="color:var(--text-muted);font-size:0.875rem;line-height:1.7;max-width:260px;">Diagnóstico personalizado de aprovação para a 2ª fase da OAB. Descubra o que falta, elimine suas lacunas e siga o caminho certo até a aprovação.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Plataforma</div>
+        <div class="footer-links">
+          <a href="#" class="footer-link">Correção Inteligente</a>
+          <a href="#" class="footer-link">Dashboard de Evolução</a>
+          <a href="#" class="footer-link">Diagnóstico</a>
+          <a href="#" class="footer-link">Simulados</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Empresa</div>
+        <div class="footer-links">
+          <a href="#" class="footer-link">Sobre a LEXIUM</a>
+          <a href="#" class="footer-link">Planos</a>
+          <a href="#" class="footer-link">Blog</a>
+          <a href="#" class="footer-link">Contato</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Legal</div>
+        <div class="footer-links">
+          <a href="/terms.html" class="footer-link">Termos de Uso</a>
+          <a href="/privacy.html" class="footer-link">Privacidade</a>
+          <a href="/privacy.html#cookies" class="footer-link">Cookies</a>
+          <a href="/privacy.html#exclusao" class="footer-link">Solicitar exclusão de dados</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aviso LGPD e IA -->
+    <div style="padding:var(--s5) 0;border-top:1px solid var(--border-subtle);margin-bottom:var(--s4);">
+      <p style="font-size:0.75rem;color:var(--text-muted);line-height:1.7;max-width:700px;">
+        ⚠️ <strong style="color:var(--text-secondary);">Aviso importante:</strong> A LEXIUM é uma plataforma educacional com IA para preparação para a 2ª fase da OAB. As correções, diagnósticos e recomendações gerados pela inteligência artificial têm caráter <strong>exclusivamente pedagógico</strong> e não substituem a orientação de advogado, professor ou banca examinadora oficial. Resultados podem variar.
+      </p>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 LEXIUM. Todos os direitos reservados. CNPJ: a definir.</div>
+      <div class="footer-copy">
+        <a href="/privacy.html" style="color:var(--text-muted);text-decoration:underline;">Política de Privacidade</a>
+        &nbsp;·&nbsp;
+        <a href="/terms.html" style="color:var(--text-muted);text-decoration:underline;">Termos de Uso</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     CHECKOUT MODAL — coleta nome/e-mail antes de ir pro pagamento
+     ============================================================ -->
+<div id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-modal-title" style="display:none;position:fixed;inset:0;z-index:999;background:rgba(0,0,0,0.75);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:var(--s6);">
+  <div style="background:var(--bg-raised);border:1px solid var(--border-default);border-radius:var(--r-xl);padding:var(--s10);max-width:440px;width:100%;position:relative;box-shadow:0 24px 80px rgba(0,0,0,0.7);max-height:90vh;overflow-y:auto;">
+
+    <button onclick="closeCheckoutModal()" aria-label="Fechar" style="position:absolute;top:var(--s5);right:var(--s5);background:var(--bg-overlay);border:none;color:var(--text-muted);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;">&#10005;</button>
+
+    <div class="badge" style="margin-bottom:var(--s5);display:inline-flex;"><span class="badge-dot"></span>Assinatura</div>
+    <h2 id="checkout-modal-title" class="display-md" style="margin-bottom:var(--s2);">Quase lá</h2>
+    <p style="color:var(--text-secondary);font-size:0.875rem;line-height:1.6;margin-bottom:var(--s6);">Confirme seus dados para seguir ao pagamento. O acesso à plataforma é liberado por e-mail assim que o pagamento for aprovado.</p>
+
+    <form id="checkout-form" novalidate>
+      <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true"><input type="text" name="ck_hp" tabindex="-1" autocomplete="off"></div>
+      <div style="display:flex;flex-direction:column;gap:var(--s4);">
+        <div>
+          <label for="checkout-nome" style="font-size:0.8125rem;font-weight:600;color:var(--text-secondary);display:block;margin-bottom:var(--s2);">Nome completo</label>
+          <input type="text" id="checkout-nome" required maxlength="120" autocomplete="name"
+            style="width:100%;background:var(--bg-overlay);border:1px solid var(--border-default);border-radius:var(--r-md);color:var(--text-primary);font-family:var(--font-body);font-size:0.875rem;padding:10px 14px;outline:none;box-sizing:border-box;"
+            placeholder="Seu nome">
+        </div>
+        <div>
+          <label for="checkout-email" style="font-size:0.8125rem;font-weight:600;color:var(--text-secondary);display:block;margin-bottom:var(--s2);">E-mail</label>
+          <input type="email" id="checkout-email" required maxlength="254" autocomplete="email"
+            style="width:100%;background:var(--bg-overlay);border:1px solid var(--border-default);border-radius:var(--r-md);color:var(--text-primary);font-family:var(--font-body);font-size:0.875rem;padding:10px 14px;outline:none;box-sizing:border-box;"
+            placeholder="seu@email.com">
+          <div style="font-size:0.7rem;color:var(--text-muted);margin-top:4px;">É pra esse e-mail que enviamos o acesso após o pagamento.</div>
+        </div>
+        <div style="background:var(--bg-overlay);border:1px solid var(--border-subtle);border-radius:var(--r-md);padding:var(--s4);">
+          <label style="display:flex;align-items:flex-start;gap:var(--s3);cursor:pointer;">
+            <input type="checkbox" id="checkout-consent" required style="margin-top:3px;accent-color:var(--brand-500);flex-shrink:0;cursor:pointer;">
+            <span style="font-size:0.75rem;color:var(--text-secondary);line-height:1.6;">
+              Concordo com a <a href="/privacy.html" target="_blank" rel="noopener noreferrer" style="color:var(--brand-300);text-decoration:underline;">Política de Privacidade</a>
+              e com os <a href="/terms.html" target="_blank" rel="noopener noreferrer" style="color:var(--brand-300);text-decoration:underline;">Termos de Uso</a> da LEXIUM.
+            </span>
+          </label>
+        </div>
+        <div id="checkout-error-msg" style="display:none;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:var(--r-md);padding:var(--s3) var(--s4);color:var(--error);font-size:0.8125rem;"></div>
+        <button type="submit" id="checkout-submit-btn" class="btn btn-primary" style="width:100%;justify-content:center;border-radius:var(--r-md);">
+          Continuar para pagamento →
+        </button>
+        <p style="font-size:0.7rem;color:var(--text-muted);text-align:center;line-height:1.6;">
+          &#128274; Pagamento processado pelo Mercado Pago. A LEXIUM não tem acesso aos dados do seu cartão.
+        </p>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+<!-- ============================================================
+     COOKIE NOTICE
+     ============================================================ -->
+<!-- ============================================================
+     CHECKOUT STATUS BANNER — retorno do Mercado Pago
+     ============================================================ -->
+<div id="checkout-status-banner" style="display:none;position:fixed;top:80px;left:50%;transform:translateX(-50%);z-index:997;max-width:520px;width:calc(100% - var(--s6) * 2);background:var(--bg-raised);border:1px solid var(--border-default);border-radius:var(--r-lg);padding:var(--s5) var(--s6);box-shadow:0 16px 48px rgba(0,0,0,0.5);text-align:center;">
+  <div id="checkout-status-text" style="font-size:0.9375rem;font-weight:600;"></div>
+</div>
+
+<div id="cookie-notice" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:998;background:var(--bg-raised);border-top:1px solid var(--border-default);padding:var(--s4) var(--s6);">
+  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:var(--s6);flex-wrap:wrap;">
+    <p style="font-size:0.8125rem;color:var(--text-secondary);line-height:1.6;max-width:680px;">
+      🍪 Utilizamos apenas cookies essenciais para o funcionamento da plataforma. Nenhum dado pessoal é compartilhado com terceiros sem seu consentimento.
+      <a href="/privacy.html#cookies" style="color:var(--brand-300);text-decoration:underline;">Saiba mais</a>
+    </p>
+    <div style="display:flex;gap:var(--s3);flex-shrink:0;">
+      <button onclick="acceptCookies()" class="btn btn-primary btn-sm" style="border-radius:var(--r-md);">Entendi</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     JS — Scroll reveal + nav scroll
+     ============================================================ -->
+<script>
+/* ══════════════════════════════════════════════════════════════════
+   LEXIUM — Landing Page Scripts
+   ══════════════════════════════════════════════════════════════════ */
+
+// ── Helpers ─────────────────────────────────────────────────────────────────
+
+/** Wrapper seguro para analytics — nunca quebra a página */
+function track(event, props) {
+  try {
+    if (window.Lexium && typeof window.Lexium.track === 'function') {
+      window.Lexium.track(event, props);
+    }
+  } catch (_) { /* silencioso */ }
+}
+
+// ── Reveal animations ────────────────────────────────────────────────────────
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(el => {
+    if (el.isIntersecting) { el.target.classList.add('visible'); revealObserver.unobserve(el.target); }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => revealObserver.observe(el));
+
+document.querySelectorAll('.steps-grid, .modules-grid, .diff-grid, .plans-grid').forEach(grid => {
+  [...grid.children].forEach((child, i) => { child.style.transitionDelay = `${i * 0.08}s`; });
+});
+
+// ── Nav scroll ───────────────────────────────────────────────────────────────
+const navEl = document.querySelector('.nav');
+window.addEventListener('scroll', () => {
+  navEl.style.background = window.scrollY > 20 ? 'rgba(6,6,8,0.95)' : 'rgba(6,6,8,0.85)';
+}, { passive: true });
+
+window.addEventListener('load', () => {
+  document.querySelectorAll('.fade-up').forEach((el, i) => {
+    el.style.animationDelay = `${i * 0.1}s`;
+    el.style.animationFillMode = 'forwards';
+  });
+});
+
+// ── Section visibility tracking ──────────────────────────────────────────────
+const SECTION_EVENTS = {
+  'planos':      'pricing_section_viewed',
+  'simulados':   'simulados_section_viewed',
+  'modulos':     'diagnosis_section_viewed',
+  'diferenciais':'differentials_section_viewed',
+};
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const evt = SECTION_EVENTS[entry.target.id];
+      if (evt) track(evt, { section: entry.target.id });
+      sectionObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.35 });
+Object.keys(SECTION_EVENTS).forEach(id => {
+  const el = document.getElementById(id);
+  if (el) sectionObserver.observe(el);
+});
+
+// ── Nav button events ────────────────────────────────────────────────────────
+const navLoginBtn    = document.getElementById('nav-login-btn');
+const navWaitlistBtn = document.getElementById('nav-waitlist-btn');
+
+if (navLoginBtn) {
+  navLoginBtn.addEventListener('click', () => {
+    track('login_clicked', { location: 'nav' });
+    window.location.href = 'lexium-app.html?auth=login';
+  });
+}
+if (navWaitlistBtn) {
+  navWaitlistBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    track('signup_clicked', { location: 'nav' });
+    document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });
+  });
+}
+
+// ── Hero CTA events ───────────────────────────────────────────────────────────
+const heroCta  = document.getElementById('hero-cta-btn');
+const heroDemo = document.getElementById('hero-demo-btn');
+
+if (heroCta) {
+  heroCta.addEventListener('click', (e) => {
+    e.preventDefault();
+    track('hero_cta_clicked', { location: 'hero' });
+    document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });
+  });
+}
+if (heroDemo) {
+  heroDemo.addEventListener('click', (e) => {
+    e.preventDefault();
+    track('demo_clicked', { location: 'hero' });
+    window.location.href = 'lexium-app.html';
+  });
+}
+
+// ── Final CTA section events ──────────────────────────────────────────────────
+const ctaMain = document.getElementById('cta-main-btn');
+const ctaDemo = document.getElementById('cta-demo-btn');
+
+if (ctaMain) {
+  ctaMain.addEventListener('click', (e) => {
+    e.preventDefault();
+    track('hero_cta_clicked', { location: 'cta_section' });
+    document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });
+  });
+}
+if (ctaDemo) {
+  ctaDemo.addEventListener('click', (e) => {
+    e.preventDefault();
+    track('demo_clicked', { location: 'cta_section' });
+    window.location.href = 'lexium-app.html';
+  });
+}
+
+// ── Plans CTA events ──────────────────────────────────────────────────────────
+document.querySelectorAll('.plans-cta').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const plan = btn.dataset.plan || 'unknown';
+    track('plans_cta_clicked', { plan });
+    window.location.href = 'checkout.html?plan=' + encodeURIComponent(plan);
+  });
+});
+
+// ── Checkout modal (nome/e-mail antes do pagamento) ────────────────────────────
+let selectedPlan = null;
+
+function openCheckoutModal(plan) {
+  selectedPlan = plan;
+  document.getElementById('checkout-modal').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  document.getElementById('checkout-nome').focus();
+}
+function closeCheckoutModal() {
+  document.getElementById('checkout-modal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.getElementById('checkout-modal').addEventListener('click', e => {
+  if (e.target === document.getElementById('checkout-modal')) closeCheckoutModal();
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCheckoutModal(); });
+
+document.getElementById('checkout-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  document.getElementById('checkout-error-msg').style.display = 'none';
+
+  const nome     = document.getElementById('checkout-nome').value.trim();
+  const email    = document.getElementById('checkout-email').value.trim();
+  const consent  = document.getElementById('checkout-consent').checked;
+  const honeypot = document.querySelector('#checkout-form input[name="ck_hp"]').value;
+
+  if (honeypot) return; // bot — falha silenciosa
+
+  if (!nome || nome.length < 2 || !email || !emailReCheckout.test(email) || !consent || !selectedPlan) {
+    const errEl = document.getElementById('checkout-error-msg');
+    errEl.textContent = 'Preencha nome, e-mail e aceite os termos para continuar.';
+    errEl.style.display = 'block';
+    return;
+  }
+
+  const btn = document.getElementById('checkout-submit-btn');
+  btn.disabled = true;
+  btn.textContent = 'Preparando pagamento...';
+  track('checkout_started', { plan: selectedPlan });
+
+  try {
+    const resp = await fetch('/api/create-checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ nome, email, plano: selectedPlan }),
+    });
+    const data = await resp.json().catch(() => ({}));
+
+    if (!resp.ok || !data.checkoutUrl) throw new Error(data.error || 'Não foi possível iniciar o pagamento.');
+
+    window.location.href = data.checkoutUrl;
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = 'Continuar para pagamento →';
+    const errEl = document.getElementById('checkout-error-msg');
+    errEl.textContent = err.message;
+    errEl.style.display = 'block';
+  }
+});
+const emailReCheckout = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+// ── Privacy & Terms link tracking ─────────────────────────────────────────────
+document.querySelectorAll('a[href="/privacy.html"], a[href*="privacy"]').forEach(a => {
+  a.addEventListener('click', () => track('privacy_policy_clicked'));
+});
+document.querySelectorAll('a[href="/terms.html"], a[href*="terms"]').forEach(a => {
+  a.addEventListener('click', () => track('terms_clicked'));
+});
+
+// ── Retorno do checkout (Mercado Pago) ──────────────────────────────────────────
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const status = params.get('checkout');
+  if (!status) return;
+
+  const messages = {
+    sucesso:  '✅ Pagamento aprovado! Enviamos o acesso para o seu e-mail — confira também a caixa de spam.',
+    pendente: '⏳ Pagamento em análise (comum em boleto/Pix). Assim que for aprovado, enviamos o acesso por e-mail.',
+    falha:    '❌ Não foi possível concluir o pagamento. Tente novamente ou use outro método.',
+  };
+  const text = messages[status];
+  if (!text) return;
+
+  const banner = document.getElementById('checkout-status-banner');
+  document.getElementById('checkout-status-text').textContent = text;
+  banner.style.display = 'block';
+  track('checkout_return', { status });
+
+  // Limpa o parâmetro da URL pra não reaparecer num refresh
+  params.delete('checkout');
+  const newUrl = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
+  window.history.replaceState({}, '', newUrl);
+})();
+
+// ── Cookie notice ─────────────────────────────────────────────────────────────
+function acceptCookies() {
+  try { localStorage.setItem('lexium_cookies_ok', '1'); } catch(_) {}
+  document.getElementById('cookie-notice').style.display = 'none';
+}
+(function() {
+  let ok = false;
+  try { ok = !!localStorage.getItem('lexium_cookies_ok'); } catch(_) {}
+  if (!ok) setTimeout(() => { document.getElementById('cookie-notice').style.display = 'block'; }, 2000);
+})();
+</script>
+
+<!-- ── Lexium Analytics (carrega após todo o conteúdo) ──────────────────── -->
+<script defer src="/js/analytics.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+{
+  "descricao": "Questões reais dos Exames OAB 2ª fase – Direito do Trabalho (XXV ao 38°), com enunciados e padrões de resposta.",
+  "total_exames": 24,
+  "exames": [
+    {
+      "id": "prova-xxv-exame",
+      "exame": "XXV Exame",
+      "tipo_peca": "CONTESTAÇÃO",
+      "peca": {
+        "enunciado": "Você foi contratado(a) pela Floricultura Flores Belas Ltda., que recebeu citação de uma \n\nreclamação  trabalhista  com  pedido  certo,  determinado  e  com  indicação  do  valor,  movida  em \n\n27/02/2018 pela ex-empregada Estela, que tramita perante o juízo da 50ª Vara do Trabalho de \n\nJoão Pessoa/PB e recebeu o número 98.765.  Estela foi floricultora na empresa em questão de \n\n25/10/2012  a  29/12/2017  e  ganhava  mensalmente  o  valor  correspondente  a  dois  salários \n\nmínimos.   \n\nNa demanda, requereu os seguintes itens:  \n\n- a aplicação da penalidade criminal cominada no Art. 49 da CLT contra os sócios da ré, \n\numa vez que eles haviam cometido a infração prevista na referido diploma legal;  \n\n-  o  pagamento  de  adicional  de  penosidade,  na  razão  de  30%  sobre  o  salário-base, \n\nporque, no exercício da sua atividade, era constantemente furada pelos espinhos das flores que \n\nmanipulava;   \n\n- o pagamento de horas extras com adição de 50%, explicando que cumpria a extensa \n\njornada de segunda a sexta-feira, das 10h às 20h, com intervalo de duas horas para refeição, e \n\naos sábados, das 16h às 20h, sem intervalo;   \n\n- o pagamento da multa do Art. 477, § 8º, da CLT, porque o valor das verbas resilitórias \n\nsomente foi creditado na sua conta 20 dias após a comunicação do aviso prévio, concedido na \n\nforma indenizada, extrapolando o prazo legal.  \n\nAfirmou,  ainda,  que  foi  obrigada  a  aderir  ao  desconto  para  o  plano  de  saúde,  tendo \n\nassinado na admissão, contra a sua vontade, um documento autorizando a subtração mensal.  \n\nA  sociedade  empresária  informou  que,  assim  que  foi  cientificada  do  aviso  prévio,  Estela  teve \n\numa reação violenta, gritando e dizendo-se injustiçada com a atitude do empregador. A situação \n\nchegou  a  tal  ponto  que  a  segurança  terceirizada  precisou  ser  chamada  para  conter  a \n\ntrabalhadora e acompanhá-la até a porta de saída. Contudo, quando deixava o portão principal, \n\nEstela  começou  a  correr,  pegou  uma  pedra  do  chão  e  a  arremessou  violentamente  contra  o \n\nprédio da empresa, vindo a quebrar uma das vidraças. A empresa informa que gastou R$ 300,00 \n\nna recolocação do vidro atingido, conforme nota fiscal que exibiu, além de apresentar a guia da \n\n\n \n \n                 \n \n \n\nRAIS comprovando possuir 7 empregados, os contracheques da autora e o documento assinado \n\npela empregada autorizando o desconto de plano de saúde.  \n\nDiante  dessa  narrativa,  apresente  a  peça  pertinent",
+        "resposta_modelo": ""
+      },
+      "questao_discursiva": null,
+      "temas_identificados": [
+        "aviso_previo",
+        "terceirizacao",
+        "jornada",
+        "salario",
+        "contestacao_peca"
+      ]
+    },
+    {
+      "id": "prova-xxv-exame--reaplica--o-porto-alegre",
+      "exame": "XXV Exame (reaplicação Porto Alegre/RS)",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": {
+        "enunciado": "Raíssa trabalhou como técnica de segurança do trabalho para a sociedade empresária \n\nMineradora Dinamite Ltda., de 10/09/2009 a 18/03/2017, quando foi dispensada sem justa causa \n\ne recebeu a indenização devida pela ruptura do pacto laboral, tudo antes da reforma trabalhista \n\n(Lei nº 13.467/2017).  \n\nA empregada em questão sempre recebeu salário equivalente a três mínimos mensais. \n\nContudo, Raíssa achava que diversos dos seus direitos haviam sido desrespeitados ao longo do \n\ncontrato,  motivo  pelo  qual  ajuizou,  em  15/05/2017,  reclamação  trabalhista  contra  o  ex-\n\nempregador  e  a  Mineradora  TNT  Ltda.,  do  mesmo  grupo  econômico,  requerendo  diversas \n\nparcelas. A demanda foi distribuída para a 90ª Vara do Trabalho de Curitiba, recebeu o número \n\n121314, foi devidamente contestada e instruída.   \n\nNa sentença, haja vista a prejudicial de prescrição parcial, o juiz declarou prescritos os \n\ndireitos  anteriores  a  15/05/2013  e,  no  mérito,  analisando  os  pedidos  formulados,  julgou \n\nprocedente o pedido de hora in itinere, deferiu adicional de periculosidade na razão de 30% sobre \n\no  salário  mínimo,  indeferiu  a  reintegração  postulada  porque  a  autora,  confessadamente,  era \n\nmembro indicado da CIPA, deferiu o adicional de transferência na razão de 20% do salário no \n\nperíodo de cinco meses, nos quais a trabalhadora foi deslocada para outra unidade da empresa \n\ne teve de mudar seu domicílio.   \n\nJulgou  procedente  o  pedido  de  dobra  das  férias,  porque  não  fruídas  no  período \n\nconcessivo, indeferiu a retificação da anotação de dispensa para computar o aviso prévio porque \n\nele foi indenizado e, assim, não seria considerado para este fim específico.  Reconheceu, ainda, \n\nque a trabalhadora somente fruiu de 20 minutos para refeição, quando o correto seria uma hora \n\ndiante da jornada cumprida, daí porque deferiu o pagamento de 40 minutos de horas extras com \n\nadicional de 50%, mas sem integrações, diante da sua natureza indenizatória. Foram indeferidas, \n\nainda,  a  verba  quinquênio,  porque  não  prevista  na  norma  coletiva  da  categoria  da  autora,  a \n\ndevolução do valor do EPI cobrado parcialmente da empregada no contracheque, porque isso \n\nbeneficia  o  obreiro  e  não  há  vedação  legal  desta  cobrança,  o  pagamento  do  vale  transporte \n\nporque a empresa afirmou que a trabalhadora não pretendia fazer uso desse direito e o ônus da \n\n\n \n \n                 \n \n \n\nprova  que,  segundo  ele,  convergiu  para  a ",
+        "resposta_modelo": ""
+      },
+      "questao_discursiva": null,
+      "temas_identificados": [
+        "aviso_previo",
+        "estabilidade",
+        "jornada",
+        "salario",
+        "ferias",
+        "prescricao"
+      ]
+    },
+    {
+      "id": "prova-xxvi-exame",
+      "exame": "XXVI Exame",
+      "tipo_peca": "CONTESTAÇÃO",
+      "peca": {
+        "enunciado": "A  sociedade  empresária  Ômega  procura  você,  exibindo  sentença  prolatada  em \n\nreclamação  trabalhista  movida  por  Fabiano  que  tramita  perante  a  100ª  Vara  do  Trabalho  de \n\nMaceió/AL.  Nela,  o  magistrado,  em  síntese,  rejeitou  preliminar  suscitada  pela  empresa  e \n\ndeterminou  o  recolhimento  do  INSS  relativo  ao  período  trabalhado  mês  a  mês,  para  fins  de \n\naposentadoria, já que restou comprovado que a empresa descontava a cota previdenciária, mas \n\nnão a repassava ao INSS; rejeitou preliminar suscitada e desconsiderou que a empresa havia \n\nfeito um acordo em outro processo movido pelo mesmo empregado, homologado em juízo, no \n\nqual pagou o prêmio de assiduidade, condenando-a novamente ao pagamento dessa parcela; \n\nrejeitou  preliminar  suscitada  pela  empresa  e  desconsiderou  que  em  relação  às  diárias \n\npostuladas, o autor tinha, comprovadamente, outra ação em curso com o mesmo tema, que se \n\nencontrava  em  grau  de  recurso;  extinguiu  o  feito  sem  resolução  do  mérito  em  relação  a  um \n\npedido de devolução de desconto, porque não havia causa de pedir; não acolheu a prescrição \n\nparcial porque  ela foi suscitada  pelo advogado  em  razões  finais, afirmando  o magistrado  que \n\ndeveria  sê-lo  apenas  na  contestação,  tendo  ocorrido  preclusão;  deferiu  a  reintegração  do  ex-\n\nempregado, Fabiano, porque ele foi eleito presidente da Associação de Leitura dos empregados \n\nda  empresa,  entidade  criada  pelos  próprios  empregados,  sendo  que  a  dispensa  ocorreu  em \n\ndezembro de 2017, no decorrer do mandato do reclamante; indeferiu o pedido de vale-transporte, \n\nporque o reclamante se deslocava para o trabalho e dele retornava a pé; deferiu indenização por \n\ndano moral, porque, pelo confessado atraso no pagamento dos salários dos últimos 3 meses do \n\ncontrato  de  trabalho,  o  empregado  teve  seu  nome  inscrito  em  cadastro  restritivo  de  crédito, \n\nconforme  certidão  do  Serasa  juntada  pelo  reclamante  demonstrando  a  inserção  do  nome  do \n\nempregado no rol de maus pagadores em novembro de 2015; deferiu a entrega de uma carta de \n\nreferência para  facilitar o  autor na obtenção  de  nova  colocação,  caso,  no  futuro,  ele  viesse  a \n\nquerer  se  empregar  em  outro  lugar;  indeferiu  a  integração  da  alimentação  concedida  ao \n\nempregado, porque a empresa aderira ao Programa de Alimentação do Trabalhador durante todo \n\no contrato de trabalho; deferiu o pagamento da participação",
+        "resposta_modelo": ""
+      },
+      "questao_discursiva": null,
+      "temas_identificados": [
+        "empregado_domestico",
+        "dano_extrapatrimonial",
+        "estabilidade",
+        "salario",
+        "prescricao",
+        "contestacao_peca"
+      ]
+    },
+    {
+      "id": "prova-xxvii-exame",
+      "exame": "XXVII Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": {
+        "enunciado": "Nelson  Aviz  procura  você,  como  advogado(a),  afirmando  que  foi  empregado  da \n\nsociedade empresária Alfa Ltda. na sede desta, localizada em Sete Lagoas/MG, de 17/12/2017 \n\na 28/04/2018, tendo exercido, na prática, a função de técnico de informática.  \n\nNelson informa que foi despedido por justa causa, apesar de não ter feito nada de errado, \n\nnão recebendo qualquer indenização, mas apenas o saldo salarial do último mês; que a empresa \n\nnão integrava, para fim algum, o salário-família que Nelson recebia; que trabalhava de segunda-\n\nfeira a sábado, das 20h às 5h, com intervalo de 20 minutos para refeição; que o local de trabalho \n\nera de difícil acesso e não servido por transporte público regular, pelo que a empresa fornecia o \n\ntransporte para ir ao trabalho e voltar dele, de forma que Nelson demorava uma hora no trajeto \n\nde ida e outra uma hora no de volta; que realizou exame médico na admissão; que Nelson tem \n\numa irmã que trabalha na mesma sociedade empresária, exercendo a função de programadora \n\nde jogos digitais.  \n\nO trabalhador exibe cópias dos contracheques, nos quais há, na parte de crédito, salário \n\nde R$ 1.200,00 e uma cota de salário-família; já na parte de descontos, há INSS, vale-transporte \n\ne FGTS. Nelson ainda exibiu sua CTPS, na qual consta admissão em 17/12/2017 e saída em \n\n28/04/2018, na função de auxiliar de serviços gerais; na parte de anotações gerais, há anotação \n\nde  que  o  empregado  foi  dispensado  por  justa  causa  em  razão  de  conduta  inadequada.  Em \n\npesquisa pela Internet, você localiza a convenção coletiva da categoria de Nelson, com os pisos \n\nnormativos para todas as funções desempenhadas na sociedade empresária Alfa, dentre elas \n\nos  seguintes:  auxiliar  de  serviços  gerais:  R$  1.200,00;  técnico  em  informática:  R$  1.800,00; \n\nprogramador: R$ 3.500,00; e engenheiro de computação: R$ 6.000,00.  \n\nElabore a peça prático-profissional que melhor defenda os interesses de Nelson, \n\nsem usar dados ou informações que não estejam no enunciado. (Valor: 5,00)  \n\nObs.: a peça deve abranger todos os fundamentos de Direito que possam ser utilizados \n\npara dar respaldo à pretensão. A simples menção ou transcrição do dispositivo legal não confere \n\npontuação.  \n\n\n \n \n                 \n \n \n \n\nResolução da Peça Prático-Profisional \n\nAO DOUTO JUÍZO DA ... VARA DO TRABALHO DE SETE LAGOAS MG. \n\nNELSON  AVIZ,  qualificação  completa  ...,  endereço  completo...,  vem  à \n\npresença  de  Vossa  Excelência,  por  seu ",
+        "resposta_modelo": ""
+      },
+      "questao_discursiva": null,
+      "temas_identificados": [
+        "fgts",
+        "jornada",
+        "salario"
+      ]
+    },
+    {
+      "id": "prova-xxviii-exame",
+      "exame": "XXVIII Exame",
+      "tipo_peca": "CONTESTAÇÃO",
+      "peca": {
+        "enunciado": "DOUTO JUÍZO DA 80ª VARA DO TRABALHO DE CUIABÁ \n\n Processo nº 1000/2018 \n\nTECELAGEM  FIO  DE  OURO  S.A,  já  qualificada  nos  autos  do  processo  em \n\nepígrafe, vem perante Vossa Excelência, por seu advogado (procuração em anexo, \n\nendereço completo....), oferecer \n\n CONTESTAÇÃO, com fundamento no art. 847 da CLT \n\nEm  razão  da  Reclamação  Trabalhista  ajuizada  por  JOANA  DA  SILVA, \n\nigualmente já qualificada nos autos do processo em epígrafe, pelas razões de fato \n\ne de direito que passa a expor: \n\nDA PRELIMINAR DE INÉPCIA DA INICIAL \n\nA reclamante postulou adicional de periculosidade, porém não fundamentou a \n\ncausa de pedir. Logo, tal situação caracteriza a inépcia da inicial, nos termos do art. \n\n330,  §1º,  I  do  CPC,  pois  ausente  causa  de  pedir.  Assim,  requer  a  extinção  sem \n\nresolução do mérito em relação ao pedido de periculosidade, conforme art. 485, I \n\ndo CPC. \n\nDA PREJUDICIAL DE PRESCRIÇÃO PARCIAL \n\nA  reclamante  ajuizou  a  ação  em  15.10.2018,  sendo  que  sua  contratação  foi \n\nrealizada em 10.05.2008, tendo esta apresentado pedidos que retroagem a data da \n\ncontratação.  Diante disso,  há  prescrição  parcial,  pois a  reclamante  apenas  pode \n\ncobrar pedidos limitados a cinco anos anteriores ao ajuizamento da ação, ou seja, \n\n15.10.2013, já que aos demais há prescrição parcial, nos termos do art. 11 da CLT, \n\nart. 7, XXIX, CF e Súmula 308, I do TST. Diante do exposto, requer seja declarada \n\na  prescrição  de  qualquer  direito  anterior  a  15/10/2013,  extinguindo-se  quanto  a \n\nesses pedidos o feito com resolução de mérito, nos termos do art. 487, II do CPC.  \n\n\n \n \n                 \n \n \n \n \n \n \n \n \n \n \n\nDA INDENIZAÇÃO POR DANO MORAL – DOENÇA DEGENERATIVA \n\n  A reclamante postula indenização por dano moral da reclamada alegando que \n\nfoi vítima de doença profissional, já que o mobiliário da empresa não respeitava as \n\nnormas  de  ergonomia.  Porém,  os  laudos  juntados  –  ressonância  magnética  da \n\ncoluna vertebral, apontam o diagnóstico de doença degenerativa.  \n\nEntão, por se tratar de doença degenerativa, a indenização é indevida, pois não \n\né considerada doença profissional ou do trabalho, conforme art. 20, §1º, alínea a, \n\nda Lei 8.213/91. Diante do exposto, requer que o pedido seja julgado improcedente. \n\nDO PLANO ODONTOLÓGICO – SALÁRIO UTILIDADE \n\nA reclamante alega que a empresa fornecia plano odontológico gratuitamente, \n\nrazão pela qual requer a integração do seu valor ao salário, como salário utilid",
+        "resposta_modelo": ""
+      },
+      "questao_discursiva": null,
+      "temas_identificados": [
+        "dano_extrapatrimonial",
+        "salario",
+        "prescricao",
+        "contestacao_peca"
+      ]
+    },
+    {
+      "id": "prova-xxx-exame",
+      "exame": "XXX Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": {
+        "enunciado": "Após juntar durante alguns anos suas economias e auxiliado por seus familiares, Tito \n\ncomprou  uma  motocicleta  e  começou  a  trabalhar  em  15-12-2018  como  motoboy  na  Pizzaria \n\nGourmet Ltda., localizada no Município de Parauapebas, Estado do Pará, realizando a entrega \n\nem  domicílio  de  pizzas  e  outros  tipos  de  massas  aos  clientes  do  empregador.  A  carteira  de \n\ntrabalho de Tito foi devidamente assinada, com o valor de 1 salário-mínimo mensal.  \n\nEm  razão  da  atividade  desempenhada,  Tito  poderia  escolher  diariamente  um  item  do \n\ncardápio  para  se alimentar  no  próprio estabelecimento,  sem  precisar pagar pelo  produto.  Tito \n\nfazia em média 10 entregas em seu turno de trabalho, e normalmente recebia R$ 1,00 (um real) \n\nde  bonificação  espontânea  de  cada  cliente,  gerando  uma  média  de  R$  260,00  (duzentos  e \n\nsessenta reais) mensais. Tito exercia suas funções durante 6 (seis) dias na semana, com folga \n\nna 2ª feira, sendo que, uma vez por mês, a folga era em um domingo. A jornada cumprida ia das \n\n18h às 3h30, com intervalo de 40 minutos para refeição.  \n\nNo  mês  de  agosto  de  2019,  Tito  fez  a  entrega  de  uma  pizza  na  casa  de  um  cliente. \n\nOcorre que o cozinheiro da pizzaria se confundiu no preparo e assou uma pizza de calabresa, \n\nsendo que o cliente era alérgico a esse produto (linguiça). Ao ver a pizza errada,  o cliente foi \n\ntomado de fúria incontrolável, começou a xingar e a ameaçar Tito, e terminou por soltar seus \n\ncães de guarda, dando ordem para atacar o entregador. Tito correu desesperadamente, mas foi \n\nmordido e arranhado pelos animais, sendo lesionado gravemente. Em razão disso, ele precisou \n\nse afastar por 30 (trinta) dias para recuperação, recebendo o benefício previdenciário pertinente \n\ndo INSS. Tito gastou R$ 30,00 na compra de vacina antirrábica, que por recomendação médica \n\nfoi obrigado a tomar, porque não sabia se os cachorros eram vacinados. Em 20 de setembro de \n\n2019, após obter alta do INSS, Tito retornou à empresa e foi dispensado, recebendo as verbas \n\nrescisórias.  \n\nNos  contracheques  de  Tito,  constam,  mensalmente,  o  pagamento  do  salário-mínimo \n\nnacional na coluna de créditos e o desconto de INSS na coluna de descontos, sendo que no mês \n\nde março de 2019 houve ainda dedução de R$ 31,80 (trinta e um reais e oitenta centavos) a \n\n\n \n \n                 \n \n \n \n \n\ntítulo de contribuição sindical, sem que tivesse Autorizado o desconto. Tito foi à CEF e solicitou ",
+        "resposta_modelo": ""
+      },
+      "questao_discursiva": null,
+      "temas_identificados": [
+        "verbas_rescisorias",
+        "jornada",
+        "salario"
+      ]
+    },
+    {
+      "id": "prova-xxxi-exame",
+      "exame": "XXXI Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": {
+        "enunciado": "Débora  Pimenta  trabalhou  como  auxiliar  de  coveiro  na  sociedade  empresária  Morada \n\nEterna Ltda., de 30/03/2018 a 07/01/2019, quando foi dispensada sem justa causa, recebendo, \n\npor último, o salário de R$ 1.250,00 mensais, conforme anotado na CTPS. Em razão disso, ela \n\najuizou reclamação trabalhista em face da sociedade empresária. A ação foi distribuída ao juízo \n\nda  90ª  Vara  do  Trabalho  de  Teresina/PI,  recebendo  o  número  0050000-80.2019.5.22.0090. \n\nDébora  formulou  vários  pedidos,  que assim foram  julgados: o  juízo  declarou  a  incompetência \n\nmaterial  da  Justiça  do  Trabalho  para  apreciar  o  pedido  de  recolhimento  do  INSS  do  período \n\ntrabalhado; foi reconhecido que a jornada se desenvolvia de 2ª a 6ª feira, das 10 às 16 horas, \n\ncom intervalo de 10 minutos para refeição, conforme confessado pelo preposto em interrogatório, \n\nsendo, então, deferido o pagamento de 15 minutos com adicional de 50%, em razão do intervalo \n\ndesrespeitado, e reflexos nas demais verbas salariais; não foi reconhecido o salário oficioso de \n\nmais  R$  2.000,00  alegado  na  petição  inicial,  já  que  o  julgador  entendeu  não  haver  prova  de \n\nqualquer  pagamento  “por  fora”;  foi  deferido  o  pagamento  de  horas  extras  pelos  feriados, \n\n\nferiado brasileiro”, sendo rejeitada a preliminar suscitada na defesa contra a forma desse pedido; \n\nfoi deferida indenização de R$ 6.000,00 a título de dano moral por acidente do trabalho em razão \n\nde  doença  degenerativa  da qual a  trabalhadora  foi vítima,  conforme  laudos  médicos  juntados \n\naos autos; foi indeferido o pagamento de adicional noturno, já que a autora não comprovou que \n\nhouvesse enterro, ou preparação para tal fim, no período compreendido entre 22 e 5 horas; foi \n\ndeferido o pagamento do vale-transporte em todo o período trabalhado, sendo que, na instrução, \n\no magistrado indeferiu a oitiva de duas testemunhas trazidas pela sociedade empresária, que \n\nseriam ouvidas para provar que ela entregava o valor da passagem em espécie diariamente à \n\n\nexordial, de 5 dias de faltas justificadas por atestados médicos, pois a preposta reconheceu que \n\na  empresa  se  negou  a  aceitar  os  atestados  porque  não  continham  CID  (Classificação \n\nInternacional de Doenças); foi deferido o pagamento correspondente a 1 cesta básica mensal, \n\nporque sua entrega era prevista na convenção coletiva que vigorou no ano anterior (de janeiro \n\n\n \n \n                 \n \n \n \n \n\nde 2017 a janeiro de",
+        "resposta_modelo": ""
+      },
+      "questao_discursiva": null,
+      "temas_identificados": [
+        "dano_extrapatrimonial",
+        "jornada",
+        "salario"
+      ]
+    },
+    {
+      "id": "prova-xxxii-exame",
+      "exame": "XXXII Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": {
+        "enunciado": "Érica Grama Verde trabalhou para a sociedade empresária Auditoria Pente Fino S.A. de \n\n29/09/2011  a  07/01/2020,  exercendo,  desde  a  admissão,  a  função  de  gerente  do  setor  de \n\nauditoria  de  médias  empresas.  Na  condição  de  gerente,  Érica  comandava  25  auditores, \n\ndesignando  suas  atividades  junto  aos  clientes  do  empregador,  bem  como  fiscalizando  e \n\nvalidando as auditorias por eles realizadas. Érica recebia salário mensal de R$ 20.000,00 (vinte \n\nmil reais), acrescido de gratificação de função de R$ 10.000,00 (dez mil reais). \n\nÉrica pediu demissão, em 07/01/2020, e ajuizou reclamação trabalhista em 30/01/2020, \n\nna  qual  postulou  o  pagamento  de  horas  extras,  alegando  que  trabalhava  de  segunda-feira  a \n\nsábado, das 8h às 20h, com intervalo de 1 hora para refeição, sendo que não marcava folha de \n\nponto.  Érica  requereu  o  pagamento  da  indenização  de  40%  sobre  o  FGTS,  que  não  foi \n\ndepositada na sua conta vinculada, conforme extrato analítico do FGTS, que juntou com a inicial. \n\nEla  afirmou,  ainda,  que  a  empresa  não  efetuou  o  recolhimento  do  INSS  nos  anos  de  2018  e \n\n2019, fazendo comprovação disso por meio do seu Cadastro Nacional de Informações Sociais \n\n(CNIS),  juntado  com  a  petição  inicial,  no  qual  se  constata  que,  nos  anos  citados,  não  houve \n\nrecolhimento previdenciário, pelo que requereu que a empresa fosse condenada a regularizar a \n\nsituação.  Érica  explicou  e  comprovou  com  os  contracheques  que,  a  partir  de  2018,  passou  a \n\nreceber  prêmios  em  pecúnia,  em  valores  variados,  pelo  que  requereu  a  integração  do  valor \n\ndesses  prêmios  à  sua  remuneração,  com  reflexos  nas  demais  verbas  salariais  e  rescisórias, \n\ninclusive FGTS, e o pagamento das diferenças daí decorrentes. \n\nÉrica informou que, desde o início de seu contrato, realizava as mesmas atividades que \n\nSilvana Céu Azul, outra gerente do setor de auditoria de médias empresas, admitida na Auditoria \n\nPente Fino S.A. em 15/01/2009, já na função de gerente, mas que ganhava salário 10% superior \n\nao  da  reclamante,  conforme  contracheques  que  foram  juntados  com  a  petição  inicial  e \n\nevidenciam  o  salário  superior  da  modelo.  Uma  vez  que  as  atividades  de  Érica  eram \n\ndesenvolvidas em prédio da sociedade empresária localizado ao lado de uma comunidade muito \n\nviolenta,  tendo a  empregada  ouvido  diversas  vezes  disparos  de arma  de  fogo  e assistido,  da \n\n",
+        "resposta_modelo": ""
+      },
+      "questao_discursiva": null,
+      "temas_identificados": [
+        "fgts",
+        "verbas_rescisorias",
+        "jornada",
+        "salario"
+      ]
+    },
+    {
+      "id": "prova-xxxiii-exame",
+      "exame": "XXXIII Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": {
+        "enunciado": "Sheila  Melodia  procura  você,  na  condição  de  advogado(a),  em  27/08/2021,  relatando \n\nque  é  empregada  da  sociedade  empresária  Solução  Ltda.  desde  15/10/2019,  recebendo  1 \n\nsalário-mínimo por mês, estando com o contrato em vigor. Sheila informa que desde o início do \n\ncontrato  de  trabalho  atua  como  auxiliar  de  manutenção  terceirizada  nas  dependências  da \n\nsociedade  empresária  Tecnologia  Ltda.,  localizada  em  Campinas/SP,  pois  existe  contrato  de \n\nprestação  de  serviços  entre  ambas  as  empresas.  A  empregada  informa  que  jamais  assinou \n\nqualquer documento ou autorização, sendo aprovada em processo seletivo para, logo após, ter \n\na  CTPS  anotada.  Diz  que  trabalha  de  2ª  a  6ª  feira,  das  9h  às  15  horas,  com  intervalo  de  15 \n\nminutos para refeição, e aos sábados, das 8h às 14 horas sem intervalo, marcando corretamente \n\nos cartões de ponto. Sheila explica que o supervisor da empregadora, alocado junto à sociedade \n\nempresária Tecnologia Ltda. para controlar a qualidade dos serviços, foi substituído há 2 meses, \n\ne  o  novo  supervisor, de  nome  Carlos,  tem  o  estranho  e  constrangedor  hábito  de  enfileirar  as \n\nempregadas no início do expediente e exigir que cada trabalhadora lhe dê um beijo no rosto. \n\nCarlos justifica esse procedimento dizendo que é uma forma de melhorar a relação da chefia \n\ncom as subordinadas, e afirma que quem se negar sofrerá punição. Com receio de sofrer algo, \n\nSheila  se  submete  à  vontade  de  Carlos, mesmo  contrariada.  Sheila  lhe  apresenta um  extrato \n\natual do FGTS, no qual se verifica um único depósito referente à competência de novembro de \n\n2019, a certidão de nascimento do seu único filho, que tem 20 anos de idade, uma fotografia na \n\nqual  aparece  com  o  uniforme  da  sociedade  empresária  Solução  Ltda.,  a  cópia  da  ata  de \n\naudiência  de  um  processo  anterior  que  ela  ajuizou  contra  as  empresas,  com  as  mesmas \n\npretensões, e que foi extinta sem resolução do mérito (arquivada) pela ausência da trabalhadora \n\nà 1ª audiência, tendo ela pago as custas processuais, com grande sacrifício (reclamação número \n\n0100217-58.2021.5.15.0170, que tramitou perante a 170ª Vara do Trabalho de Campinas), os \n\ncontracheques de todo o período, nos quais consta, na parte de créditos, o salário mínimo e, na \n\nparte  de  descontos,  a  dedução  de  INSS,  sendo  que,  no  mês  de  março  de  2020  consta  uma \n\ndedução  da  contribuição  sindical  de  R$",
+        "resposta_modelo": ""
+      },
+      "questao_discursiva": null,
+      "temas_identificados": [
+        "fgts",
+        "terceirizacao",
+        "jornada",
+        "salario"
+      ]
+    },
+    {
+      "id": "prova-xxxiv-exame",
+      "exame": "XXXIV Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": {
+        "enunciado": "Heitor  Agulhas  trabalhava  na  sociedade  empresária  Porcelanas  Orientais  Ltda.  desde \n\n26/10/2020,  exercendo  a  função  de  vendedor  na  unidade  localizada  em  Linhares/ES  e \n\nrecebendo, em média, quantia equivalente a 1,5 salário-mínimo por mês, a título de comissão.  \n\nEm janeiro de 2022, o dono do estabelecimento resolveu instalar mais duas prateleiras na loja \n\npara poder expor mais produtos e, visando economizar dinheiro, fez a instalação pessoalmente. \n\nAs prateleiras foram afixadas logo acima do balcão em que trabalhavam os vendedores. Ocorre \n\nque  o  dono  da  empresa  tinha  pouca  habilidade  manual,  e,  por  isso,  as  prateleiras  não  foram \n\nfixadas adequadamente. No dia seguinte à instalação malfeita, com o peso dos produtos nelas \n\ncolocadas,  as  prateleiras  caíram  com  todo  o  material,  acertando  violentamente  a  cabeça  de \n\nHeitor,  que  estava  logo  abaixo  fazendo  um  atendimento.  Heitor  desmaiou  com  o  impacto,  foi \n\nsocorrido  e  conduzido  ao  hospital  público,  onde  recebeu  atendimento  e  levou  50  pontos  na \n\ncabeça, testa e face, resultando em uma grande cicatriz que, segundo Heitor, passou a despertar \n\na atenção das pessoas, que reagiam negativamente ao vê-lo. Heitor teve o plano de saúde, que \n\nera concedido pela sociedade empresária, cancelado após o dia do incidente e teve de usar suas \n\nreservas financeiras para arcar com R$ 1.350,00 em medicamentos, para aliviar as dores físicas, \n\nalém de R$ 2.500,00 em sessões de terapia, pois ficou fragilizado psicologicamente depois do \n\nevento. Heitor ficou afastado em benefício previdenciário por acidente do trabalho (auxílio por \n\nincapacidade temporária acidentária, antigo auxílio-doença acidentário, código B-91), teve alta \n\nmédica após 3 meses e retornou à empresa com a capacidade laborativa preservada, mas foi \n\ndispensado, sem justa causa, no mesmo dia. Heitor procura você, como advogado(a), querendo \n\npropor  alguma  medida  judicial  para  defesa  dos  seus  direitos,  pois  está  desempregado,  sem \n\ndinheiro para se manter e sentindo-se injustiçado porque ainda precisará de tratamento médico \n\ne suas reservas financeiras acabaram. Além dos documentos comprobatórios do atendimento \n\nhospitalar e gastos, Heitor exibe a CTPS devidamente assinada pela sociedade empresária e o \n\nextrato do FGTS, onde não constam depósitos nos 3 meses de afastamento pelo INSS.  \n\nComo advogado de Heitor, elabore a medida judicial em defesa dos interesses dele. (",
+        "resposta_modelo": ""
+      },
+      "questao_discursiva": null,
+      "temas_identificados": [
+        "fgts",
+        "salario"
+      ]
+    },
+    {
+      "id": "prova-37--exame",
+      "exame": "37° Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": {
+        "enunciado": "Ronaldo  Lourenço,  auxiliar  de  escritório,  trabalhou  nesta  função  para  a  sociedade \n\nempresária  Inventários  Empresariais  Ltda.,  no  período  de  20/01/2018  a  08/03/2023.  A  ex-\n\nempregadora  atualmente  tem,  na  sua  composição  societária,  dois  sócios,  Lúcio  Gonçalves  e \n\nAntônio  Amarante,  cada  um  com  50%  das  cotas,  conforme  modificação  do  contrato  social \n\naverbada nos órgãos competentes, em 30/01/2018. A modificação do contrato social deu-se em \n\nvirtude da retirada da sociedade do sócio Jorge Machado, que alienou suas cotas para Antônio \n\nAmarante.  Após  ser dispensado  Ronaldo Lourenço  ingressou  com  reclamação  trabalhista  em \n\nface de Inventários Empresariais Ltda., Lúcio Gonçalves, Antônio Amarante e Jorge Machado, \n\ntendo juntado, com a petição inicial, os contratos sociais da sociedade empresária Inventários \n\nEmpresariais Ltda. alegando receio de eventuais dificuldades em futura execução, já que o ramo \n\nde inventários comerciais passa por momento de dificuldades econômico-financeiras, em razão \n\ndas ferramentas tecnológicas disponíveis. A ação foi distribuída no dia 15/03/2022 para a 85ª \n\nVara  do  Trabalho  do  Rio  de  Janeiro/RJ  sob  o  número  0123-  12.2022.5.01.0085.  Na  inicial \n\nRonaldo  Lourenço  aduz  que  trabalhava  de  segunda  a  sexta-feira  das  8h  às  17h,  quando \n\ntrabalhava na sede da empresa. Porém, três vezes por semana, os inventários eram realizados \n\nem  clientes  de  outros  municípios.  Nestes  dias,  Ronaldo  apresentava-se  às  8h  na  sede  da \n\nempresa,  horário  em  que  saía  um  ônibus  com  vários  funcionários  para  o  destino  final.  O \n\ninventário era realizado em média das 10h às 14h, sendo certo que, às 17h, o ônibus já estava \n\nde volta à sede da empresa com os funcionários. Por conta destas situações, pretende adicional \n\nde transferência, em razão do trabalho em outros municípios. Ronaldo residia e reside em local \n\ndistante da sede da empresa, razão pela qual necessitava de dois ônibus para chegar ao centro \n\nda cidade, onde estava localizada a sede da empresa. Assim sendo, por residir em local de difícil \n\nacesso, requer o pagamento de horas in itinere. O trabalho de Ronaldo consistia na coleta de \n\ndados,  notadamente  a  quantidade  de  mercadorias,  o  que  obtinha  por  informação  pessoal  e \n\ntelefônica  dos  funcionários  dos  clientes.  Munido  dessas  informações,  Ronaldo  lançava  a \n\nquantidade em um programa específico, que comparava estes dado",
+        "resposta_modelo": ""
+      },
+      "questao_discursiva": null,
+      "temas_identificados": []
+    },
+    {
+      "id": "prova-38--exame",
+      "exame": "38° Exame",
+      "tipo_peca": "CONTESTAÇÃO",
+      "peca": {
+        "enunciado": "Josefina Pires ajuizou reclamação trabalhista contra Larissa Barreto, em março de 2022, \n\nrequerendo o reconhecimento de vínculo empregatício como empregada doméstica, no período \n\nde 10/09/2010 a 15/12/2021.  \n\nAfirmou que recebia, por último, o salário de R$ 2.00,00 mensais e que jamais recebeu \n\n13º salário ou férias (que requereu por todo o período, sendo as férias calculadas sobre a última \n\nremuneração), FGRS e horas extras (a partir de quando tais direitos passaram a ser devidos ao \n\nempregado doméstico), assim como honorários advocatícios. A petição inicial indicou estimativa \n\ndos  valores  pretendidos  e  foi distribuída  ao  juízo  da  100ª  Vara  do  Trabalho de  Petrópolis/RJ, \n\nrecebendo o número 00500-80.2022.5.01.0100. O rito adotado foi o ordinário, em razão do valor \n\npostulado.  \n\nDevidamente citada, a reclamada não apresentou contestação, daí porque o pedido foi \n\njulgado  inteiramente  procedente  à  revelia,  sendo  proferida  sentença  líquida,  no  valor  de  R$ \n\n125.000,00. \n\nIntimadas  as  partes,  não  houve  interposição  de  recurso,  foi  certificado  o  trânsito  em \n\njulgado  e  a  executada  foi  citada  por  oficial  de  justiça,  em  maio  de  2022,  para  pagamento \n\nvoluntário,  mas  quedou-se  inerte.  Então,  o  juízo  acionou  o  bloqueio  de  ativos  financeiros \n\n(penhora online), conseguindo reter R$ 2.000,00 da executada. As novas tentativas de bloqueio \n\nforam infrutíferas, sendo então expedido mandado de penhora e avaliação de bens. \n\n Foi penhorado o imóvel em que vivia a executada, avaliado pelo oficial de justiça em R$ \n\n123.000,00, sendo a penhora registrada no RGI.  \n\nGarantido o juízo, a executada ajuizou embargos à execução no 5º dia, no qual alegou \n\nque o imóvel penhorado era um bem de família, pois era proprietária de 2 imóveis e residia com \n\nsua família em ambos, alternadamente; suscitou prescrição parcial; afirmou que o valor retido de \n\nsua conta correspondia a parte do seu salário (10%), portanto impenhorável, juntando o extrato \n\nconfirmando que o valor bloqueado era de salário depositado; requereu nova chance de defesa, \n\nporque  teve  pouco  tempo  para  contestar,  pois  a  audiência  foi  marcada  para  14  dias  após  a \n\ncitação;  que,  no  cálculo  das  férias,  o  juiz  não  utilizou  a  evolução  salarial  durante  o  longevo \n\n\n \n \n                 \n \n \n \n \n\ncontrato de trabalho, como deveria ser, mas, sim, a última remuneração paga por ocasião da \n\nextinção do contrato.  \n\nApós devid",
+        "resposta_modelo": ""
+      },
+      "questao_discursiva": null,
+      "temas_identificados": [
+        "empregado_domestico",
+        "vinculo_empregaticio",
+        "salario",
+        "ferias",
+        "prescricao",
+        "contestacao_peca"
+      ]
+    },
+    {
+      "id": "prova-xxv-exame",
+      "exame": "XXV Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": null,
+      "questao_discursiva": null,
+      "temas_identificados": []
+    },
+    {
+      "id": "prova-xxv-exame--reaplica--o-porto-alegre",
+      "exame": "XXV Exame (reaplicação Porto Alegre/RS)",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": null,
+      "questao_discursiva": null,
+      "temas_identificados": []
+    },
+    {
+      "id": "prova-xxvi-exame",
+      "exame": "XXVI Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": null,
+      "questao_discursiva": null,
+      "temas_identificados": []
+    },
+    {
+      "id": "prova-xxvii-exame",
+      "exame": "XXVII Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": null,
+      "questao_discursiva": null,
+      "temas_identificados": []
+    },
+    {
+      "id": "prova-xxviii-exame",
+      "exame": "XXVIII Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": null,
+      "questao_discursiva": null,
+      "temas_identificados": []
+    },
+    {
+      "id": "prova-xxx-exame",
+      "exame": "XXX Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": null,
+      "questao_discursiva": null,
+      "temas_identificados": []
+    },
+    {
+      "id": "prova-xxxi-exame",
+      "exame": "XXXI Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": null,
+      "questao_discursiva": null,
+      "temas_identificados": []
+    },
+    {
+      "id": "prova-xxxii-exame",
+      "exame": "XXXII Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": null,
+      "questao_discursiva": null,
+      "temas_identificados": []
+    },
+    {
+      "id": "prova-xxxiii-exame",
+      "exame": "XXXIII Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": null,
+      "questao_discursiva": null,
+      "temas_identificados": []
+    },
+    {
+      "id": "prova-xxxiv-exame",
+      "exame": "XXXIV Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": null,
+      "questao_discursiva": null,
+      "temas_identificados": []
+    },
+    {
+      "id": "prova-37--exame",
+      "exame": "37° Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": null,
+      "questao_discursiva": null,
+      "temas_identificados": []
+    },
+    {
+      "id": "prova-38--exame",
+      "exame": "38° Exame",
+      "tipo_peca": "RECLAMAÇÃO TRABALHISTA",
+      "peca": null,
+      "questao_discursiva": null,
+      "temas_identificados": []
+    }
+  ]
+}

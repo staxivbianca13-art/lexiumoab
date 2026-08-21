@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>LEXIUM — Acesso Confirmado</title>
+<style>
+  :root {
+    --brand-500: #FF5500;
+    --brand-400: #FF6B1A;
+    --brand-300: #FF8C42;
+    --grad: linear-gradient(135deg, #FF5500 0%, #FF8C00 100%);
+    --bg-base:    #06060a;
+    --bg-surface: #0d0d14;
+    --bg-raised:  #12121c;
+    --bg-overlay: #1a1a28;
+    --border:     rgba(255,255,255,0.08);
+    --border-brand: rgba(255,100,0,0.25);
+    --text-1: #f0f0f5;
+    --text-2: #a0a0b8;
+    --text-3: #606078;
+    --success: #22c55e;
+    --font-d: 'Georgia', serif;
+    --font-b: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --r-md: 12px; --r-lg: 16px; --r-xl: 20px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg-base);
+    color: var(--text-1);
+    font-family: var(--font-b);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Background glow */
+  body::before {
+    content: '';
+    position: fixed;
+    top: -160px; left: 50%;
+    transform: translateX(-50%);
+    width: 700px; height: 500px;
+    background: radial-gradient(ellipse, rgba(34,197,94,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* ── LOGO ── */
+  .logo {
+    display: flex; align-items: center; gap: 10px;
+    text-decoration: none; margin-bottom: 40px;
+  }
+  .logo-mark { width: 34px; height: 34px; }
+  .logo-text {
+    font-family: var(--font-d);
+    font-size: 1.375rem; font-weight: 700;
+    letter-spacing: -0.02em;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ── CARD ── */
+  .card {
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: var(--r-xl);
+    padding: 48px 40px;
+    width: 100%;
+    max-width: 520px;
+    text-align: center;
+    box-shadow: 0 32px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.02);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Top accent line */
+  .card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #22c55e, #16a34a);
+  }
+
+  /* ── SUCCESS CIRCLE ── */
+  .success-ring {
+    width: 88px; height: 88px;
+    background: rgba(34,197,94,0.1);
+    border: 2px solid rgba(34,197,94,0.35);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 24px;
+    font-size: 2.25rem;
+    color: var(--success);
+    font-weight: 700;
+    animation: popIn .5s cubic-bezier(.175,.885,.32,1.275);
+  }
+  @keyframes popIn {
+    from { transform: scale(.5); opacity: 0; }
+    to   { transform: scale(1);  opacity: 1; }
+  }
+
+  /* ── TEXTS ── */
+  .title {
+    font-family: var(--font-d);
+    font-size: 1.75rem; font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    font-size: .9375rem; color: var(--text-2);
+    line-height: 1.7; margin-bottom: 28px;
+  }
+  .highlight { color: var(--text-1); font-weight: 600; }
+
+  /* ── AREA BADGE ── */
+  .area-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(255,85,0,0.08);
+    border: 1px solid rgba(255,85,0,0.22);
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-size: .8125rem; font-weight: 700;
+    color: var(--brand-300);
+    margin-bottom: 28px;
+  }
+  .area-badge-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--brand-400);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: .4; }
+  }
+
+  /* ── NEXT STEPS ── */
+  .steps {
+    background: var(--bg-overlay);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 20px 24px;
+    margin-bottom: 28px;
+    text-align: left;
+  }
+  .steps-title {
+    font-size: .7rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .1em;
+    color: var(--text-3); margin-bottom: 14px;
+  }
+  .step-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 8px 0;
+  }
+  .step-item + .step-item { border-top: 1px solid var(--border); }
+  .step-num {
+    width: 24px; height: 24px; border-radius: 50%;
+    background: rgba(255,85,0,0.12);
+    border: 1px solid rgba(255,85,0,0.25);
+    display: flex; align-items: center; justify-content: center;
+    font-size: .72rem; font-weight: 800;
+    color: var(--brand-300); flex-shrink: 0; margin-top: 1px;
+  }
+  .step-text { font-size: .845rem; color: var(--text-2); line-height: 1.6; }
+  .step-text strong { color: var(--text-1); font-weight: 600; }
+
+  /* ── CTA BUTTON ── */
+  .btn-primary {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%;
+    background: var(--grad);
+    color: #fff; border: none; border-radius: var(--r-md);
+    padding: 15px 24px;
+    font-family: var(--font-b);
+    font-size: 1rem; font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 24px rgba(255,85,0,0.35);
+    transition: opacity .2s, transform .15s;
+    text-decoration: none;
+    margin-bottom: 14px;
+  }
+  .btn-primary:hover { opacity: .92; transform: translateY(-1px); }
+  .btn-primary:active { transform: translateY(0); }
+
+  /* ── EMAIL NOTE ── */
+  .email-note {
+    font-size: .78rem; color: var(--text-3);
+    line-height: 1.65; margin-bottom: 24px;
+  }
+  .email-note span { color: var(--text-2); font-weight: 600; }
+
+  /* ── DIVIDER ── */
+  .divider {
+    border: none; border-top: 1px solid var(--border);
+    margin: 20px 0;
+  }
+
+  /* ── SUPPORT ── */
+  .support {
+    font-size: .78rem; color: var(--text-3); line-height: 1.7;
+  }
+  .support a { color: var(--brand-300); text-decoration: none; }
+  .support a:hover { text-decoration: underline; }
+
+  /* ── FOOTER ── */
+  .page-footer {
+    margin-top: 28px;
+    font-size: .72rem; color: var(--text-3); text-align: center;
+  }
+  .page-footer a { color: var(--text-3); }
+
+  @media (max-width: 560px) {
+    .card { padding: 36px 24px; }
+    .title { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Logo -->
+<a href="index.html" class="logo">
+  <svg class="logo-mark" viewBox="0 0 100 100" fill="none">
+    <defs><linearGradient id="lg" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FF4E00"/><stop offset="60%" stop-color="#FF8C00"/><stop offset="100%" stop-color="#FFB300"/></linearGradient></defs>
+    <path d="M50 8L82 22L82 55Q82 78 50 92Q18 78 18 55L18 22Z" fill="url(#lg)" opacity=".15" stroke="url(#lg)" stroke-width="2.5"/>
+    <rect x="30" y="24" width="8" height="44" rx="3" fill="url(#lg)"/>
+    <rect x="30" y="60" width="22" height="8" rx="3" fill="url(#lg)"/>
+    <path d="M45 46L53 56L70 36" stroke="url(#lg)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M62 20Q84 30 84 55Q84 75 62 86" stroke="url(#lg)" stroke-width="5" stroke-linecap="round" fill="none" opacity=".7"/>
+  </svg>
+  <span class="logo-text">Lexium</span>
+</a>
+
+<!-- Card -->
+<div class="card">
+
+  <!-- Success icon -->
+  <div class="success-ring">✓</div>
+
+  <!-- Title -->
+  <h1 class="title" id="title-text">Acesso confirmado!</h1>
+  <p class="subtitle" id="subtitle-text">
+    Seu pagamento foi processado com sucesso.<br>
+    Sua jornada rumo à aprovação na 2ª fase começa agora.
+  </p>
+
+  <!-- Area badge -->
+  <div class="area-badge" id="area-badge" style="display:none">
+    <div class="area-badge-dot"></div>
+    <span id="area-badge-text">Direito Civil · 2ª Fase OAB</span>
+  </div>
+
+  <!-- Next steps -->
+  <div class="steps">
+    <div class="steps-title">O que acontece agora</div>
+    <div class="step-item">
+      <div class="step-num">1</div>
+      <div class="step-text"><strong>Acesso imediato</strong> — sua área do aluno já está disponível. Clique no botão abaixo para entrar.</div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">2</div>
+      <div class="step-text"><strong>Envie sua primeira peça</strong> — a LEXIUM vai analisar e traçar o diagnóstico do seu nível atual.</div>
+    </div>
+    <div class="step-item">
+      <div class="step-num">3</div>
+      <div class="step-text"><strong>Acompanhe sua evolução</strong> — a cada correção, seu diagnóstico de aprovação é atualizado.</div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <a href="https://lexiumoab.com.br/lexium-app.html?novo=1" class="btn-primary" id="btn-entrar">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+    Acessar minha Área do Aluno
+  </a>
+
+  <!-- Email note -->
+  <p class="email-note" id="email-note">
+    Um e-mail de confirmação foi enviado para <span id="email-display">seu e-mail</span>.<br>
+    Guarde-o para acessar a plataforma quando quiser.
+  </p>
+
+  <hr class="divider">
+
+  <!-- Support -->
+  <div class="support">
+    Alguma dúvida? Fale com a gente em <a href="mailto:contato@lexiumoab.com.br">contato@lexiumoab.com.br</a><br>
+    Dúvidas? Entre em contato e teremos prazer em ajudar.
+  </div>
+
+</div>
+
+<!-- Page footer -->
+<div class="page-footer">
+  LEXIUM © 2026 · <a href="privacy.html">Privacidade</a> · <a href="terms.html">Termos</a>
+</div>
+
+<script>
+// Personalizar com dados do sessionStorage (preenchidos no checkout)
+(function () {
+  try {
+    const nome  = sessionStorage.getItem('lexium_nome');
+    const area  = sessionStorage.getItem('lexium_area');
+    const email = sessionStorage.getItem('lexium_email');
+
+    // Título personalizado
+    if (nome) {
+      const primeiro = nome.split(' ')[0];
+      document.getElementById('title-text').textContent = 'Tudo certo, ' + primeiro + '!';
+      document.getElementById('subtitle-text').innerHTML =
+        'Seu pagamento foi confirmado e sua conta está ativa.<br>Sua jornada rumo à aprovação na 2ª fase começa agora.';
+    }
+
+    // Badge de área
+    if (area) {
+      const badge = document.getElementById('area-badge');
+      const badgeText = document.getElementById('area-badge-text');
+      badge.style.display = 'inline-flex';
+      badgeText.textContent = area + ' · 2ª Fase OAB';
+    }
+
+    // E-mail
+    if (email) {
+      document.getElementById('email-display').textContent = email;
+    }
+
+    // Passar área para a área do aluno
+    if (area) {
+      document.getElementById('btn-entrar').href = 'https://lexiumoab.com.br/lexium-app.html?novo=1';
+    }
+
+  } catch (_) {}
+})();
+</script>
+
+</body>
+</html>

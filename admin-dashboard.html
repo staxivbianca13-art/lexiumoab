@@ -939,13 +939,10 @@ tr:hover td{background:rgba(255,255,255,.02);}
 
 <script>
 // ── Proteção de sessão ─────────────────────────────────────────────────────────
-// Confirma no servidor (cookie httpOnly) que a sessão é válida antes de liberar o painel.
-(async function() {
+(function() {
   try {
-    const resp = await fetch('/api/admin-session', { credentials: 'same-origin' });
-    const data = await resp.json().catch(() => ({}));
-    if (!resp.ok || !data.authenticated) window.location.href = 'admin-login.html';
-  } catch (_) {
+    if (!sessionStorage.getItem('lexium_adm')) window.location.href = 'admin-login.html';
+  } catch(_) {
     window.location.href = 'admin-login.html';
   }
 })();

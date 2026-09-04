@@ -1502,11 +1502,22 @@ select.input{appearance:none;cursor:pointer}
     </div>
   </div>
 
+  <!-- Resultado da IA (preenchido via JS após correção real) -->
+  <div id="relatorio-ia-content" style="display:none;margin-bottom:24px">
+    <div class="card">
+      <div class="report-section-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        Diagnóstico LEXIUM — Resultado da IA
+      </div>
+      <div id="relatorio-ia-texto" style="font-size:.875rem;color:var(--text-secondary);line-height:1.85;white-space:pre-wrap"></div>
+    </div>
+  </div>
+
   <div class="g2" style="align-items:start;gap:24px">
     <div style="display:flex;flex-direction:column;gap:20px">
 
       <!-- 1. Resumo executivo -->
-      <div class="card">
+      <div class="card" id="relatorio-static-content">
         <div class="report-section-title">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
           Resumo Executivo da IA
@@ -2585,6 +2596,7 @@ const AREA_CONFIG = {
   'Direito Empresarial': {pecas:['Petição Inicial','Contestação','Recurso de Apelação','Embargos de Declaração','Mandado de Segurança','Ação de Dissolução','Pedido de Recuperação Judicial'],temas:['Sociedades Empresárias','Títulos de Crédito','Recuperação Judicial','Falência','Responsabilidade dos Sócios','Contratos Empresariais','Direito do Consumidor']}
 };
 let studentArea='Direito Civil';
+const WORKER_URL='https://lexium-api.staxivbianca13.workers.dev';
 function initStudentArea(){
   try{studentArea=sessionStorage.getItem('lexium_area')||'Direito Civil';}catch(_){}
   if(!AREA_CONFIG[studentArea])studentArea='Direito Civil';
@@ -2735,24 +2747,90 @@ async function submitPeca(){
   const btn=document.getElementById('submit-peca-btn');
   if(btn){btn.disabled=true;btn.textContent='Enviando...';}
 
-  const { error } = await submitCorrectionRequest({
-    texto: ta.value.trim(),
-    enunciado: document.getElementById('corr-enunciado').value.trim(),
-    tipoDoc: document.getElementById('corr-tipo-doc').value,
-    tipoPeca: document.getElementById('corr-tipo-peca').value,
-  });
+  const texto=ta.value.trim();
+  const enunciado=document.getElementById('corr-enunciado').value.trim();
+  const tipoDoc=document.getElementById('corr-tipo-doc').value;
+  const tipoPeca=document.getElementById('corr-tipo-peca').value;
+
+  // Salva no Supabase em segundo plano
+  submitCorrectionRequest({ texto, enunciado, tipoDoc, tipoPeca }).catch(console.error);
 
   if(btn){
     btn.disabled=false;
     btn.innerHTML='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> Enviar para Correção';
   }
 
-  if(error){
-    showToast(error.message||'Não foi possível enviar sua peça. Tente novamente.','error');
-    return;
+  // Inicia correção com IA
+  startProcessingIA(texto, enunciado, tipoPeca||tipoDoc);
+}
+
+async function startProcessingIA(texto, enunciado, tipoPeca){
+  const IA_STEPS=['Analisando sua peça…','Corrigindo com IA LEXIUM…','Gerando diagnóstico personalizado'];
+  goPage('processando');
+  document.getElementById('proc-in-progress').classList.remove('hidden');
+  document.getElementById('proc-done').classList.add('hidden');
+  for(let i=0;i<IA_STEPS.length;i++){const el=document.getElementById('ps'+i);if(!el)continue;el.classList.remove('done','running');el.innerHTML='<div class="proc-icon">⏳</div>'+IA_STEPS[i];}
+  const bar=document.getElementById('proc-bar'),pctEl=document.getElementById('proc-pct');
+  if(bar)bar.style.width='0%';clearInterval(procInterval);
+
+  const ps0=document.getElementById('ps0');
+  if(ps0){ps0.classList.add('running');ps0.innerHTML='<div class="proc-icon"><div class="proc-spinner"></div></div>'+IA_STEPS[0];}
+  if(bar)bar.style.width='20%';if(pctEl)pctEl.textContent='20%';
+
+  let resultado=null;
+  try{
+    const resp=await fetch(WORKER_URL,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({tipo:'correcao',area:studentArea||'Direito Civil',enunciado:enunciado||'Não informado',conteudo:texto})
+    });
+    if(ps0){ps0.classList.remove('running');ps0.classList.add('done');ps0.innerHTML='<div class="proc-icon">✅</div>'+IA_STEPS[0];}
+    const ps1=document.getElementById('ps1');
+    if(ps1){ps1.classList.add('running');ps1.innerHTML='<div class="proc-icon"><div class="proc-spinner"></div></div>'+IA_STEPS[1];}
+    if(bar)bar.style.width='60%';if(pctEl)pctEl.textContent='60%';
+    const data=await resp.json();
+    resultado=data.resultado;
+    if(ps1){ps1.classList.remove('running');ps1.classList.add('done');ps1.innerHTML='<div class="proc-icon">✅</div>'+IA_STEPS[1];}
+    const ps2=document.getElementById('ps2');
+    if(ps2){ps2.classList.add('running');ps2.innerHTML='<div class="proc-icon"><div class="proc-spinner"></div></div>'+IA_STEPS[2];}
+    if(bar)bar.style.width='90%';if(pctEl)pctEl.textContent='90%';
+    await new Promise(r=>setTimeout(r,700));
+    if(ps2){ps2.classList.remove('running');ps2.classList.add('done');ps2.innerHTML='<div class="proc-icon">✅</div>'+IA_STEPS[2];}
+    if(bar)bar.style.width='100%';if(pctEl)pctEl.textContent='100%';
+  }catch(err){
+    console.error('[LEXIUM] Correção IA:',err);
   }
 
-  showReceivedConfirmation();
+  await new Promise(r=>setTimeout(r,600));
+  document.getElementById('proc-in-progress').classList.add('hidden');
+  if(resultado){
+    popularRelatorioIA(resultado,tipoPeca);
+    goPage('relatorio');
+  }else{
+    document.getElementById('proc-done').classList.remove('hidden');
+  }
+}
+
+function popularRelatorioIA(texto,tipoPeca){
+  // Extrai nota
+  const m=texto.match(/NOTA ESTIMADA[\s\S]*?(\d[\d,\.]+)\s*\/\s*10/);
+  const nota=m?m[1].replace('.',','):'—';
+  const gradeEl=document.querySelector('.report-grade-num');
+  if(gradeEl)gradeEl.textContent=nota;
+  // Atualiza área e tipo
+  const areaBadge=document.querySelector('#page-relatorio .badge-muted');
+  if(areaBadge)areaBadge.textContent=studentArea||'Direito';
+  const titleEl=document.querySelector('#page-relatorio .t-xl');
+  if(titleEl)titleEl.textContent=tipoPeca||'Peça Jurídica';
+  // Exibe resultado completo da IA
+  const iaBox=document.getElementById('relatorio-ia-content');
+  const iaTexto=document.getElementById('relatorio-ia-texto');
+  if(iaBox&&iaTexto){
+    iaTexto.textContent=texto;
+    iaBox.style.display='block';
+    const staticEl=document.getElementById('relatorio-static-content');
+    if(staticEl)staticEl.style.display='none';
+  }
 }
 
 // Grava a submissão de verdade na tabela `submissoes` (Supabase). A correção
@@ -2896,23 +2974,61 @@ async function fetchProvasFgv(){
 }
 
 async function startSimulado(){
-  if(studentArea === 'Direito do Trabalho'){
+  const btn=document.querySelector('#page-simulados .btn.btn-primary.w-full');
+  if(btn){btn.disabled=true;btn.innerHTML='⏳ Gerando simulado com IA...';}
+
+  // Tenta carregar prova real FGV para Trabalho
+  if(studentArea==='Direito do Trabalho'){
     try{
-      const provas = await fetchProvasFgv();
+      const provas=await fetchProvasFgv();
       if(provas.length){
-        const prova = provas[Math.floor(Math.random()*provas.length)];
+        const prova=provas[Math.floor(Math.random()*provas.length)];
         popularSimuladoReal(prova);
-        goPage('simulado-ativo');
-        startTimer();
-        return;
+        if(btn){btn.disabled=false;btn.innerHTML='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 3l14 9-14 9V3z"/></svg> Iniciar Simulado';}
+        goPage('simulado-ativo');startTimer();return;
       }
-    }catch(err){
-      console.error('[LEXIUM] Falha ao carregar provas reais da FGV, usando demonstração:', err.message);
-    }
+    }catch(err){console.error('[LEXIUM] FGV provas:',err.message);}
   }
+
+  // Gera simulado via IA para qualquer área
+  try{
+    const area=document.getElementById('sim-area-display')?.textContent?.trim()||studentArea||'Direito Civil';
+    const resp=await fetch(WORKER_URL,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({tipo:'simulado',area})
+    });
+    const data=await resp.json();
+    if(data.resultado){
+      popularSimuladoIA(data.resultado,area);
+      if(btn){btn.disabled=false;btn.innerHTML='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 3l14 9-14 9V3z"/></svg> Iniciar Simulado';}
+      goPage('simulado-ativo');startTimer();return;
+    }
+  }catch(err){console.error('[LEXIUM] Simulado IA:',err);}
+
+  // Fallback demo
   popularSimuladoDemo();
-  goPage('simulado-ativo');
-  startTimer();
+  if(btn){btn.disabled=false;btn.innerHTML='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 3l14 9-14 9V3z"/></svg> Iniciar Simulado';}
+  goPage('simulado-ativo');startTimer();
+}
+
+function popularSimuladoIA(texto,area){
+  const linhas=texto.split('\n');
+  let enunciado=texto,pecaInfo='';
+  const ultima=linhas[linhas.length-1];
+  if(ultima&&ultima.includes('Peça esperada:')){
+    enunciado=linhas.slice(0,-1).join('\n').trim();
+    pecaInfo=ultima.replace(/\*\*/g,'').trim();
+  }
+  document.getElementById('sim-header-sub').textContent='Simulado gerado por IA · '+(area||'OAB 2ª Fase');
+  document.getElementById('sim-header-title').textContent='Caso Prático — '+(area||'OAB 2ª Fase');
+  document.getElementById('sim-area-badge').textContent=area||studentArea;
+  document.getElementById('sim-real-badge').classList.add('hidden');
+  const casoEl=document.getElementById('sim-caso-texto');
+  casoEl.innerHTML=enunciado.split('\n\n').map(p=>p.trim()).filter(Boolean)
+    .map(p=>'<p style="font-size:.875rem;line-height:1.8;color:var(--text-secondary);margin-top:8px">'+p+'</p>').join('');
+  document.getElementById('sim-dicas-titulo').textContent=pecaInfo?'📋 '+pecaInfo:'💡 Dicas';
+  document.getElementById('sim-dicas-conteudo').innerHTML='• Leia o enunciado com atenção antes de começar<br>• Identifique todos os pedidos cabíveis<br>• Fundamente com artigos de lei específicos<br>• Verifique o endereçamento correto do juízo';
 }
 
 function popularSimuladoReal(prova){
